@@ -1,0 +1,39 @@
+25W Powerbank 10000mAh
+Galaxy SmartTag: How to track things outside 120m range
+How to ensure that my Samsung Mobile device is powered by safe batteries?
+Features of the Samsung Find app
+Use the Samsung Find app to share your location with your friends, child, family, and other contacts
+Additional Information
+Support Alert Battery Lifetime Test Procedure Jan 20, 2025
+Support News Samsung Galaxy Ring materials and wearing precautions Oct 18, 2024
+Support News How One UI 6.0 displays internal storage capacity Nov 27, 2023
+support product detail
+Accessory & Bluetooth
+Others Galaxy SmartTag: How to track things outside 120m range Galaxy SmartTag: How to track things outside 120m range
+Others How to ensure that my Samsung Mobile device is powered by safe batteries? FAQ for Samsung Mobile Device. Find more about 'How to ensure that my Samsung Mobile device is powered by safe batteries?' with Samsung Support.
+Samsung Apps Features of the Samsung Find app Discover the various features of the Samsung Find app.
+Others What are the important reasons to Recycle Samsung products? FAQ for Samsung Mobile Device. Find more about 'What are the important reasons to Recycle Samsung products?' with Samsung Support.
+Others How to solve S Pen connection issues FAQ for Mobile Devices. Find more about How to solve S Pen connection issues with Samsung Support.
+Battery गैलेक्सी बड्स: बैटरी इंडिकेटर और चार्जिंग केस की हल्की स्थिति गैलेक्सी बड्स: बैटरी इंडिकेटर और चार्जिंग केस की हल्की स्थिति
+Settings गैलेक्सी वॉच: मोबाइल डिवाइस से कैसे कनेक्ट करें? गैलेक्सी वॉच: मोबाइल डिवाइस से कैसे कनेक्ट करें?
+Hardware Defects of unauthorised third-party protective films on Galaxy devices This guide discusses the possible problems Galaxy device users might encounter if they use unauthorised third-party screen protectors.
+Samsung Apps Use the Samsung Find app to share your location with your friends, child, family, and other contacts Learn how to use the Samsung Find app to share your location with friends, family, and other contacts.
+Samsung Apps Use the Samsung Find app to locate a lost device Learn how to use the Samsung Find app to locate lost devices and track Samsung SmartTags.
+{{filterInfo.title}}
+{{contentInfo.symptomName}} {{contentInfo.title}} {{contentInfo.content}}
+{"softwares":[],"manuals":[{"description":"User Manual","englishDescription":"User Manual","fileName":"EB-P3400_UM_GLOBAL_Type_Rev.1.1_230502.pdf","fileModifiedDate":"Jun 14. 2023","fileModifiedDateCalendar":1686669960000,"fileVersion":"1.1","fileSize":"2.57","contentsTypeCode":"UM","filePath":"UM/202306/20230614092433771/EB-P3400_UM_GLOBAL_Type_Rev.1.1_230502.pdf","fileID":9220144,"viewCount":0,"downloadUrl":"https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_IN&OriginYN=N&ModelType=N&ModelName=EB-P3400&CttFileID=9220144&CDCttType=UM&VPath=UM%2F202306%2F20230614092433771%2FEB-P3400_UM_GLOBAL_Type_Rev.1.1_230502.pdf","osList":null,"areaList":[{"code":"AR","orgCode":"AR"},{"code":"BR","orgCode":"BR"},{"code":"CN","orgCode":"CN"},{"code":"ID","orgCode":"ID"},{"code":"IN","orgCode":"IN"},{"code":"JP","orgCode":"JP"},{"code":"KR","orgCode":"KR"},{"code":"MX","orgCode":"MX"},{"code":"RU","orgCode":"RU"},{"code":"TH","orgCode":"TH"},{"code":"TR","orgCode":"TR"},{"code":"TW","orgCode":"TW"},{"code":"US","orgCode":"US"},{"code":"WW","orgCode":"WW"}],"languageList":[{"code":"KO","orgCode":"KO","name":"KOREAN"},{"code":"EN","orgCode":"EN","name":"ENGLISH"},{"code":"EN","orgCode":"E1","name":"ENGLISH(Europe)"},{"code":"EN","orgCode":"E2","name":"ENGLISH(India)"},{"code":"EN","orgCode":"EC","name":"ENGLISH(Latin America)"},{"code":"EN","orgCode":"E3","name":"ENGLISH(M.E Asia)"},{"code":"EN","orgCode":"EB","name":"ENGLISH(North America)"},{"code":"EN","orgCode":"E5","name":"ENGLISH(S.E Asia)"},{"code":"EN","orgCode":"ED","name":"ENGLISH(S.W Asia)"},{"code":"FR","orgCode":"FN","name":"FRENCH(North America)"},{"code":"P2","orgCode":"P2","name":"PORTUGUESE(Brazil)"},{"code":"P1","orgCode":"P1","name":"PORTUGUESE(European)"},{"code":"ZH","orgCode":"C2","name":"SIMPLIFIED CHINESE(China)"},{"code":"ES","orgCode":"S3","name":"SPANISH(Latin America)"},{"code":"ES","orgCode":"S4","name":"SPANISH(North America)"},{"code":"AR","orgCode":"AR","name":"ARABIC"},{"code":"ZH","orgCode":"ZH","name":"CHINESE"},{"code":"ZH","orgCode":"ZH","name":"CHINESE"},{"code":"HR","orgCode":"HR","name":"CROATIAN"},{"code":"CS","orgCode":"CS","name":"CZECH"},{"code":"DA","orgCode":"DA","name":"DANISH"},{"code":"NL","orgCode":"NL","name":"DUTCH"},{"code":"ET","orgCode":"ET","name":"ESTONIAN"},{"code":"FI","orgCode":"FI","name":"FINNISH"},{"code":"FR","orgCode":"FR","name":"FRENCH"},{"code":"KA","orgCode":"KA","name":"GEORGIAN"},{"code":"DE","orgCode":"DE","name":"GERMAN"},{"code":"EL","orgCode":"EL","name":"GREEK"},{"code":"ID","orgCode":"ID","name":"INDONESIAN"},{"code":"IT","orgCode":"IT","name":"ITALIAN"},{"code":"JA","orgCode":"JA","name":"JAPANESE"},{"code":"KK","orgCode":"KK","name":"KAZAKH"},{"code":"LV","orgCode":"LV","name":"LATVIAN"},{"code":"LT","orgCode":"LT","name":"LITHUANIAN"},{"code":"NO","orgCode":"NO","name":"NORWEGIAN"},{"code":"PL","orgCode":"PL","name":"POLISH"},{"code":"PT","orgCode":"PT","name":"PORTUGUESE"},{"code":"RO","orgCode":"RO","name":"ROMANIAN"},{"code":"RU","orgCode":"RU","name":"RUSSIAN"},{"code":"SR","orgCode":"SR","name":"SERBIAN"},{"code":"SK","orgCode":"SK","name":"SLOVAK"},{"code":"SL","orgCode":"SL","name":"SLOVENIAN"},{"code":"ES","orgCode":"ES","name":"SPANISH"},{"code":"SV","orgCode":"SV","name":"SWEDISH"},{"code":"TH","orgCode":"TH","name":"THAI"},{"code":"TR","orgCode":"TR","name":"TURKISH"},{"code":"UK","orgCode":"UK","name":"UKRAINIAN"}]}]}
+https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx
+Language Click to Expand
+{{file.description}} ver {{file.fileVersion}} {{file.fileSize}} MB {{file.fileModifiedDate}} {{file.osNames}} {{file.languageName}} {{file.languageName}} {{file.allLanguageNames}} {{file.languageName}} Layer Popup Close Download
+ver {{file.fileVersion}}
+{{file.fileSize}} MB
+{{file.fileModifiedDate}}
+ADDITIONAL INFORMATION
+Face-to-face support
+Digital Service Center
+Request Callback Service
+Face-to-Face Support
+Phone Support (India)
+Phone Support (Bangladesh, Sri Lanka, Nepal)
+Apps & Services Customer Support
+RC01_Static Content : This text is only displayed on the editor page

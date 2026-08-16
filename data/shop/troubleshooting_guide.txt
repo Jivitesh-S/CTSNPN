@@ -1,0 +1,413 @@
+# TechStore Troubleshooting Guide
+Comprehensive step-by-step fixes for common phone, laptop and accessory problems.
+
+# PHONES
+
+## Phone won't charge
+1. Use the original charger and cable that came with the phone.
+2. Check the charging port for dust, lint, or debris and clean it gently with a dry toothpick or soft brush.
+3. Try a different wall socket. Avoid charging through laptops or extension boards with heavy load.
+4. Try wireless charging if your phone supports it.
+5. Restart the phone and try again.
+6. Check the cable for cuts or bends - damaged cables are the most common cause.
+7. If the phone heats up while charging, remove the case and avoid using it while charging.
+8. If none of these work, the charging port or battery may need service. Visit our store for a free diagnosis.
+
+## Phone battery drains too fast
+1. Check battery usage in Settings to find power-hungry apps.
+2. Reduce screen brightness and turn off Always-On Display.
+3. Enable power saving mode in Settings > Battery.
+4. Turn off background app refresh for unused apps.
+5. Disable Wi-Fi, Bluetooth, and GPS when not in use.
+6. Update the phone to the latest OS version.
+7. Close apps you are not using, especially games and video streaming.
+8. If the phone is more than 2 years old, the battery may need replacement. We replace batteries within 24 hours.
+
+## Phone heats up / overheating
+1. Remove the phone case to allow heat to escape.
+2. Close all background apps, especially games, cameras, and navigation.
+3. Lower screen brightness and avoid direct sunlight.
+4. Stop charging while using heavy apps.
+5. Avoid playing heavy games during charging.
+6. Check for OS updates - overheating fixes are common in updates.
+7. If overheating persists during light use, get a free diagnosis at our store. It may indicate a battery problem.
+
+## Phone is slow / lagging
+1. Restart the phone.
+2. Clear cached data in Settings > Storage.
+3. Delete unused apps, photos, and videos.
+4. Check free storage - keep at least 15% of storage free.
+5. Disable animations in Developer Options (Settings > About > Build number tapped 7 times).
+6. Uninstall recently installed apps that may be causing issues.
+7. Update the OS to the latest version.
+8. If the phone still lags, back up data and do a factory reset.
+
+## Phone won't turn on
+1. Press and hold the power button for 15-20 seconds to force restart.
+2. Plug the phone into a charger and wait 10 minutes - the battery may be completely drained.
+3. Try a different charger and cable.
+4. Connect to a PC or laptop - if the phone is detected, the screen may be damaged.
+5. If a charging animation appears but the screen stays black, the display may need replacement.
+6. If nothing works, bring the phone for a free diagnosis. Do not open the phone yourself.
+
+## Phone screen is cracked or damaged
+1. Stop using the phone if glass is broken - small shards can cut fingers.
+2. Back up your data using cloud backup (Google Drive/iCloud) while the screen is still usable.
+3. Do not attempt DIY screen repairs - it voids warranty and can damage the phone.
+4. Visit our store - screen replacement for popular models takes 48 hours.
+5. After repair, apply a tempered glass protector.
+
+## Phone touch screen not responding
+1. Remove the screen protector - it may be interfering.
+2. Clean the screen with a soft dry cloth.
+3. Restart the phone.
+4. Check for water or moisture on the screen.
+5. In Settings > Accessibility, check touch sensitivity settings.
+6. If the issue persists, the digitizer may be faulty - screen replacement is needed.
+
+## Phone camera not working / black screen
+1. Close the camera app completely and reopen it.
+2. Restart the phone.
+3. Check if other apps can use the camera - if not, the camera hardware may be blocked by another app.
+4. Clear camera app data in Settings > Apps.
+5. Update the phone software.
+6. If the camera lens is dirty, clean gently with a microfiber cloth.
+7. If the problem persists, the camera module needs service.
+
+## Phone speakers not working / no sound
+1. Check that the volume is turned up and the phone is not on silent.
+2. Check if sound works through headphones - if yes, the speaker is the problem.
+3. Clean the speaker grille gently with a soft dry brush.
+4. Restart the phone.
+5. Disable Bluetooth to rule out a connected device stealing audio.
+6. Check the media volume separately from the ring volume.
+7. If no sound at all, the speaker module needs replacement - typically fixed within 24 hours.
+
+## Phone microphone not working
+1. Check if the problem is in calls only or all recordings.
+2. Remove the phone case - it may be covering the mic.
+3. Clean the microphone hole with a soft brush - lint is a common cause.
+4. Restart the phone.
+5. Check that no app is blocking microphone access in Settings > Privacy.
+6. If calls fail but recordings work, check network/call settings with your carrier.
+7. If the mic is faulty, visit our store for service.
+
+## Phone Wi-Fi not connecting
+1. Turn off Wi-Fi and turn it back on.
+2. Restart the router and the phone.
+3. Forget the network (Settings > Wi-Fi > long press > Forget) and reconnect with the password.
+4. Make sure airplane mode is off.
+5. Check that the router allows multiple devices.
+6. Reset network settings (Settings > General Management > Reset > Reset Network Settings).
+7. If only one network fails but others work, the issue is with that router.
+
+## Phone Bluetooth not pairing
+1. Turn Bluetooth off and on again.
+2. Put the accessory in pairing mode (check its manual).
+3. Delete the device from the paired list and pair again.
+4. Make sure the devices are within 1 metre of each other.
+5. Restart both devices.
+6. Reset network settings on the phone.
+7. Check battery levels on both devices.
+
+## Phone keeps restarting / boot loop
+1. Force restart by holding the power button for 20 seconds.
+2. Charge the phone for at least 30 minutes and retry.
+3. Try booting into Safe Mode (hold power, then long-press 'Power off' and confirm Safe Mode).
+4. If Safe Mode works, uninstall recently installed apps.
+5. Update the operating system.
+6. If boot loop persists, back up data via recovery mode and factory reset.
+7. Visit our store for a free diagnosis - this can indicate a motherboard or battery issue.
+
+## Phone fell in water
+1. Remove the phone from water immediately.
+2. Turn the phone OFF immediately - do not press buttons.
+3. Do NOT charge it, do NOT use a hair dryer, do NOT put it in rice.
+4. Wipe the exterior gently with a dry cloth.
+5. Remove the SIM tray and case.
+6. Bring the phone to our service centre immediately - the faster it is cleaned internally, the higher the chance of saving it.
+7. Do not power it on until our technician checks it.
+
+## Phone storage full
+1. Back up photos and videos to Google Photos or iCloud.
+2. Clear app caches in Settings > Storage.
+3. Delete duplicate and unwanted files.
+4. Move large files to a microSD card (if supported) or to cloud storage.
+5. Uninstall apps you no longer use.
+6. Use the phone's built-in storage cleaner tool.
+
+## Phone not receiving calls / calls dropping
+1. Check that the SIM is inserted properly.
+2. Check signal strength - move to an open area.
+3. Turn airplane mode on and off to refresh network registration.
+4. Check call forwarding settings in the dialer.
+5. Remove and reinsert the SIM card.
+6. Update the phone software.
+7. If the problem continues, test the SIM in another phone - if it works, the issue is the phone; if not, contact your carrier.
+
+## Android phone apps keep crashing
+1. Clear the app's cache (Settings > Apps > App > Clear Cache).
+2. Clear the app's data (Settings > Apps > App > Clear Data) - note this logs you out.
+3. Update the app from the Play Store.
+4. Restart the phone.
+5. Check for OS updates.
+6. Uninstall and reinstall the app.
+7. Check storage - low storage causes crashes.
+
+## Galaxy phone apps keep crashing
+1. Force close the app by swiping it away in the Recents view.
+2. Restart the Galaxy phone.
+3. Update the app from the Galaxy Store or Play Store.
+4. Update One UI in Settings > Software Update.
+5. Clear the app's cache (Settings > Apps > App > Storage > Clear Cache) and try again.
+6. Check available storage - low storage causes crashes.
+
+## Phone fingerprint sensor not working
+1. Make sure fingers are clean and dry.
+2. Remove and re-add fingerprints in Settings.
+3. Remove the screen protector if it is thick.
+4. Restart the phone.
+5. If the sensor is physical (side or rear), clean it gently.
+6. If the issue persists, the sensor needs service.
+
+## Phone face unlock not working
+1. Make sure the front camera is clean.
+2. Improve lighting - face unlock struggles in very dark or very bright conditions.
+3. Re-register the face in Settings.
+4. Remove glasses or masks during registration and use.
+5. If using a screen protector with a cutout, ensure it is not covering the camera.
+
+## Phone not detected by PC / laptop
+1. Unlock the phone before connecting.
+2. On Android, pull down the notification shade and select 'File Transfer' or 'MTP' mode.
+3. Try a different USB cable and port.
+4. Install/update the USB drivers on the PC.
+5. On Galaxy, unlock and tap 'Trust This Computer' / 'Allow' for USB debugging when prompted.
+6. Restart both devices.
+
+# LAPTOPS
+
+## Laptop won't boot / no display
+1. Press and hold the power button for 15 seconds to force shutdown, then power on.
+2. Remove the charger and battery (if removable), hold power 15 seconds, reconnect, and try again.
+3. Connect an external monitor to check if the laptop screen is the problem.
+4. Listen for beeps - different beep patterns indicate different hardware issues.
+5. Check the power adapter light - if it is off, the adapter may be dead.
+6. If you recently added RAM or an SSD, reseat them.
+7. Enter the BIOS (F2/Del/F10 on startup) - if BIOS loads, it is a software or OS issue.
+8. If nothing displays, visit our store for a free diagnosis.
+
+## Laptop is very slow
+1. Restart the laptop.
+2. Check which apps are consuming resources in Task Manager (Ctrl+Shift+Esc).
+3. Close background programs and browser tabs.
+4. Check free disk space - keep at least 20% free.
+5. Disable startup programs (Task Manager > Startup).
+6. Scan for viruses and malware.
+7. Update Windows and device drivers.
+8. Upgrade to an SSD if the laptop has a hard drive - this is the single biggest speed upgrade.
+9. Upgrade RAM to 16GB if the laptop has 8GB or less.
+
+## Laptop overheating
+1. Place the laptop on a hard flat surface - never on a bed or pillow.
+2. Clean the vents with compressed air - dust is the #1 cause of overheating.
+3. Use a cooling pad for intensive work.
+4. Check that the fans spin - if silent while hot, fans may be failing.
+5. Update the BIOS and graphics drivers.
+6. Lower performance settings or limit background tasks.
+7. Repaste the CPU if the laptop is 2+ years old and running hot.
+8. If it overheats and shuts down, visit our store for cleaning and thermal service.
+
+## Laptop battery draining fast
+1. Check battery health (Settings > System > Power > Battery Health or manufacturer tool).
+2. Lower screen brightness.
+3. Enable Battery Saver mode.
+4. Disable keyboard backlight when not needed.
+5. Close GPU-heavy apps (games, video editing).
+6. Check for battery-draining background apps in Task Manager.
+7. Disconnect unused USB devices.
+8. If the battery health is below 80%, a replacement is recommended - we replace laptop batteries within 24 hours.
+
+## Laptop keyboard not working
+1. Restart the laptop - keyboard issues are often temporary.
+2. Check if it is a hardware or software issue by opening an on-screen keyboard.
+3. On Windows, run the keyboard troubleshooter (Settings > System > Troubleshoot).
+4. Check for stuck keys and debris - clean gently with compressed air.
+5. Connect an external keyboard - if it works, the built-in keyboard may be faulty.
+6. Check if a recent driver update caused it - roll back the keyboard driver.
+7. If the keys are unresponsive, the keyboard needs replacement.
+
+## Laptop touchpad not working
+1. Check if the touchpad is disabled - most laptops toggle it with F6, F9, or Fn+F keys.
+2. Restart the laptop.
+3. Check touchpad settings (Settings > Bluetooth & Devices > Touchpad).
+4. Update the touchpad driver in Device Manager.
+5. Disconnect an external mouse and test again.
+6. If the touchpad still doesn't work, it may need service.
+
+## Laptop screen flickering
+1. Update the graphics driver.
+2. Check refresh rate settings (Settings > System > Display > Advanced Display).
+3. Lower the refresh rate temporarily to test.
+4. Disable hardware acceleration in the browser.
+5. Run the display troubleshooter.
+6. If flickering continues, the display cable or panel may be faulty.
+
+## Laptop Wi-Fi not working
+1. Turn Wi-Fi off and on (or Fn+F key toggle).
+2. Restart the router and laptop.
+3. Update the Wi-Fi driver in Device Manager.
+4. Check if the Wi-Fi adapter is disabled in Device Manager.
+5. Run Windows network troubleshooter.
+6. Reset network settings (Settings > Network > Advanced > Network Reset).
+7. If the adapter shows an error, the hardware may need service.
+
+## Laptop audio not working
+1. Check the volume and mute state.
+2. Check the default output device (right-click the speaker icon > Sound Settings).
+3. Ensure the correct output device is selected (speakers vs headphones).
+4. Run the audio troubleshooter.
+5. Update the audio driver.
+6. Restart the Windows Audio service (services.msc > Windows Audio > Restart).
+7. Test with headphones - if they work, the internal speakers may be faulty.
+
+## Laptop stuck on update screen
+1. Wait 30-60 minutes - Windows updates can take a long time.
+2. If stuck for hours, force shutdown by holding the power button 15 seconds.
+3. On restart, Windows usually resumes or rolls back the update.
+4. If it keeps failing, boot into Safe Mode and use Windows Update Troubleshooter.
+5. Free up disk space - updates need 20GB+ free.
+6. Run DISM and SFC repair commands in an admin command prompt: sfc /scannow and DISM /Online /Cleanup-Image /RestoreHealth.
+
+## Laptop makes loud fan noise
+1. Close heavy applications.
+2. Check Task Manager for high CPU usage.
+3. Clean the vents with compressed air.
+4. Update the BIOS - fan curves are often improved.
+5. Use 'Balanced' power mode instead of 'Best Performance'.
+6. If the fan rattles or runs at full speed constantly, the fan may need replacement.
+
+## Laptop USB ports not working
+1. Restart the laptop.
+2. Try the device on a different port.
+3. Update USB drivers (Device Manager > Universal Serial Bus controllers).
+4. Check Device Manager for yellow warning icons.
+5. Disable and re-enable the USB controller.
+6. Check for debris in the port - clean gently with a toothpick.
+7. If all ports fail, the motherboard chip may need service.
+
+## Laptop shows blue screen (BSOD)
+1. Note the error code on the screen.
+2. Restart the laptop.
+3. Remove recently installed hardware and uninstall recently installed software.
+4. Run sfc /scannow in an admin command prompt.
+5. Update drivers, especially graphics and chipset.
+6. Check RAM with Windows Memory Diagnostic (mdsched.exe).
+7. Boot into Safe Mode - if it works there, a driver or app is the cause.
+8. If blue screens continue, visit our store for diagnosis.
+
+## Laptop hard drive/SSD full
+1. Run Disk Cleanup (search 'Disk Cleanup' and select the drive).
+2. Clean temporary files (Settings > System > Storage > Temporary Files).
+3. Uninstall unused software.
+4. Move personal files to an external drive or cloud.
+5. Check for large files with a disk space analyzer.
+6. Upgrade to a larger SSD - we install and clone drives in store.
+
+## Laptop webcam not working
+1. Check the privacy shutter (physical cover) - many laptops have one.
+2. Check camera privacy settings (Settings > Privacy & Security > Camera).
+3. Check if the app has camera permission.
+4. Update the camera driver.
+5. Press Fn+F8 or similar key if the camera has a kill switch.
+6. Test in another app to isolate the issue.
+
+# ACCESSORIES
+
+## TWS earbuds not pairing
+1. Remove the earbuds from the case - they enter pairing mode automatically.
+2. If not, press and hold the touch area for 5-10 seconds.
+3. Delete the device from your phone's Bluetooth list and pair fresh.
+4. Make sure the earbuds are charged.
+5. Reset the earbuds (check the manual - usually 3 taps + hold on both buds).
+6. Keep the phone within 1 metre during pairing.
+7. If only one bud plays sound, place both buds back in the case and take them out together.
+
+## TWS earbuds one side not working
+1. Place both earbuds in the case and close it for 10 seconds, then remove them together.
+2. Check that both buds show charge in the case.
+3. Clean the charging contacts on the buds and case with a dry cloth.
+4. Delete and re-pair the earbuds.
+5. Check the balance setting on the phone (Settings > Accessibility > Audio Balance).
+6. If one bud still fails, it may need service under warranty.
+
+## Earbuds low volume
+1. Check the volume on both the phone and the earbuds.
+2. Check for earwax blocking the speaker mesh - clean gently.
+3. Check the audio balance setting.
+4. Some earbuds have a volume limit feature - check the companion app.
+5. Make sure the earbuds are fully charged.
+
+## Headphones not charging
+1. Check the charging cable and port - clean the port gently.
+2. Use the original cable.
+3. Leave it charging for 30 minutes even if no light appears.
+4. Try a different charger.
+5. If the headphone has a replaceable battery compartment, check battery orientation.
+6. If still not charging, the battery may need service.
+
+## Bluetooth speaker not connecting
+1. Put the speaker in pairing mode (usually long-press the Bluetooth button).
+2. Delete it from the phone and pair fresh.
+3. Check the speaker battery level.
+4. Move the speaker closer to the phone.
+5. Reset the speaker (check manual for reset combo).
+6. Try pairing with another phone to isolate the issue.
+
+## Bluetooth speaker has low sound or distortion
+1. Check the phone volume and speaker volume separately.
+2. Lower the volume - distortion at max volume is normal for small speakers.
+3. Check that no EQ is boosting bass heavily.
+4. Update the speaker firmware via its app if available.
+5. Clean the speaker grille gently.
+
+## Power bank not charging phone
+1. Check the cable first - swap with another cable.
+2. Press the power button on the power bank to wake it up.
+3. Check the power bank's own charge level.
+4. Use the right output port (some are for low-power devices only).
+5. Check that your phone's cable is properly inserted.
+6. If the power bank won't charge itself, try another charger and cable.
+7. If it still fails, the power bank battery may be dead - check warranty.
+
+## Power bank charges slowly
+1. Use a higher wattage cable and charger.
+2. Make sure the power bank supports fast charging (check specs).
+3. Charging two devices at once halves the speed per device.
+4. Some phones need a specific port for fast charging.
+5. Check that the cable supports fast charging (look for 5A rated cables).
+
+## Wireless mouse not working
+1. Check the battery and replace if low.
+2. Reconnect the USB receiver - try a different port.
+3. Press the connect button on the mouse and receiver to re-pair.
+4. Clean the mouse sensor with a dry cloth.
+5. Check the surface - glass and glossy surfaces confuse optical sensors.
+6. Restart the PC or reinstall the driver.
+
+## Router Wi-Fi keeps dropping
+1. Restart the router (unplug 30 seconds, plug back in).
+2. Update the router firmware.
+3. Move the router to a central, elevated location away from walls.
+4. Change the Wi-Fi channel in router settings (try 1, 6, or 11 on 2.4GHz).
+5. Check for interference from microwaves, baby monitors, and other routers.
+6. Limit connected devices - too many devices overload cheap routers.
+7. Check the router's heat - routers overheat in closed cabinets.
+
+## Router slow internet speed
+1. Restart the router and modem.
+2. Test speed wired vs wireless - if wired is fast but wireless slow, it's a Wi-Fi issue.
+3. Change the band to 5GHz for newer devices.
+4. Update router firmware.
+5. Check for bandwidth hogs (background downloads, cloud sync).
+6. Contact your ISP if wired speeds are also slow.

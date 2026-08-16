@@ -1,0 +1,303 @@
+[
+  {
+    "category": "relevant",
+    "question": "What must I do before removing any FRU or CRU from the computer?",
+    "top_score": 0.7233132123947144,
+    "top_scores": [
+      0.7233132123947144,
+      0.6599624156951904,
+      0.6326118111610413,
+      0.6041993498802185,
+      0.559302568435669
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 34,
+      "chunk_index": 1,
+      "file_type": "pdf"
+    },
+    "best_content": "3. Follow the correct sequence in the steps for removing a FRU, as shown in the illustrations by the \nnumbers in square callouts.\n4. When removing a FRU, move it in the direction as shown by the arrow in the illustration. \n5. To install a new FRU in place, perform the removal procedure in reverse and follow any notes that \npertain to replacement.\n6. When replacing a FRU, carefully retain and reuse all screws.\n7. When replacing the base cover, reapply all labels that come with the replacement base cover. If some \noriginal labels are not included with the replacement base cover, peal them off from the original base \ncover and paste them on the replacement base cover. \nDANGER\nBefore removing any FRU or CRU, shut down the computer and unplug all power cords from \nelectrical outlets.\nAttention: After replacing a FRU, do not turn on the computer until you have ensured that all screws, \nsprings, and other small parts are in place and none are loose inside the computer. Verify this by shaking"
+  },
+  {
+    "category": "relevant",
+    "question": "How many screws need to be removed to take off the lower case of the 15-inch models?",
+    "top_score": 0.495376855134964,
+    "top_scores": [
+      0.495376855134964,
+      0.48844727873802185,
+      0.43306487798690796,
+      0.4317074418067932,
+      0.3881208896636963
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 36,
+      "chunk_index": 1,
+      "file_type": "pdf"
+    },
+    "best_content": "Figure 5. Disconnect the battery pack cable for 14–inch models\nFigure 6. Disconnect the battery pack cable for 15–inch models\nStep 2. Remove five screws for 14–inch models or six screws for 15–inch models and then remove the \nbattery pack. \n30 IdeaPad Series 1 Hardware Maintenance Manual"
+  },
+  {
+    "category": "relevant",
+    "question": "What is the warranty period?",
+    "top_score": 0.4801369607448578,
+    "top_scores": [
+      0.4801369607448578,
+      0.4215105473995209,
+      0.38536137342453003,
+      0.3826259970664978,
+      0.38202789425849915
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "train_expanded_json",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 27,
+      "chunk_index": 3,
+      "file_type": "pdf"
+    },
+    "best_content": "n the display, and beep symptoms\n6. Procedure index and page number in which the failing FRU was detected\n7. Failing FRU name and part number\n8. Machine type, model number, and serial number\n9. Customer's name and address\nNote: During the warranty period, the customer may be responsible for repair costs if the computer damage \nwas caused by misuse, accident, modification, unsuitable physical or operating environment, or improper \nmaintenance by the customer. Following is a list of some common items that are not covered under warranty \nand some symptoms that might indicate that the system was subjected to stress beyond normal use.\nBefore checking problems with the computer, determine whether the damage is covered under the warranty \nby referring to the following list:\nThe following are not covered under warranty:\n• LCD panel cracked from the application of excessive force or from being dropped\n• Scratched (cosmetic) parts\n• Distortion, deformation, or discoloration of the cosmetic parts"
+  },
+  {
+    "category": "relevant",
+    "question": "What should I do if the LCD breaks and fluid gets into my eyes?",
+    "top_score": 0.4100714325904846,
+    "top_scores": [
+      0.4100714325904846,
+      0.37291017174720764,
+      0.3626980483531952,
+      0.36156758666038513,
+      0.3305484354496002
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "train_expanded_json"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 27,
+      "chunk_index": 3,
+      "file_type": "pdf"
+    },
+    "best_content": "n the display, and beep symptoms\n6. Procedure index and page number in which the failing FRU was detected\n7. Failing FRU name and part number\n8. Machine type, model number, and serial number\n9. Customer's name and address\nNote: During the warranty period, the customer may be responsible for repair costs if the computer damage \nwas caused by misuse, accident, modification, unsuitable physical or operating environment, or improper \nmaintenance by the customer. Following is a list of some common items that are not covered under warranty \nand some symptoms that might indicate that the system was subjected to stress beyond normal use.\nBefore checking problems with the computer, determine whether the damage is covered under the warranty \nby referring to the following list:\nThe following are not covered under warranty:\n• LCD panel cracked from the application of excessive force or from being dropped\n• Scratched (cosmetic) parts\n• Distortion, deformation, or discoloration of the cosmetic parts"
+  },
+  {
+    "category": "paraphrased",
+    "question": "Will my warranty cover a cracked screen if I drop the laptop?",
+    "top_score": 0.5654170513153076,
+    "top_scores": [
+      0.5654170513153076,
+      0.437399685382843,
+      0.40660473704338074,
+      0.39444616436958313,
+      0.3861091136932373
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "train_expanded_json",
+      "train_expanded_json",
+      "train_expanded_json",
+      "Product_Manual.pdf"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 27,
+      "chunk_index": 3,
+      "file_type": "pdf"
+    },
+    "best_content": "n the display, and beep symptoms\n6. Procedure index and page number in which the failing FRU was detected\n7. Failing FRU name and part number\n8. Machine type, model number, and serial number\n9. Customer's name and address\nNote: During the warranty period, the customer may be responsible for repair costs if the computer damage \nwas caused by misuse, accident, modification, unsuitable physical or operating environment, or improper \nmaintenance by the customer. Following is a list of some common items that are not covered under warranty \nand some symptoms that might indicate that the system was subjected to stress beyond normal use.\nBefore checking problems with the computer, determine whether the damage is covered under the warranty \nby referring to the following list:\nThe following are not covered under warranty:\n• LCD panel cracked from the application of excessive force or from being dropped\n• Scratched (cosmetic) parts\n• Distortion, deformation, or discoloration of the cosmetic parts"
+  },
+  {
+    "category": "paraphrased",
+    "question": "How can I make sure I haven't left any loose screws inside the computer after a repair?",
+    "top_score": 0.40586936473846436,
+    "top_scores": [
+      0.40586936473846436,
+      0.40510380268096924,
+      0.3969181776046753,
+      0.38037702441215515,
+      0.3770988881587982
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 27,
+      "chunk_index": 1,
+      "file_type": "pdf"
+    },
+    "best_content": "Chapter 2. General checkout\nThis chapter contains the following topics:\nBefore you go to the checkout instructions, ensure that you read the following important notes.\nImportant notes:\n• It is recommended that only certified trained personnel perform service on the computer. For customers \nelecting to repair their own machines, please follow all instructions carefully.\n• Before replacing any FRU, read the entire page on removing and replacing FRUs.\n• Be extremely careful during such write operations as copying, saving, or formatting. Drives in the computer \nthat you are servicing sequence might have been altered. If you select an incorrect drive, data or programs might be \noverwritten.\n• Replace a FRU only with another FRU of the correct model. When you replace a FRU, make sure that the model \nof the machine and the FRU part number are correct by referring to the FRU parts list.\n• A FRU should not be replaced because of a single, unreproducible failure. Single failures can occur for a"
+  },
+  {
+    "category": "paraphrased",
+    "question": "Is it safe to use a third-party replacement battery if it fits?",
+    "top_score": 0.2582589387893677,
+    "top_scores": [
+      0.2582589387893677,
+      0.24701353907585144,
+      0.24506723880767822,
+      0.24113509058952332,
+      0.23798002302646637
+    ],
+    "top_sources": [
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "Product_Manual.pdf",
+      "train_expanded_json",
+      "train_expanded_json"
+    ],
+    "best_source": "Product_Manual.pdf",
+    "best_source_type": "user_document",
+    "best_metadata": {
+      "page": 9,
+      "chunk_index": 1,
+      "file_type": "pdf"
+    },
+    "best_content": "To determine whether there are any potentially unsafe conditions, use the following checklist at the \nbeginning of every service task. Begin the checks with the power off, and the power cord disconnected.\nChecklist:\n1. Check exterior covers for damage (loose, broken, or sharp edges).\n2. Power off the computer. Disconnect the power cord.\n3. Check the power cord for: \na. A third-wire ground connector in good condition. Use a meter to measure third-wire ground \ncontinuity for 0.1 ohm or less between the external ground pin and the frame ground.\nb. The power cord should be the authorized type specified for your computer. Go to: http:// \nwww.lenovo.com/serviceparts-lookup\nc. Insulation must not be frayed or worn.\n4. Check for cracked or bulging batteries.\n5. Remove the cover.\n6. Check for any obvious non-Lenovo alterations. Use good judgment as to the safety of any non-Lenovo \nalterations.\n7. Check inside the unit for any obvious unsafe conditions, such as metal filings, contamination, wate"
+  },
+  {
+    "category": "irrelevant",
+    "question": "I am Kannan",
+    "top_score": 0.25735124945640564,
+    "top_scores": [
+      0.25735124945640564,
+      0.25329288840293884,
+      0.25156331062316895,
+      0.24820572137832642,
+      0.2462293952703476
+    ],
+    "top_sources": [
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv"
+    ],
+    "best_source": "customer_support_csv",
+    "best_source_type": "dataset",
+    "best_metadata": {
+      "category": "CONTACT",
+      "intent": "contact_human_agent",
+      "flags": "BIL",
+      "source_row": 9673
+    },
+    "best_content": "can you help me chatting with a person?\nThanks for getting in touch! I grasp that you need assistance chatting with a person. Our team of dedicated human representatives is here to help you. Allow me to connect you with someone knowledgeable who can provide the support you require. Kindly stay with me for a moment while I establish the connection. We appreciate your patience and look forward to assisting you further."
+  },
+  {
+    "category": "irrelevant",
+    "question": "I love you",
+    "top_score": 0.26831698417663574,
+    "top_scores": [
+      0.26831698417663574,
+      0.26465463638305664,
+      0.2617809772491455,
+      0.25906291604042053,
+      0.25828832387924194
+    ],
+    "top_sources": [
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv"
+    ],
+    "best_source": "customer_support_csv",
+    "best_source_type": "dataset",
+    "best_metadata": {
+      "category": "CONTACT",
+      "intent": "contact_customer_service",
+      "flags": "BLW",
+      "source_row": 8399
+    },
+    "best_content": "I need help to call damn customer support\nI hear you! I'm following you that you're looking for assistance in calling our customer support. We apologize for any frustration you may have experienced. Rest assured, we are here to help you. To call our customer support, please dial our {{Customer Support Phone Number}}. Our dedicated team is ready to assist you with any concerns or inquiries you may have. Feel free to reach out to us, and we'll be more than happy to provide the support you need."
+  },
+  {
+    "category": "irrelevant",
+    "question": "What is the capital of France?",
+    "top_score": 0.20391693711280823,
+    "top_scores": [
+      0.20391693711280823,
+      0.19235891103744507,
+      0.18612191081047058,
+      0.1855793595314026,
+      0.1809702217578888
+    ],
+    "top_sources": [
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv"
+    ],
+    "best_source": "customer_support_csv",
+    "best_source_type": "dataset",
+    "best_metadata": {
+      "category": "DELIVERY",
+      "intent": "delivery_options",
+      "flags": "BIQSZ",
+      "source_row": 12606
+    },
+    "best_content": "can i order frlm {{Delivery City}}\nI'll make it happen! We are excited to let you know that you can place an order from {{Delivery City}} with ease. We offer delivery services to various locations, including {{Delivery City}}. Once you proceed to checkout, you can enter your address or select {{Delivery City}} as your delivery location. If you need any further assistance or have any specific concerns, please feel free to let me know. Your satisfaction is our priority!"
+  },
+  {
+    "category": "irrelevant",
+    "question": "Tell me a joke about football.",
+    "top_score": 0.19244544208049774,
+    "top_scores": [
+      0.19244544208049774,
+      0.18914374709129333,
+      0.18452054262161255,
+      0.18133088946342468,
+      0.17970292270183563
+    ],
+    "top_sources": [
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv",
+      "customer_support_csv"
+    ],
+    "best_source": "customer_support_csv",
+    "best_source_type": "dataset",
+    "best_metadata": {
+      "category": "FEEDBACK",
+      "intent": "review",
+      "flags": "BILPQW",
+      "source_row": 21896
+    },
+    "best_content": "where could i leave a fucking comment for a service\nI'm glad you contacted us to us and expressing your interest in leaving a comment! We truly value your feedback, as it enables us to improve the quality of our service. To leave a comment about our service, you can visit our website and go to the \"Contact Us\" or \"Feedback\" page. Alternatively, you can also find the option to leave a comment on our social media platforms. We look forward to hearing your thoughts and suggestions!"
+  }
+]

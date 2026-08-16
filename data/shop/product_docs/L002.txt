@@ -1,0 +1,37 @@
+Galaxy Book4 Pro, 35.56 cm, Core™ Ultra 7, 32 GB, Intel® Arc™ Graphics
+Remaster picture feature on Samsung Galaxy Book4 series
+Moisture prevention tips for Samsung Laptops (Galaxy Book)
+Additional Information
+Support Alert Intel CPU Firmware Update Aug 27, 2018
+Support Alert End of support for Windows XP Aug 08, 2017
+support product detail
+Guide/Others How to fix Samsung laptop battery is not charging? FAQ for Laptop. Find more about How to resolve charging related issues in Samsung Laptop?
+Guide/Others How to use the ‘Second Screen’ feature on your Samsung Galaxy Book2 Series? DIY video to know how to use the second screen feature on your samsung galaxy book2 series
+Guide/Others How to realign the taskbar on your Samsung Galaxy Book2 Series? DIY video to know how to realign the taskbar on your Samsung Galaxy Book2 Series
+Guide/Others How to use the ‘Quick Share’ feature on your Samsung Galaxy Book2 Series? DIY video to know how to use the Quick Share feature on your Samsung Galaxy Book2 Series
+Hardware How to improve the battery life of your Samsung Galaxy Book2 Series? DIY video to know how to improve the battery life of your samsung galaxy book2 series
+Software Using the SW Update Application How to Video for Samsung PC. Find more about 'Using the SW Update Application' with Samsung Support.
+What is MIMO technology? FAQ for Samsung PC. Find more about 'What is MIMO technology?' with Samsung Support.
+Guide/Others How to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series? DIY video to know how to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series
+Guide/Others How to turn on Battery saver Find out more about How to turn on Battery saver with Samsung Support
+Guide/Others Moisture prevention tips for Samsung Laptops (Galaxy Book) FAQ for Samsung Laptop. Find more about "moisture prevention tips for samsung laptops" with Samsung support.
+Guide/Others Remaster picture feature on Samsung Galaxy Book4 series FAQ for Samsung Laptop. Find more about 'remaster picture feature on samsung galaxy book4 series' with Samsung support.
+Guide/Others How to use Samsung Studio on Galaxy Book4 series FAQ for Samsung Laptop. Find more about 'How to use Samsung Studio on Galaxy Book4 series' with Samsung support.
+{{filterInfo.title}}
+{{contentInfo.symptomName}} {{contentInfo.title}} {{contentInfo.content}}
+{"softwares":[],"manuals":[{"description":"User Manual(Windows 11)","englishDescription":"User Manual(Windows 11)","fileName":"94xXGK_96xXGK_96xXGL_Win11_UM_ENG_Rev.2.0_250602.pdf","fileModifiedDate":"Jun 18. 2025","fileModifiedDateCalendar":1750176420000,"fileVersion":"2.0","fileSize":"1.08","contentsTypeCode":"UM","filePath":"UM/202506/20250618100447559/94xXGK_96xXGK_96xXGL_Win11_UM_ENG_Rev.2.0_250602.pdf","fileID":10563857,"viewCount":0,"downloadUrl":"https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_IN&OriginYN=N&ModelType=N&ModelName=NP940XGKA-EXP&CttFileID=10563857&CDCttType=UM&VPath=UM%2F202506%2F20250618100447559%2F94xXGK_96xXGK_96xXGL_Win11_UM_ENG_Rev.2.0_250602.pdf","osList":null,"areaList":[{"code":"BE","orgCode":"BE"},{"code":"BR","orgCode":"BR"},{"code":"CA","orgCode":"CA"},{"code":"CL","orgCode":"CL"},{"code":"CZ","orgCode":"CZ"},{"code":"DE","orgCode":"DE"},{"code":"DK","orgCode":"DK"},{"code":"ES","orgCode":"ES"},{"code":"FI","orgCode":"FI"},{"code":"FR","orgCode":"FR"},{"code":"GB","orgCode":"GB"},{"code":"HK","orgCode":"HK"},{"code":"HU","orgCode":"HU"},{"code":"IE","orgCode":"IE"},{"code":"IN","orgCode":"IN"},{"code":"IS","orgCode":"IS"},{"code":"IT","orgCode":"IT"},{"code":"LU","orgCode":"LU"},{"code":"MO","orgCode":"MO"},{"code":"NL","orgCode":"NL"},{"code":"NO","orgCode":"NO"},{"code":"PL","orgCode":"PL"},{"code":"PT","orgCode":"PT"},{"code":"RO","orgCode":"RO"},{"code":"SE","orgCode":"SE"},{"code":"TW","orgCode":"TW"},{"code":"UA","orgCode":"UA"},{"code":"US","orgCode":"US"}],"languageList":[{"code":"EN","orgCode":"EN","name":"ENGLISH"}]}]}
+https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx
+Language Click to Expand
+{{file.description}} ver {{file.fileVersion}} {{file.fileSize}} MB {{file.fileModifiedDate}} {{file.osNames}} {{file.languageName}} {{file.languageName}} {{file.allLanguageNames}} {{file.languageName}} Layer Popup Close Download
+ver {{file.fileVersion}}
+{{file.fileSize}} MB
+{{file.fileModifiedDate}}
+ADDITIONAL INFORMATION
+Face-to-face support
+Digital Service Center
+Request Callback Service
+Face-to-Face Support
+Phone Support (India)
+Phone Support (Bangladesh, Sri Lanka, Nepal)
+Apps & Services Customer Support
+RC01_Static Content : This text is only displayed on the editor page

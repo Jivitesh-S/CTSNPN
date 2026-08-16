@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: #e2e8f0;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Neutral Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Professional surfaces */
+.glass-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: #ffffff;
+  border-color: #1e3a8a;
+  box-shadow: 0 10px 30px -12px rgba(30, 58, 138, 0.18);
+  transform: translateY(-2px);
+}
+
+.glass-input {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.glass-input:focus-within {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+/* Accent text */
+.text-gradient-primary {
+  color: #1e3a8a;
+}
+
+/* User bubble (solid dark blue) */
+.user-bubble-gradient {
+  background: #1e3a8a;
+  box-shadow: 0 4px 14px -4px rgba(30, 58, 138, 0.35);
+}
+
+/* Typing shimmer (neutral) */
+@keyframes shimmerWave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.typing-shimmer {
+  background: linear-gradient(90deg, #e2e8f0 0%, #cbd5e1 50%, #e2e8f0 100%);
+  background-size: 200% 100%;
+  animation: shimmerWave 1.6s infinite;
+}
