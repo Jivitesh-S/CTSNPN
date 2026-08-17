@@ -1,0 +1,57 @@
+# Samsung Galaxy A51 (P035) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** PHONE
+**Model ID:** P035
+**Store Pricing:** Rs. 18,999
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2020-01
+**Official Support Reference:** https://www.samsung.com/in/support/model/P035/
+
+---
+
+## 📖 Product Overview & Description
+Global top-selling phone of 2020 with 6.5-inch Super AMOLED Infinity-O screen, 48MP quad-camera, and 4000mAh battery.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Display:** 6.5-inch Super AMOLED, FHD+
+- **Processor:** Exynos 9611 (10nm)
+- **Ram Storage:** 6GB/8GB RAM, 128GB
+- **Camera:** 48MP + 12MP + 5MP + 5MP
+- **Battery:** 4000mAh, 15W fast charging
+- **Extras:** On-screen fingerprint, 3.5mm jack
+
+---
+
+
+### 📱 Mobile Operating & Setup Guide
+1. **Initial Setup & SIM Insertion:**
+   - Use the SIM ejector tool to insert Nano-SIM or activate eSIM.
+   - Power on by holding the Side Power Key for 3 seconds.
+   - Use Samsung Smart Switch to transfer contacts, photos, and apps from your old device.
+2. **Key Software & AI Features:**
+   - **Galaxy AI (Circle to Search, Live Translate, Note Assist):** Access via Galaxy AI settings.
+   - **Samsung DeX:** Connect wirelessly to any PC or monitor for a desktop workstation experience.
+   - **Samsung Knox Vault:** Hardware-isolated security protecting PIN, biometric, and cryptographic keys.
+   - **Camera Modes:** Expert RAW, 8K Video Recording, Nightography, Astro-hyperlapse, and Single Take.
+3. **Battery & Device Care:**
+   - Protect Battery feature limits charging to 80% to maximize long-term lithium-ion lifespan.
+   - Supports 25W/45W Super Fast Charging with certified USB PD 3.0 PPS adapters.
+4. **Phone Troubleshooting & Diagnostics:**
+   - **Force Restart:** Press and hold Volume Down + Side Key simultaneously for 10-15 seconds.
+   - **Screen Freeze:** Clear cache partition in Android Recovery Mode or use Device Care auto-optimization.
+   - **Moisture Detected Warning:** Dry the USB-C port thoroughly before plugging in a charger.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

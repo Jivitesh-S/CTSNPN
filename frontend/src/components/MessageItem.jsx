@@ -16,13 +16,32 @@ import {
   Phone,
   PhoneCall,
   MessageCircle,
-  Bot
+  Bot,
+  Download,
+  Printer,
+  FileCheck,
+  ShieldCheck,
+  Play,
+  ExternalLink,
+  Video,
+  ShoppingBag,
 } from "lucide-react";
+import { generateServiceTokenPdf } from "../utils/pdfGenerator";
+import { VideoHubCard } from "./VideoHubCard";
+import ComparisonCard from "./ComparisonCard";
+import VisualDiagnosticCard from "./VisualDiagnosticCard";
 
-export function MessageItem({ message, onRetry }) {
+
+
+
+
+
+export function MessageItem({ message, onRetry, onSendMessage, onReserve }) {
+
   const [copied, setCopied] = useState(false);
   const [liked, setLiked] = useState(null); // 'like' | 'dislike' | null
   const [speaking, setSpeaking] = useState(false);
+
 
   const isUser = message.role === "user";
 
@@ -59,9 +78,76 @@ export function MessageItem({ message, onRetry }) {
     message.action === "call_store"
   );
 
+  // Detect Service Token Receipt generated in this message
+  const hasToken = Boolean(
+    message.token_id ||
+    message.action === "token_created" ||
+    (message.content && /#(?:CAN|REP)-\d{4}/i.test(message.content))
+  );
+
+  const rawTokenMatch = message.content?.match(/#(CAN-\d{4}|REP-\d{4})/i);
+  const rawOrderMatch = message.content?.match(/#(ORD-\d{3,5})/i);
+  const rawCustomerMatch = message.content?.match(/Customer:\*{0,2}\s*([^\n\r*]+)/i);
+  const rawPhoneMatch = message.content?.match(/Phone:\*{0,2}\s*([^\n\r*]+)/i);
+  const rawModelMatch = message.content?.match(/for Order [^(\n]*\(([^)]+)\)/i);
+
+  const currentTokenId = message.token_id || rawTokenMatch?.[1] || "CAN-8968";
+  const currentOrderId = message.order_id || rawOrderMatch?.[1] || "ORD-1003";
+  const currentCustomer = message.customer_name || rawCustomerMatch?.[1]?.trim() || "Customer";
+  const currentPhone = message.phone || rawPhoneMatch?.[1]?.trim() || "+91 98401 23456";
+  const currentModel = message.model_name || rawModelMatch?.[1]?.trim() || "Samsung Galaxy Device";
+  const currentReqType = message.request_type || (currentTokenId.startsWith("REP") ? "Replacement" : "Cancellation");
+
+  const [downloadingPdf, setDownloadingPdf] = useState(false);
+
+  const handleDownloadPdf = () => {
+    setDownloadingPdf(true);
+    try {
+      generateServiceTokenPdf(
+        {
+          token_id: currentTokenId,
+          order_id: currentOrderId,
+          customer_name: currentCustomer,
+          phone: currentPhone,
+          model_name: currentModel,
+          request_type: currentReqType,
+          price: message.price,
+          purchase_date: message.purchase_date,
+        },
+        true
+      );
+    } catch (e) {
+      console.error("PDF download error:", e);
+    }
+    setTimeout(() => setDownloadingPdf(false), 1500);
+  };
+
+  const handlePrintPdf = () => {
+    try {
+      const doc = generateServiceTokenPdf(
+        {
+          token_id: currentTokenId,
+          order_id: currentOrderId,
+          customer_name: currentCustomer,
+          phone: currentPhone,
+          model_name: currentModel,
+          request_type: currentReqType,
+          price: message.price,
+          purchase_date: message.purchase_date,
+        },
+        false
+      );
+      doc.autoPrint();
+      window.open(doc.output("bloburl"), "_blank");
+    } catch (e) {
+      console.error("PDF print error:", e);
+    }
+  };
+
   const phoneNumber = message.phone || "+91 9087086182";
   const telUrl = message.tel || "tel:+919087086182";
   const waUrl = message.whatsapp || "https://wa.me/919087086182?text=Hello%20TechStore%2C%20I%20need%20human%20assistance";
+
 
   const markdownComponents = {
     a: ({ node, href, children, ...props }) => {
@@ -78,18 +164,38 @@ export function MessageItem({ message, onRetry }) {
           </a>
         );
       }
+      const isYouTube = href && (href.includes("youtube.com") || href.includes("youtu.be"));
+      if (isYouTube) {
+        return (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-3 py-1.5 my-1.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 active:scale-95 text-white text-xs font-semibold shadow-sm transition-all border border-red-400/40 group/yt"
+            {...props}
+          >
+            <span className="w-4 h-4 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 group-hover/yt:bg-white/30 transition">
+              <Play className="w-2.5 h-2.5 fill-current ml-0.5" />
+            </span>
+            <span>{children}</span>
+            <ExternalLink className="w-3 h-3 opacity-75 ml-0.5" />
+          </a>
+        );
+      }
       return (
         <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:underline font-medium"
+          className="text-blue-600 hover:underline font-medium inline-flex items-center gap-1"
           {...props}
         >
           {children}
+          <ExternalLink className="w-3 h-3 opacity-60" />
         </a>
       );
     },
+
     table: ({ node, ...props }) => (
       <div className="my-3.5 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-xs">
         <table className="w-full text-left text-[13.5px] border-collapse" {...props} />
@@ -230,12 +336,163 @@ export function MessageItem({ message, onRetry }) {
               remarkPlugins={[remarkGfm]}
               components={markdownComponents}
             >
-              {message.content}
+              {(message.video_hub || message.video)
+                ? message.content
+                    .replace(/(?:🎥\s*)?\*{0,2}Watch Video Review:?\*{0,2}\s*\[.*?\]\(https?:\/\/.*?\)/gi, "")
+                    .replace(/You can also watch a detailed unboxing and review here:?\s*/gi, "")
+                    .trim()
+                : message.content}
             </ReactMarkdown>
           </div>
 
+          {/* Visual AI Hardware Diagnostic Card */}
+          {message.visual_diagnostic && (
+            <VisualDiagnosticCard
+              diag={message.visual_diagnostic}
+              imagePreview={message.image_preview}
+              onSendMessage={onSendMessage}
+            />
+          )}
+
+          {/* Side-by-Side Product Comparison Matrix */}
+          {message.comparison_data && (
+            <ComparisonCard
+              data={message.comparison_data}
+              onReserve={onReserve}
+            />
+          )}
+
+          {/* Single Product In-Store Reservation Action Card */}
+          {(message.product || message.reservation_available) && !message.comparison_data && onReserve && (
+            <div className="my-3 p-3.5 rounded-2xl bg-gradient-to-r from-blue-50/90 via-indigo-50/80 to-purple-50/90 border border-blue-200/80 shadow-xs flex items-center justify-between gap-3 flex-wrap">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-blue-600/10 flex items-center justify-center text-blue-600 shrink-0">
+                  <ShoppingBag className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-slate-900 font-heading">
+                    Reserve {(message.product || message.reservation_available).name}
+                  </div>
+                  <div className="text-[11px] text-slate-500 font-medium">
+                    Rs. {Number((message.product || message.reservation_available).price || 0).toLocaleString("en-IN")} • 24-Hour Free In-Store Hold (Surapet, Chennai)
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => onReserve(message.product || message.reservation_available)}
+                className="py-1.5 px-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-xl text-xs font-bold shadow-xs transition active:scale-95 flex items-center gap-1.5 cursor-pointer"
+              >
+                <ShoppingBag className="w-3.5 h-3.5" />
+                <span>Reserve in Store</span>
+              </button>
+            </div>
+          )}
+
+          {/* Interactive YouTube Video & Benchmark Hub Card */}
+          {message.video_hub && (
+            <VideoHubCard hub={message.video_hub} />
+          )}
+
+
+
+
+
+          {/* E-Invoice & Service Token Receipt Card */}
+          {hasToken && (
+            <div className="my-4 p-4 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-blue-950 text-white shadow-lg border border-indigo-500/30 overflow-hidden relative">
+              {/* Top Decorative Glow */}
+              <div className="absolute -top-12 -right-12 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl pointer-events-none" />
+
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3 pb-3 border-b border-white/10">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-xl bg-blue-500/20 border border-blue-400/40 flex items-center justify-center text-blue-400">
+                    <FileCheck className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-semibold uppercase tracking-wider text-blue-200">
+                      Official E-Invoice & Service Receipt
+                    </h4>
+                    <p className="text-[11px] text-slate-300">
+                      Token: <span className="font-mono font-bold text-amber-300">#{currentTokenId}</span> • Auth: Telegram 2FA
+                    </p>
+                  </div>
+                </div>
+
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-medium border border-emerald-500/30">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>Verified & Auto-Downloaded</span>
+                </div>
+              </div>
+
+              {/* Quick Details Pill Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3.5 text-xs">
+                <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] text-slate-400 block">Customer</span>
+                  <span className="font-semibold text-slate-100 truncate block">{currentCustomer}</span>
+                </div>
+                <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] text-slate-400 block">Order ID</span>
+                  <span className="font-semibold text-slate-100 truncate block">#{currentOrderId}</span>
+                </div>
+                <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] text-slate-400 block">Device</span>
+                  <span className="font-semibold text-slate-100 truncate block">{currentModel}</span>
+                </div>
+                <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] text-slate-400 block">Request</span>
+                  <span className="font-semibold text-rose-300 truncate block">{currentReqType}</span>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 pt-1">
+                <button
+                  onClick={handleDownloadPdf}
+                  disabled={downloadingPdf}
+                  className="flex-1 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 active:scale-95 text-white text-xs font-semibold shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Download className={`w-3.5 h-3.5 ${downloadingPdf ? 'animate-bounce' : ''}`} />
+                  {downloadingPdf ? "Downloading Receipt..." : "Download PDF Receipt"}
+                </button>
+
+                <button
+                  onClick={handlePrintPdf}
+                  className="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 text-slate-200 text-xs font-semibold border border-white/15 transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Printer className="w-3.5 h-3.5" />
+                  Print Receipt
+                </button>
+              </div>
+            </div>
+          )}
+
+
+          {/* Smart Contextual Follow-up Suggestions */}
+          {!isUser && message.suggested_followups && message.suggested_followups.length > 0 && onSendMessage && (
+            <div className="mt-4 pt-3.5 border-t border-slate-200/70">
+              <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                <Sparkles className="w-3 h-3 text-blue-600" />
+                <span>Suggested Follow-ups:</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {message.suggested_followups.map((suggestion, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => onSendMessage(suggestion)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 hover:bg-blue-50/90 active:scale-95 border border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-700 text-xs font-medium shadow-2xs hover:shadow-xs transition-all duration-200 text-left cursor-pointer group"
+                  >
+                    <span>{suggestion}</span>
+                    <span className="text-slate-400 group-hover:text-blue-600 transition ml-0.5 font-bold">↗</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Bottom Action Toolbar */}
           <div className="flex items-center justify-between gap-2 mt-4 pt-3 border-t border-white/60 text-slate-500 text-xs">
+
             <div className="flex items-center gap-1">
               {/* Copy Button */}
               <button

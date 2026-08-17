@@ -42,13 +42,14 @@ Comprehensive step-by-step fixes for common phone, laptop and accessory problems
 7. Update the OS to the latest version.
 8. If the phone still lags, back up data and do a factory reset.
 
-## Phone won't turn on
-1. Press and hold the power button for 15-20 seconds to force restart.
-2. Plug the phone into a charger and wait 10 minutes - the battery may be completely drained.
-3. Try a different charger and cable.
-4. Connect to a PC or laptop - if the phone is detected, the screen may be damaged.
-5. If a charging animation appears but the screen stays black, the display may need replacement.
-6. If nothing works, bring the phone for a free diagnosis. Do not open the phone yourself.
+## How to turn on phone / Phone won't turn on
+1. Press and hold the Side / Power button on the right edge for 3-5 seconds until the logo appears.
+2. If the phone does not power on, plug the phone into an official charger and wait 10-15 minutes - the battery may be completely drained.
+3. Force Restart: If the screen is black and unresponsive, press and hold both the Volume Down and Power buttons simultaneously for 10-15 seconds until the device vibrates and reboots.
+4. Check the charging cable and adapter on another socket.
+5. Connect to a PC or laptop - if the phone vibrates or is detected, the display may need service.
+6. If the device still does not turn on, visit TechStore (+91 9087086182) for free diagnostics.
+
 
 ## Phone screen is cracked or damaged
 1. Stop using the phone if glass is broken - small shards can cut fingers.
@@ -187,15 +188,14 @@ Comprehensive step-by-step fixes for common phone, laptop and accessory problems
 
 # LAPTOPS
 
-## Laptop won't boot / no display
-1. Press and hold the power button for 15 seconds to force shutdown, then power on.
-2. Remove the charger and battery (if removable), hold power 15 seconds, reconnect, and try again.
-3. Connect an external monitor to check if the laptop screen is the problem.
-4. Listen for beeps - different beep patterns indicate different hardware issues.
-5. Check the power adapter light - if it is off, the adapter may be dead.
-6. If you recently added RAM or an SSD, reseat them.
-7. Enter the BIOS (F2/Del/F10 on startup) - if BIOS loads, it is a software or OS issue.
-8. If nothing displays, visit our store for a free diagnosis.
+## Laptop not turning on / Laptop won't boot / no display
+1. Check the power adapter and charging LED indicator light. Let the laptop charge for 15-20 minutes.
+2. Hard Power Reset: Disconnect all USB devices and the charger. Press and hold the power button for 20-30 seconds continuously to drain static power, then reconnect charger and press power once.
+3. If fans or keyboard lights turn on but the screen is black, press Win + Ctrl + Shift + B to reset display drivers.
+4. Connect an external monitor to check if the laptop screen or video cable is faulty.
+5. Enter the BIOS (press F2, F10, or Del during boot) - if BIOS loads, the issue is Windows/OS related.
+6. If the laptop shows no power lights and does not respond, bring it to TechStore (+91 9087086182) for free diagnostics.
+
 
 ## Laptop is very slow
 1. Restart the laptop.
@@ -411,3 +411,79 @@ Comprehensive step-by-step fixes for common phone, laptop and accessory problems
 4. Update router firmware.
 5. Check for bandwidth hogs (background downloads, cloud sync).
 6. Contact your ISP if wired speeds are also slow.
+
+# SMART TELEVISIONS & MONITORS
+
+## Samsung TV won't turn on / Red light blinking
+1. Cold Boot / Power Reset: Unplug the TV power cord from the wall outlet. Press and hold the physical Power button on the TV chassis (bottom or rear) for 30 seconds to drain residual power. Wait 2 minutes, then plug directly into the wall (avoid extension sockets) and power on.
+2. Check the Red Standby Light:
+   - If red light is solid OFF: Check the power socket or test with another appliance.
+   - If red light is blinking continuously: Count the blinks (usually indicates power board or backlight protection).
+3. If using a One Connect Box (on Frame / Neo QLED / OLED S95D), ensure the invisible silver fiber cable is firmly seated at both ends without sharp bends.
+4. Try powering on using the physical power button on the TV frame to rule out dead remote batteries.
+5. If the red light stays blinking or no power returns, contact TechStore (+91 9087086182) for an in-home technician visit.
+
+## Samsung TV black screen with sound (No picture)
+1. Flashlight Test: Shine a smartphone flashlight closely at the dark screen. If you can see faint images or menu outlines, the display panel is fine but the LED backlight / power inverter needs service.
+2. Picture Test: On your remote, press Home > Settings > Support > Device Care > Self Diagnosis > Picture Test.
+3. Check HDMI cables: Disconnect all HDMI devices (set-top box, gaming console, firestick). If the TV menu/home screen appears normally, the issue is with the external device or HDMI cable.
+4. Firmware update: Update Tizen OS to latest version via Settings > Support > Software Update.
+5. If picture test fails or screen remains pitch black, book a free technician inspection with TechStore.
+
+## Samsung TV HDMI eARC / Soundbar audio not working
+1. Use a High-Speed HDMI 2.1 cable certified for eARC and connect to the dedicated HDMI Port labeled "eARC" (usually HDMI Port 3).
+2. Enable Anynet+ (HDMI-CEC): Navigate to Settings > General > External Device Manager > Anynet+ (HDMI-CEC) and turn it ON.
+3. Configure Sound Output: Go to Settings > Sound > Expert Settings > Digital Output Audio Format and select "Pass-Through" or "Auto".
+4. Set eARC Mode to "Auto" in Sound Expert Settings.
+5. Power cycle the TV and Soundbar simultaneously (unplug both for 60 seconds).
+
+## Samsung TV Wi-Fi keeps disconnecting / Tizen OS network error
+1. Restart the TV via remote: Press and hold the Remote Power button for 5 seconds until the Samsung logo appears (soft reboot).
+2. DNS Settings Fix: Go to Settings > General > Network > Network Status > IP Settings > DNS Setting > Set to "Enter Manually" > DNS Server: 8.8.8.8 (Google DNS).
+3. Forget and Reconnect Wi-Fi: Delete the saved Wi-Fi network, restart your home router, and reconnect entering your password fresh.
+4. Date & Time Sync: Ensure Settings > General > System Manager > Time > Clock is set to Auto (incorrect time prevents SSL connections for YouTube/Netflix).
+
+## Samsung SolarCell Remote not working / Unresponsive
+1. Solar / USB-C Charging: Place the remote face-down under direct sunlight or indoor lighting, or plug a USB Type-C cable into the bottom port for 30 minutes.
+2. Re-pair Remote: Stand 1 foot away from the TV, point at the sensor, and press and hold the "Return" (Back) and "Play/Pause" buttons simultaneously for 3 seconds until "Pairing Device..." appears on screen.
+3. Clean the IR emitter lens at the top of the remote with a soft microfiber cloth.
+
+---
+
+# WASHING MACHINES & DRYERS
+
+## Samsung Washing Machine 4C / 4E Error Code (Water Supply Issue)
+- Meaning: Water is not entering the drum or filling too slowly.
+- Step 1: Check water tap - ensure the inlet tap connected to the machine is fully OPEN.
+- Step 2: Check inlet hose - verify the water hose is not kinked, twisted, or crushed against the wall.
+- Step 3: Clean Debris Mesh Filter - Turn off the tap, unscrew the L-shaped water inlet hose at the back of the machine, remove the small plastic mesh filter with pliers, rinse out lime/sand debris under running water, and reconnect firmly.
+- Step 4: Check water pressure - Ensure minimum household water pressure is at least 0.5 bar (50 kPa).
+
+## Samsung Washing Machine 5C / 5E / Nd Error Code (Drainage Issue)
+- Meaning: Water is unable to drain out of the drum during rinse/spin cycles.
+- Step 1: Clean Emergency Drain Filter (Pump Filter): Open the small access flap at the bottom-right front of the machine. Place a shallow tray and towel underneath. Pull the small rubber drain tube to release excess water into the tray. Unscrew the circular debris filter counter-clockwise, remove coins, lint, hairpins, and clean under warm water. Screw back tightly.
+- Step 2: Check drain hose height: Ensure the drain hose is elevated between 60cm to 90cm from the floor (not pushed too deep into the standpipe or lying flat on ground).
+- Step 3: Check for frozen or kinked drain pipe.
+
+## Samsung Washing Machine Ub / UE Error Code (Unbalanced Load)
+- Meaning: The drum cannot reach high-speed spin due to uneven weight distribution.
+- Step 1: Redistribute clothes: Open the door and evenly spread out bulky items (bedsheets, heavy jackets, towels). Avoid washing a single heavy item alone — add 1-2 towels to balance the drum.
+- Step 2: Level the machine: Check that all four leveling feet touch the floor firmly. Use a spirit level on top of the machine and adjust the lock nuts underneath with a spanner.
+- Step 3: Run Calibration Mode: Empty the drum, turn machine off, press and hold "Temp" + "Delay End" simultaneously, then press Power. Press Start to run the 3-minute auto-calibration cycle (CLB).
+
+## Samsung Washing Machine dC / dE / dE1 Error Code (Door Lock Fault)
+- Meaning: The door is open, not latched, or laundry is trapped in the rubber gasket.
+- Step 1: Ensure no garments or socks are caught between the glass door and rubber seal.
+- Step 2: Push the door firmly until you hear a distinct mechanical click.
+- Step 3: If child lock is active, press and hold the Child Lock buttons (usually Temp + Rinse) for 3 seconds to unlock.
+
+## Samsung Washing Machine AC6 / 3C / 3E Error Code (Motor / Communication Issue)
+- Meaning: Digital Inverter Motor overload or main control board communication glitch.
+- Step 1: Power cycle: Switch off the wall power switch and unplug the machine for 15 minutes to reset the inverter drive module.
+- Step 2: Reduce load: If the drum was overloaded with heavy wet duvets, remove half the items.
+- Step 3: If the error code returns immediately upon pressing Start, contact TechStore (+91 9087086182) for a certified technician motor inspection (Digital Inverter Motor is backed by a 20-year warranty).
+
+## Samsung EcoBubble Not Foaming / High Vibration
+1. Water Temperature: EcoBubble works with cold water (15°C–25°C). Ensure you are not running boiling hot water directly into the bubble generator.
+2. Detergent Type: Use liquid Front-Load detergent (Matik) in the correct auto-dispenser compartment. Do not use standard hand-wash powder which causes excessive residue.
+3. Transit Bolts: If the machine is brand new and vibrating violently across the floor, ensure the 4 rear metal transit bolts (shipping safety bolts) were removed during installation!

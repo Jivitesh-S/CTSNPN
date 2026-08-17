@@ -117,3 +117,31 @@
   animation: shimmerWave 1.6s infinite;
 }
 
+/* Ambient Floating Chat Bubbles */
+@keyframes floatSlow1 {
+  0%, 100% { transform: translateY(0px) rotate(-1.5deg); }
+  50% { transform: translateY(-8px) rotate(-0.5deg); }
+}
+
+@keyframes floatSlow2 {
+  0%, 100% { transform: translateY(0px) rotate(1.5deg); }
+  50% { transform: translateY(-10px) rotate(2.5deg); }
+}
+
+@keyframes floatSlow3 {
+  0%, 100% { transform: translateY(0px) rotate(-0.5deg); }
+  50% { transform: translateY(-7px) rotate(1deg); }
+}
+
+.animate-float-1 {
+  animation: floatSlow1 7s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: floatSlow2 8.5s ease-in-out infinite 1s;
+}
+
+.animate-float-3 {
+  animation: floatSlow3 6.5s ease-in-out infinite 2s;
+}
+

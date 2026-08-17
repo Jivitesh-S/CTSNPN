@@ -1,285 +1,58 @@
-The Samsung Galaxy Z Flip 7 (stylized as Samsung Galaxy Z Flip7 ) is a foldable smartphone developed and marketed by Samsung Electronics . It was officially announced on July 9, 2025, at the Samsung 's Galaxy Unpacked event held in Brooklyn , New York City , United States , alongside the Galaxy Z Fold 7 and the Galaxy Watch 8 series, and were released on July 25, 2025. [ 2 ] [ 3 ]
-Samsung also introduced a derivative model, the Galaxy Z Flip 7 FE , which features a slimmer and lighter design and is equipped with a 50 MP main camera, and it is based on the full predecessor . [ 4 ]
-The Galaxy Z Flip 7 and its FE model have been succeeded by the Samsung Galaxy Z Flip 8 on July 22, 2026. [ 5 ]
-The Galaxy Z Flip 7 is available in four color options at launch: Jet Black, Blue Shadow, Coral Red, and Mint, with the latter being offered exclusively through Samsung's online store. [ 6 ] It features a matte glass back panel and aluminum frame. [ 7 ]
-As part of its physical refinement, the Galaxy Z Flip 7 is now approximately 0.4 mm thinner when unfolded compared to its predecessor, the Galaxy Z Flip 6 , contributing to a more compact hardware profile. [ 8 ] [ 9 ]
-The Galaxy Z Flip 7 features a 6.9‑inch Dynamic AMOLED 2X main display with a resolution of 2520 × 1080 pixels (21:9 aspect ratio) and a pixel density of approximately 397 ppi. It supports a variable refresh rate from 1 to 120 Hz, enabling adaptive performance based on content type. The display also supports HDR10+ and is protected by Ultra Thin Glass (UTG). [ 10 ] [ 11 ]
-Cover screen and FlexWindow
-The Galaxy Z Flip 7 features a 4.1‑inch Super AMOLED cover screen, referred to by Samsung as the FlexWindow , with a resolution of 1048 × 948 pixels and a refresh rate of up to 120 Hz. [ 12 ]
-Compared to the Galaxy Z Flip 6 , the FlexWindow has been enlarged by approximately 2.2-inches in usable screen area, enabled in part by a 0.7 mm bezel reduction. This results in improved content visibility and expanded touch interaction zones. The screen is protected by Gorilla Glass Victus 2 . [ 13 ]
-The FlexWindow enables access to widgets, notifications, camera previews, and selected apps—such as Google Gemini , Now Bar , and Now Brief —without unfolding the device. [ 14 ]
-The Galaxy Z Flip 7 is powered by the Exynos 2500 processor, built on a 3 nm fabrication process. It is the first Galaxy Z Flip device (alongside the Galaxy Z Flip 7 FE ) to use an Exynos processor, as opposed to the Qualcomm Snapdragon chipsets used since the first release of the Galaxy Z Flip. [ 16 ]
-It features an octa-core CPU based on the latest Cortex-X5 architecture. To maintain thermal stability during high-performance scenarios such as gaming or multitasking, the device includes a large vapor chamber cooling system. [ 17 ]
-The Galaxy Z Flip 7 is only available with 12 GB of RAM, paired with either 256 GB or 512 GB of internal storage which utilizes UFS 4.0. [ 18 ]
-The Galaxy Z Flip 7 is equipped with a 4,300 mAh dual-cell battery. It supports 25W wired charging (compatible with USB Power Delivery 3.0 and Qualcomm Quick Charge 2.0),15W wireless and 4.5W reverse wireless charging. [ 18 ]
-The Galaxy Z Flip 7 features a dual rear camera system, comprising a 50 MP wide-angle sensor (with optical image stabilization (OIS) and Dual Pixel autofocus) and a 12 MP ultra-wide sensor (offering a 123-degree field of view). Camera features include LED flash, HDR, and panorama. [ 20 ]
-The front-facing camera is a 10 MP sensor with HDR support and 4K video recording at 30 and 60 fps. [ 21 ] [ 22 ]
-FlexCam is a shooting mode that enables hands-free photo and video capture by partially folding the device, typically between 75 and 115 degrees. The mode uses the rear cameras with the cover screen acting as a live viewfinder. [ 20 ] It is commonly used for scenarios such as group selfies, vlogging, and video calls. While the core functionality is the same on both devices, the user experience may differ depending on cover screen size and app support. [ 15 ] [ 23 ]
-The Galaxy Z Flip 7 and Z Flip 7 FE ship with Android 16 and One UI 8 . Alongside the Galaxy Z Fold 7 , it is promised to get up to seven years of operating system and security updates, which is a policy first introduced with the Galaxy S24 series, [ 24 ] making it the second Galaxy Z series phone to do so after the Galaxy Z6 series. [ 25 ]
-Galaxy AI features, first introduced with the Galaxy S24 lineup, are supported on both models as part of One UI 8 . Key tools include Interpreter, Chat Assist, and Generative Edit, among other available features. These features use a combination of on-device and cloud-based processing, depending on the task and language. [ 27 ]
-Samsung Galaxy Z series
-Samsung Galaxy Z Fold 7
-Samsung Galaxy Z TriFold
-Samsung Galaxy Z Flip 7 FE
-↑ "Samsung Galaxy Z Flip7 – Full phone specifications" . GSMArena . Retrieved 2025-07-09 .
-↑ "Samsung Galaxy Unpacked 2025: Live Updates on Galaxy Z Fold 7, Z Flip 7 and Watch 8" . Engadget . 2025-07-09 . Retrieved 2025-07-09 .
-↑ "How to Watch Samsung Unpacked for the Galaxy Z Fold 7 and Z Flip 7 Debut" . CNET . 2025-07-08 . Retrieved 2025-07-09 .
-↑ "Samsung Galaxy Z Flip7: A Pocket-Sized AI Powerhouse With a New Edge-To-Edge FlexWindow" . Samsung Newsroom . 2025-07-09 . Retrieved July 17, 2026 .
-↑ "Everything Samsung Announced at Its Unpacked Event: Galaxy Z Fold 8 Wide, Smart Glasses, and More - CNET" . 2026-07-29 . Retrieved 2026-08-06 .
-↑ "Samsung Galaxy Z Flip 7 colors — all the official hues" . PhoneArena . 2024-07-10 . Retrieved 2025-07-11 .
-↑ "Samsung Galaxy Z Flip 7: Everything you need to know" . Android Central . 2024-07-10 . Retrieved 2025-07-11 .
-↑ "The Galaxy Z Flip 7's best new feature is one that other Samsung phones have had for years" . Android Authority . 2025-07-09 . Retrieved 2025-07-11 .
-↑ "Hands-on: The Galaxy Z Fold 7 and Flip 7 are the result of Samsung actually trying" . 9to5Google . 2025-07-09 . Retrieved 2025-07-11 .
-↑ "Samsung Galaxy Z Flip 7 announced — here's all the upgrades including a huge cover display" . Tom's Guide . 2024-07-10 . Retrieved 2025-07-11 .
-↑ "Samsung Galaxy Z Flip 7 hands-on review: Feels like flip phone perfection" . Tom's Guide . 2024-07-10 . Retrieved 2025-07-11 .
-↑ "Samsung Galaxy Z Fold 7 and Z Flip 7 Officially Released" . Hevman . 12 July 2025 . Retrieved 2025-07-12 .
-↑ "I Tried the Galaxy Z Flip 7 and Flip 7 FE and I'm Here for the Larger Cover Screen" . CNET . 2025-07-09 . Retrieved 2025-07-11 .
-↑ "Galaxy Z Flip 7 is as big of an upgrade as the Fold, but it doesn't matter without cover screen apps" . 9to5Google . 2025-07-10 . Retrieved 2025-07-11 .
-1 2 3 "Samsung Galaxy Z Flip 7 vs Galaxy Z Flip 7 FE: Which phone is worth flipping?" . PCMag . 11 July 2025 . Retrieved 2025-07-15 .
-↑ published, Stephen Lambrechts (2025-09-18). "From Snapdragon to Exynos: How the Samsung Galaxy Z Flip 7's chipset change really feels" . Tom's Guide . Retrieved 2026-04-25 .
-↑ Asim, Abdullah (2026-04-25). "Samsung Galaxy Z Flip 7's greatest strength came from Exynos" . PhoneArena . Retrieved 2026-04-25 .
-1 2 Herbrich, Marcus (2025-09-04). "Compact Flip phone loses ground – Samsung Galaxy Z Flip7 review" . Notebookcheck . Retrieved 2026-04-25 .
-↑ "Which foldable will you flip for? Comparing Samsung's Galaxy Z Flip 7 and Z Flip 7 FE" . CNET . Retrieved 2025-07-15 .
-1 2 "Samsung Galaxy Z Flip7 review" . GSMArena.com . 2025-07-23 . Retrieved 2026-04-26 .
-↑ "Samsung Galaxy Z Flip 7 camera: All you need to know" . PhoneArena . Retrieved 2025-07-15 .
-↑ "Samsung Galaxy Z Flip 7: everything we know so far" . TechRadar . 5 February 2025 . Retrieved 2025-07-15 .
-↑ "Galaxy Z Flip 7 FE review: A budget foldable with a familiar feel" . PhoneArena . 2025-07-09 . Retrieved 2025-07-15 .
-↑ "Samsung Galaxy Z Flip 7 launches with an upgrade everyone wants" . Android Authority . 2025-07-10 . Retrieved 2025-07-15 .
-1 2 Farooqui, Adnan (2025-07-09). "Samsung Galaxy Z Flip 7 gets seven years of Android OS upgrades" . SamMobile . Retrieved 2026-04-26 .
-↑ Shaik, Abid Iqbal (2026-05-06). "Galaxy Z Fold 7, Flip 7 get stable One UI 8.5 update" . SamMobile . Retrieved 2026-05-07 .
-↑ published, Brady Snyder (2025-07-28). "These are the 5 best AI features on the Samsung Galaxy Z Flip 7 I actually use" . Android Central . Retrieved 2026-04-26 .
-Z Fold Special Edition
-A013 (Galaxy A01 Core/A3 Core)
-A032 (Galaxy A03 Core) · A035 (Galaxy A03) · A037 (Galaxy A03s)
-A042 (Galaxy A04e) · A045 (Galaxy A04) · A047 (Galaxy A04s)
-A055 (Galaxy A05) · A057 (Galaxy A05s)
-A125 (Galaxy A12), A127 (Galaxy A12 Nacho/A12 (India))
-A135 (Galaxy A13) · A136 (Galaxy A13 5G)
-A145 (Galaxy A14) · A146 (Galaxy A14 5G)
-A155 (Galaxy A15) · A156 (Galaxy A15 5G)
-A165 (Galaxy A16) · A166 (Galaxy A16 5G)
-A175 (Galaxy A17) · A176 (Galaxy A17 5G)
-A226 (Galaxy A22 5G)
-A235 (Galaxy A23) · A236 (Galaxy A23 5G)
-A256 (Galaxy A25 5G)
-A260 (Galaxy A2 Core)
-A266 (Galaxy A26 5G)
-A300 (Galaxy A3 (2015))
-A310 (Galaxy A3 (2016))
-A320 (Galaxy A3 (2017))
-A326 (Galaxy A32 5G)
-A336 (Galaxy A33 5G)
-A346 (Galaxy A34 5G)
-A356 (Galaxy A35 5G)
-A366 (Galaxy A36 5G)
-A376 (Galaxy A37 5G)
-A426 (Galaxy A42 5G)
-A500 (Galaxy A5 (2015))
-A510 (Galaxy A5 (2016))
-A515 (Galaxy A51) · A516 (Galaxy A51 5G) · A516V (Galaxy A51 5G UW)
-A520 (Galaxy A5 (2017))
-A525 (Galaxy A52) · A526 (Galaxy A52 5G) · A528 (Galaxy A52s 5G)
-A536 (Galaxy A53 5G)
-A546 (Galaxy A54 5G)
-A556 (Galaxy A55 5G)
-A566 (Galaxy A56 5G)
-A576 (Galaxy A57 5G)
-A530 (Galaxy A8 (2018))
-A600 (Galaxy A6 (2018) · A605 (Galaxy A6+ (2018))
-A700 (Galaxy A7 (2015))
-A710 (Galaxy A7 (2016))
-A715 (Galaxy A71) · A716 (Galaxy A71 5G) · A716V (Galaxy A71 5G UW)
-A720 (Galaxy A7 (2017))
-A736 (Galaxy A73 5G)
-A730 (Galaxy A8+ (2018))
-A750 (Galaxy A7 (2018))
-A800 (Galaxy A8 (2015))
-A810 (Galaxy A8 (2016))
-A900 (Galaxy A9 (2016))
-A908 (Galaxy A90 5G)
-A910 (Galaxy A9 Pro (2016))
-A920x (Galaxy A9 (2018)/A9s)
-B5310 (Genio Slide, Corby Pro)
-C5000 (Galaxy C5) · C501x (Galaxy C5 Pro)
-C7000 (Galaxy C7) · C701x (Galaxy C7 Pro)
-C7100 (Galaxy C8) · C7108 (Galaxy C7 (2017))
-C900x (Galaxy C9 Pro)
-E156 (Galaxy F15 5G)
-E236 (Galaxy F23 5G)
-E426 (Galaxy F42 5G)
-E470S (Galaxy S4 Active LTE-A)
-E5260 (Galaxy F52 5G)
-E546 (Galaxy F54 5G)
-E1107 (Crest Solar/Solar Guru)
-F415 (Galaxy F41/Galaxy M21s)
-F700 (Galaxy Z Flip)
-F707 (Galaxy Z Flip 5G)
-F711 (Galaxy Z Flip3 5G)
-F721 (Galaxy Z Flip4)
-F731 (Galaxy Z Flip5)
-F741 (Galaxy Z Flip6)
-F761 (Galaxy Z Flip7 FE)
-F766 (Galaxy Z Flip7)
-F907 (Galaxy Fold 5G)
-F916 (Galaxy Z Fold2 5G)
-F926 (Galaxy Z Fold3 5G)
-F936 (Galaxy Z Fold4)
-F946 (Galaxy Z Fold5)
-F956 (Galaxy Z Fold6)
-F966 (Galaxy Z Fold7)
-G150N0 (Galaxy Folder)
-G160N (Galaxy Folder 2)
-G318 (Galaxy Ace 4 Neo/Trend 2 Lite)
-G350E (Galaxy Star 2)
-G360 (Galaxy Core Prime)
-G386x (Galaxy Core LTE)
-G388F (Galaxy Xcover 3)
-G530x (Galaxy Grand Prime) · G531x (Galaxy Grand Prime Value Edition)
-G532x (Galaxy J2 Prime/J2 Ace/Grand Prime+)
-G550 (Galaxy On5/Galaxy On5 Pro)
-G600x (Galaxy On7/On7 Pro)
-G610x (Galaxy J7 Prime/On7 2016/On NXT)
-G611x (Galaxy J7 Prime 2/On7 Prime)
-G710x (Galaxy Grand 2)
-G720x (Galaxy Grand Max)
-G750x (Galaxy Mega 2)
-G770x (Galaxy S10 Lite)
-G780x (Galaxy S20 FE)
-SM-G800x (Galaxy S5 Mini)
-G850x (Galaxy Alpha)
-G885x (Galaxy A8 Star/A9 Star)
-G887x (Galaxy A8s/A9 Pro (2019))
-G890A (Galaxy S6 Active)
-G920x (Galaxy S6) · G925x (Galaxy S6 Edge) · G928x (Galaxy S6 Edge+)
-G930x (Galaxy S7) · G935x (Galaxy S7 Edge)
-G950x (Galaxy S8) · G955x (Galaxy S8+)
-G960x (Galaxy S9) · G965x (Galaxy S9+)
-G970x (Galaxy S10e) · G973x (Galaxy S10) · G975x (Galaxy S10+) · G977x (Galaxy S10 5G)
-G980x (Galaxy S20) · G986x (Galaxy S20+) · G988x (Galaxy S20 Ultra)
-G990x (Galaxy S21 FE) · G991x (Galaxy S21) · G996x (Galaxy S21+) · G998x (Galaxy S21 Ultra)
-i300 (Windows Mobile)
-i537 (Galaxy S4 Active)
-i927 (Captivate Glide)
-i5700 (Galaxy Spica)
-i8160 (Galaxy Ace 2)
-i8190 (Galaxy S III Mini)
-i8520 (Galaxy Beam i8520)
-i8730 (Galaxy Express)
-i9001 (Galaxy S Plus)
-i9070 (Galaxy S Advance)
-i9080/i9082 (Galaxy Grand)
-i9105 (Galaxy S II Plus)
-i9250 (Galaxy Nexus)
-i9150 (Galaxy Mega 5.8)
-i9190/i9192/i9195 (Galaxy S4 Mini)
-i9200 (Galaxy Mega 6.3)
-i9295 (Galaxy S4 Active)
-i9300/i9305 (Galaxy S III)
-i9500/i9505/i9506 (Galaxy S4)
-J105x (Galaxy J1 Nxt/Mini)
-J106x (Galaxy J1 Mini Prime/V2)
-J110x (Galaxy J1 Ace)
-J120x (Galaxy J1 2016)
-J200x (Galaxy J2/J2 2017 Edition)
-J210x (Galaxy J2 (2016)/J2 Pro)
-J250x (Galaxy J2 2018/J2 Pro 2018/Grand Prime Pro)
-J260x (Galaxy J2 Core)
-J311x (Galaxy J3 Pro)
-J326AZ (Galaxy Sol 2) · J327x (Galaxy J3 Prime/J3 Emerge/J3 Eclipse/J3 Luna Pro/Express Prime 2/Amp Prime 2)
-J330x (Galaxy J3 2017)
-J337x (Galaxy J3 2018/J3 Aura/J3 Star/J3 V 2018/Amp Prime 3)
-J410x (Galaxy J4 Core)
-J500x (Galaxy J5 2015)
-J510x (Galaxy J5 2016/Metal)
-J530x (Galaxy J5 2017/Pro)
-J600x (Galaxy J6/On6)
-J700x (Galaxy J7 2015)
-J710x (Galaxy J7 2016/Metal)
-J730x (Galaxy J7 2017/Pro)
-J810x (Galaxy J8/On8 (2018))
-M013 (Galaxy M01 Core)
-M135 (Galaxy M13) · M136 (Galaxy M13 5G)
-M146 (Galaxy M14 5G)
-M236 (Galaxy M23 5G/Buddy 2)
-M315 (Galaxy M31/M31 Prime Edition)
-M326 (Galaxy M32 5G)
-M336 (Galaxy M33 5G)
-M346 (Galaxy M34 5G)
-M356 (Galaxy M35 5G)
-M366 (Galaxy M36 5G)
-M426 (Galaxy M42 5G)
-M526 (Galaxy M52 5G)
-M536 (Galaxy M53 5G)
-M546 (Galaxy M54 5G)
-M7500 (Emporio Armani)
-N7100 (Galaxy Note II)
-N750x (Galaxy Note 3 Neo)
-N900x (Galaxy Note 3)
-N910x (Galaxy Note 4)
-N920x (Galaxy Note 5)
-N930x (Galaxy Note 7)
-N935x (Galaxy Note Fan Edition)
-N950x (Galaxy Note 8)
-N960x (Galaxy Note 9)
-N970x (Galaxy Note 10) · N971x (Galaxy Note 10 5G) · N975x (Galaxy Note 10+) · N976x (Galaxy Note 10+ 5G)
-N980x (Galaxy Note 20) · N981x (Galaxy Note 20 5G) · N985x (Galaxy Note 20 Ultra) · N986x (Galaxy Note 20 Ultra 5G)
-P520 (Giorgio Armani)
-S3650 (Corby/Corby Classic)
-S5300 (Galaxy Pocket)
-S5310/S5312 (Galaxy Pocket Neo)
-S5610/11 (Primo/Utopia)
-S5690 (Galaxy Xcover)
-S6310 (Galaxy Young)
-S6500 (Galaxy Mini 2)
-S711x (Galaxy S23 FE)
-S721x (Galaxy S24 FE)
-S7270 (Galaxy Ace 3)
-S7500 (Galaxy Ace Plus)
-S7560 (Galaxy Trend) · S7560M (Galaxy Ace II x)
-S7562 (Galaxy S Duos)
-S7582 (Galaxy S Duos 2)
-S7710 (Galaxy Xcover 2)
-S901x (Galaxy S22) · S906x (Galaxy S22+) · S908x (Galaxy S22 Ultra)
-S911x (Galaxy S23) · S916x (Galaxy S23+) · S918x (Galaxy S23 Ultra)
-S921x (Galaxy S24) · S926x (Galaxy S24+) · S928x (Galaxy S24 Ultra)
-S931x (Galaxy S25) · S936x (Galaxy S25+) · S937x (Galaxy S25 Edge) · S938x (Galaxy S25 Ultra)
-S942x (Galaxy S26) · S946x (Galaxy S26+) · S948x (Galaxy S26 Ultra)
-T699 (Galaxy S Relay 4G)
-Galaxy S Note Z A M F
-Google Nexus (for Nexus S )
-SCH for CDMA (non-Sprint) Handset
-SPH for CDMA (Sprint) Handset
-GT for Global Telecommunications
-SM for Samsung Mobile
-Galaxy Ace Plus 2 3 4 Neo
-Galaxy Amp 2 Prime Prime 2 Prime 3
-Galaxy Beam i8520 i8530
-Galaxy C C5 C7 C8/C7 (2017) C9 Pro C55 5G
-Galaxy Core LTE Plus Prime 2
-Galaxy Express 2 3 Prime Prime 2 Prime 3
-Galaxy Grand 2 Max Prime Prime+ Prime Pro Quattro
-Galaxy On On5 2016 On6 On7 2016 Prime On8 2018 On Max On Nxt
-Galaxy Pocket Duos Neo Plus 2
-Galaxy R/Galaxy Z Style
-Galaxy Trend Plus 2 Lite 3 Neo
-Galaxy Y Duos Plus Pro Duos
-T-Mobile Sidekick 4G
-A3 2015 2016 2017 Core
-A7 2015 2016 2017 2018
-A8 2015 2016 2018 + Star s
-A9 2016 Pro 2018/s Star Lite Pro Pro 2019
-V/Sky Pro/Perx/Prime (2017)
-2018/Star/Refine/V (2018)
-S SL 4G LTE/Aviator/Lightray 4G Advance Duos 2 3 Plus Relay 4G WiFi
-4G LTE/Aviator/Lightray 4G
-S III Mini Neo Progre
-Omnia Pro B7610 B7330
-Android (operating system) devices
-Foldable smartphones
-Mobile phones introduced in 2025
-Mobile phones with multiple rear cameras
-Mobile phones with 4K video recording
-Samsung Galaxy Z mobile phones
-Articles with short description
-Short description is different from Wikidata
-Commons category link from Wikidata
+# Samsung Galaxy Z Fold3 5G (P025) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** PHONE
+**Model ID:** P025
+**Store Pricing:** Rs. 89,999
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2021-08
+**Official Support Reference:** https://www.samsung.com/in/support/model/P025/
+
+---
+
+## 📖 Product Overview & Description
+First water-resistant foldable with under-display camera, 120Hz dual displays, and S-Pen support.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Main Display:** 7.6-inch Foldable AMOLED, 120Hz
+- **Cover Display:** 6.2-inch AMOLED
+- **Processor:** Snapdragon 888
+- **Ram Storage:** 12GB RAM, 256GB/512GB
+- **Camera:** 12MP + 12MP + 12MP
+- **Battery:** 4400mAh
+- **Extras:** IPX8, UDC camera
+
+---
+
+
+### 📱 Mobile Operating & Setup Guide
+1. **Initial Setup & SIM Insertion:**
+   - Use the SIM ejector tool to insert Nano-SIM or activate eSIM.
+   - Power on by holding the Side Power Key for 3 seconds.
+   - Use Samsung Smart Switch to transfer contacts, photos, and apps from your old device.
+2. **Key Software & AI Features:**
+   - **Galaxy AI (Circle to Search, Live Translate, Note Assist):** Access via Galaxy AI settings.
+   - **Samsung DeX:** Connect wirelessly to any PC or monitor for a desktop workstation experience.
+   - **Samsung Knox Vault:** Hardware-isolated security protecting PIN, biometric, and cryptographic keys.
+   - **Camera Modes:** Expert RAW, 8K Video Recording, Nightography, Astro-hyperlapse, and Single Take.
+3. **Battery & Device Care:**
+   - Protect Battery feature limits charging to 80% to maximize long-term lithium-ion lifespan.
+   - Supports 25W/45W Super Fast Charging with certified USB PD 3.0 PPS adapters.
+4. **Phone Troubleshooting & Diagnostics:**
+   - **Force Restart:** Press and hold Volume Down + Side Key simultaneously for 10-15 seconds.
+   - **Screen Freeze:** Clear cache partition in Android Recovery Mode or use Device Care auto-optimization.
+   - **Moisture Detected Warning:** Dry the USB-C port thoroughly before plugging in a charger.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

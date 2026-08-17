@@ -1,78 +1,58 @@
-Samsung Galaxy Z Flip7: A Pocket-Sized AI Powerhouse With a New Edge-To-Edge FlexWindow
-Compact in size, bold in capability — Galaxy Z Flip7 redefines the flip phone experience
-Samsung Electronics today unveiled Galaxy Z Flip7, a compact AI phone with multimodal capabilities, powered by a new FlexWindow. Small enough to slip into a pocket, yet powerful enough to deliver the handiest assistance, it melds Galaxy AI with a new edge-to-edge FlexWindow, a flagship level camera and an ultra-compact and iconic design. From intuitive voice AI to the best selfie capabilities, Galaxy Z Flip7 is an intelligent pocket-sized companion built for seamless interaction and everyday reliability.
-“Galaxy Z Flip7 is proof that big intelligence can come in a small, pocket-sized form factor,” said TM Roh, President and Acting Head of the Device eXperience (DX) at Samsung Electronics. “By bringing rich multimodal AI capabilities and seamless functionality to the FlexWindow, we’ve created a device that adapts, anticipates and empowers users, unlocking a smarter, more intuitive way to engage with the world.”
-Biggest, Brightest FlexWindow Yet
-Content spills elegantly from edge-to-edge on the Galaxy Z Flip7’s stunning FlexWindow display, which brings essentials front and center and makes it easy to type out quick messages, check schedules at a glance and snap high-quality selfies. Galaxy Z Flip’s brightest FlexWindow yet delivers a super-smooth refresh rate, so everything looks vivid and feels fluid — even when outside on a sunny day.
-The 4.1-inch 1 Super AMOLED FlexWindow is the largest ever on a Galaxy Z Flip, with edge-to-edge usability that enables users to see and do more on the cover screen.
-With 2,600 nits of peak brightness and a smooth 120Hz refresh rate on both the main display and the FlexWindow, Galaxy Z Flip7 enables ultra-fluid scrolling, streaming and gaming. Plus, the FlexWindow gets an upgrade with Vision Booster , enhancing outdoor visibility so users can stay connected wherever they are. 2
-The main display is a 6.9-inch Dynamic AMOLED 2X , 3 built for an ultra-smooth, immersive experience.
-Thinnest Yet Durable Galaxy Z Flip
-Galaxy Z Flip7 is crafted for portability and puts powerful performance right in the palm of the user’s hand. With its compact size and sleek silhouette, it slips effortlessly into a small pocket or purse, perfect for whatever the day brings. Whether catching calls during a coffee outing or snapping pictures at the store — no need to worry about the inevitable drops and bumps along the way. It’s also built to last and engineered to handle the rigors of daily use.
-Weighing just 188 grams 4 and measuring only 13.7mm when folded , Galaxy Z Flip7 is the slimmest Galaxy Z Flip yet.
-The cover and back are protected by Corning® Gorilla® Glass Victus® 2 .
-The Armor FlexHinge is thinner than the hinge on the previous generation and features a restructured design and high-strength materials for smoother folds and long-lasting durability.
-A robust Armor Aluminum Frame provides a tough exterior for resilience. 5
-Power That Lasts Longer and Works Smarter
-While Galaxy Z Flip7 has been slimmed down and refined throughout, it now features a bigger battery and an even bigger display — all in a more compact form. With the largest battery ever in the Galaxy Z Flip series, it delivers enough additional power to watch an extra movie without charging. Users can stream music or listen to podcasts during long commutes, edit photos on the fly and share updates throughout the day without missing a beat.
-The 4,300mAh battery 6 is the largest ever on a Galaxy Z Flip, delivering up to 31 hours of video play time on a single charge. 7
-Galaxy Z Flip7 is powered by the latest 3nm processor , customized for Galaxy and fit for today’s lifestyle with an even more powerful CPU, GPU and NPU 8 than Galaxy Z Flip6.
-Samsung DeX comes to a Galaxy Z Flip7 for the first time, enabling it to instantly transform into a handy workstation: users can flip it open, connect to a screen and instantly get PC-like tools for enhanced multitasking.
-With FlexWindow enhanced for greater usability and Galaxy AI 9 that is smarter and more intuitive than ever, Galaxy Z Flip7 introduces a new era of convenience and functionality, empowering users to search with their voice, get answers and take action directly on FlexWindow. Powered by the newest One UI 8 10 and Android 16 right out of the box, it delivers true multimodal AI experiences optimized for the Flip’s iconic design, with many tasks now able to be handled right from the cover screen. This intuitive, one-handed experience enhances productivity and introduces even more personalization options, making the Galaxy Z Flip7 a smart and handy companion, whether a user is traveling around the globe or simply navigating a busy day.
-Galaxy Z Flip7 brings a new level of AI-powered personalization, tailored to users’ style and routine. From curated wallpaper suggestions to emoji, color and widget customization, the FlexWindow becomes a dynamic extension of a user’s personality. Whether prepping for travel or matching the mood, personalization is effortless and always evolving.
-Gemini Live 11 is now available directly on the FlexWindow , enabling users to search for information with their voice and complete tasks — hands-free. Users getting ready for an overseas trip can just tell Gemini what they need. It can pull up flight details from Samsung Wallet, set a reminder for when to leave for the airport and even find top-rated restaurants at the user’s destination. Plus, all this information can be stored in Samsung Notes for easy access later. It’s like having a personal assistant, right on the cover screen.
-With camera sharing on Gemini Live , getting real-time help is as easy as pointing the camera. Whether packing for a trip or choosing an outfit, users can simply show Gemini what they are looking at. Ask questions like, “Which of these outfits is better for the weather in Seoul?” Gemini will respond, just like a helpful friend would.
-Now Bar 12 shows real-time app activity, podcast progress and alerts right on the cover screen, and it’s now integrated with even more third-party apps. A quick glance at the FlexWindow lets users check on the ETA of their rideshare, see what song is playing, peek at the latest football scores and so much more.
-Now Brief 13 provides even more personalized daily updates including traffic, reminders, calendar events and fitness summaries. Users can get personalized music and video recommendations based on subscriptions and interests, as well as easily access health and wellness data pulled from Samsung Health and Galaxy Watch.
-The FlexWindow’s clock adapts and stretches to compliment a user’s wallpaper, wrapping the font around faces or objects in the image to keep the time display clear. Whether it’s a close-up selfie or a scenic skyline, the lock screen ensures the clock remains visible without disrupting the image.
-A Pocket-Sized Selfie Studio 14
-Galaxy Z Flip7 brings flagship-level photography and Samsung’s best selfie camera yet. With Samsung’s advanced ProVisual Engine, it intelligently optimizes every scene to deliver crisp, detailed shots in any lighting, without any manual adjustments needed. From playful pet moments to zoomed-in festival shots and glowing sunset portraits, Galaxy Z Flip7 captures stunning results without a tripod or even unfolding the screen.
-The dual rear camera system includes a 50MP Wide 15 and a 12MP Ultra-Wide lens , delivering flagship-level clarity in any lighting, whether capturing scenic shots or snapping high-quality selfies directly from the cover screen.
-With Enhanced Nightography , users can capture vivid photos in low-light environments through improved lighting adjustments and the removal of noise and blurred frames.
-10-bit HDR provides richer color, deeper contrast and more life-like detail in video, no matter the time of day.
-Galaxy Z Flip7 takes selfies to the next level, right from the FlexWindow. Real-Time Filters now lets users preview and perfect FlexCam shots instantly. And with the new Zoom Slider , users can quickly zoom 16 in or out with just a swipe — making it perfect for capturing a full outfit or fitting everyone into the frame for a flawless group selfie.
-With Dual Preview , the photographer and the subject can see the composition live on the FlexWindow, helping users nail the perfect shot on the first go.
-Everyday pet moments become eye-catching shots with Portrait Studio 17 in Photo Assist whether featuring a playful cartoon style, a quirky fisheye look or a polished, professional finish.
-Samsung Galaxy Z Flip7 FE
-Bringing the foldable experience to even more users, Samsung also announced Galaxy Z Flip7 FE . Compact when folded and expansive when opened, Galaxy Z Flip7 FE features a 6.7-inch Main Display for an immersive viewing experience. The 50MP FlexCam enables high-quality selfies and video in Flex Mode, letting users capture content hands-free, without even opening the device. Now Brief surfaces helpful updates — including weather, daily schedules and commute alerts — on the cover screen, in a layout optimized for Galaxy Z Flip7 FE’s compact form. Available in Black and White, it delivers a minimalist look that complements its intelligent, foldable design.
-Future-Ready Mobile Security
-As mobile experiences grow ever more intelligent and interconnected, Samsung is reinforcing the foundations that protect them — unveiling new protections for on-device AI, expanding cross-device threat detection and enhancing network security with quantum-resistant encryption. One UI 8 brings enhanced privacy to personalized AI experiences with the new Knox Enhanced Encrypted Protection (KEEP) . 18 KEEP creates encrypted, app-specific storage environments within the device’s secure storage area, ensuring each app can access only its own sensitive information and nothing more. With One UI 8, Samsung is advancing Knox Matrix to deliver more proactive and user-friendly protection across the Galaxy ecosystem. Furthermore, as part of its ongoing commitment to quantum-safe security, Samsung is integrating post-quantum cryptography into Secure Wi-Fi . 19 This enhancement secures the key exchange process at the core of encrypted connections, helping ensure robust privacy even over public networks.
-Availability & Offers
-Galaxy Z Flip7 will be available for pre-order starting July 9, with general availability beginning July 25. Galaxy Z Flip7 comes in 20 Blue Shadow, Jetblack, Coralred and Mint 21 (online exclusive) color options. Galaxy Flip7 FE is available in Black or White.
-For greater peace of mind, Samsung Care+ 22 offers comprehensive coverage for accidental damage, repairs and replacements. Plus, for users who love having the latest technology, Samsung is introducing the New Galaxy Club.
-Get expanded access to Google AI Pro 23 and 2TB of cloud storage for 6 months at no cost with Galaxy Z Flip7 and Galaxy Z Flip7 FE.
-For more information about Galaxy Z Fold7, Galaxy Z Flip7 and Galaxy Z Flip7 FE, please visit: Samsung Global Newsroom or Samsung.com .
-[Samsung.com Exclusive] Mint **
-Measured diagonally, Galaxy Z Flip7’s Cover Screen size is 4.1-inch in the full rectangular form; actual viewable area is less due to the rounded corners and camera hole. ↩︎
-Galaxy Z Flip7 has a peak brightness of 2600 nits on both the main screen and cover screen. The displays are adaptive, adjusting brightness level automatically based on the environment. In certain illuminance conditions or higher, High Brightness Mode and Vision Booster will be activated. ↩︎
-Measured diagonally, Galaxy Z Flip7’s Main Screen size is 6.9-inch in the full rectangle and 6.8-inch accounting for the rounded corners; actual viewable area is less due to the rounded corners and camera hole. ↩︎
-Weight may vary by country or region. ↩︎
-Armor Aluminum frame does not include volume and side keys, SIM tray or camera lens barrel. ↩︎
-Typical value tested under third-party laboratory condition. Typical value is the estimated average value considering the deviation in battery capacity among the battery samples tested under IEC 61960 standard. Rated capacity is 4174 mAh for Galaxy Z Flip7. ↩︎
-Based on Samsung internal lab test conditions with pre-release version of given model connected to earphone via Bluetooth under default settings over LTE. Estimated against battery capacity and measured current over battery power consumption during video playback (video file resolution 720p, saved on device). Actual video playback time may vary by network connection, settings, video file format, screen brightness, battery condition and many other factors. Actual battery life varies by network environment, features and apps used, frequency of calls and messages, the number of times charged, and many other factors. Estimated against the average usage profile compiled by UX Connect Research. Independently assessed by UX Connect Research between 2025.06.12-2025.06.20 in US with pre-release versions of SM-F766 under default setting using LTE and 5G Sub6 networks. NOT tested under 5G mmWave Network. ↩︎
-AP performance improvements shown compared to Galaxy Z Flip6. Actual performance will depend on user environment, conditions and pre-installed software and applications. ↩︎
-Samsung Account login may be required to use certain AI features. Samsung does not make any promises, assurances or guarantees as to the accuracy, completeness or reliability of the output provided by AI features. Availability of Galaxy AI features may vary depending on the region/country, OS/One UI version, device model and phone carrier. ↩︎
-Some functional widgets may require a network connection and/or Samsung Account login. Availability of functions supported within the apps may vary by country. ↩︎
-Gemini is a trademark of Google LLC. Results for illustrative purposes. Gemini Live feature requires internet connection and Google Account login. Service availability may vary by country, language, device model. Features may differ depending on subscription and results may vary. Compatible with certain features and certain accounts. Currently, you can use a personal Google Account that you manage on your own or a work or school account for which your administrator has enabled access to Gemini. You must be 13 (or the applicable age in your country) or over to use Gemini with a personal or school Google Account and 18 or over to use Gemini with a work account. ↩︎
-Availability of functions supported within the apps may vary by country. Some functional widgets may require a network connection and/or Samsung Account login. ↩︎
-Now Brief feature requires Samsung Account login. Service availability may vary by country, language, device model, apps. Some features may require a network connection. Modes and Routines need to be enabled to use Personal Data Engine for context-based Routines suggestions. User needs to consent to access permissions such as photos, videos, audio files and calendar events. May not display moments depending upon exposure policy. The description of photos provided by moments may not align with the user’s intent. Events schedule notification is supported with calendar apps that utilize Android calendar database and available if Samsung Calendar is installed. Notifications for coupons only available for coupons added to Samsung Wallet with expiration date. To check the Energy Score, the health data tracked from Samsung Galaxy Watch or Samsung Galaxy Ring must be synchronized with the Samsung Health App. The result is for your personal reference only and is not intended for medical purposes. ↩︎
-Results may vary depending on light condition and/or shooting conditions including multiple subjects, being out of focus or moving subjects. ↩︎
-50 MP resolution is available on Galaxy Z Flip7’s rear wide camera only. ↩︎
-AI Zoom is applied to distances between digital zoom lengths. Accuracy of results is not guaranteed. ↩︎
-Portrait Studio feature for Photo Assist requires a network connection and Samsung Account login. Editing with Portrait Studio results in a resized photo. A visible watermark is overlaid on the image output upon saving in order to indicate that the image is generated by AI. The accuracy and reliability of the generated output is not guaranteed. ↩︎
-Available on Galaxy smartphones and tablets with One UI 8 or later. ↩︎
-Secure Wi-Fi offers free protection of up to 1024MB per month for Android OS 13 or later, and 250MB per month for Android OS 12 or earlier versions. Availability details may vary by market or network provider and connectivity is subject to applicable network environments. ↩︎
-Color availability may vary depending on market, country or carrier. ↩︎
-Online exclusive colors only available on Samsung.com. ↩︎
-Terms and conditions apply. Samsung Care+ coverage, service type and promotion details may vary by country/region and deductible (service fee) may apply. To be eligible for Samsung Care+ promotion benefit, registration may be required. For detailed Samsung Care+ information, please visit https://www.samsung.com/samsung-care-plus/. ↩︎
-Google AI Pro is a trademark of Google LLC. Google AI Pro and Gemini for Gmail, Docs, and more are only available for ages 18+. Gemini for Gmail, Docs and more is available in select languages. Rate limits may apply. ↩︎
-Galaxy Unpacked July 2025
-Press Resources Press Releases
-For any issues related to customer service, please go to Customer Support page for assistance. For media inquiries, please click Media Contact to move to the form.
-Samsung Galaxy Z Fold7: Raising the Bar for Smartphones
-July 9, 2025 Press Release
-Samsung Galaxy Watch8 Series: Ultra Comfort, From Sleep to Workout
-[Galaxy Unpacked 2025] A First Look at the Galaxy Z Fold7: Unfolding a New Standard in Foldable Design
-[Galaxy Unpacked 2025] A First Look at the Galaxy Z Flip7: Refining the Pocketable Foldable
-[Galaxy Unpacked 2025] A First Look at the Galaxy Watch8 Series: Streamlining Sleep, Exercise and Everything in Between
-Samsung-Mobile-Galaxy-Unpacked-July-2025-Galazy-Z-Flip7-and-Z-Flip-FE-A-Pocket-Sized-AI-Powerhouse_dl1FFFF.jpg
+# Samsung Galaxy Z Flip4 (P024) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** PHONE
+**Model ID:** P024
+**Store Pricing:** Rs. 59,999
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2022-08
+**Official Support Reference:** https://www.samsung.com/in/support/model/P024/
+
+---
+
+## 📖 Product Overview & Description
+Stylish compact flip phone with Snapdragon 8+ Gen 1, 3700mAh battery, and FlexCam hands-free shooting.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Main Display:** 6.7-inch Dynamic AMOLED 2X
+- **Cover Display:** 1.9-inch Super AMOLED
+- **Processor:** Snapdragon 8+ Gen 1
+- **Ram Storage:** 8GB RAM, 128GB/256GB
+- **Camera:** 12MP + 12MP
+- **Battery:** 3700mAh
+- **Extras:** IPX8
+
+---
+
+
+### 📱 Mobile Operating & Setup Guide
+1. **Initial Setup & SIM Insertion:**
+   - Use the SIM ejector tool to insert Nano-SIM or activate eSIM.
+   - Power on by holding the Side Power Key for 3 seconds.
+   - Use Samsung Smart Switch to transfer contacts, photos, and apps from your old device.
+2. **Key Software & AI Features:**
+   - **Galaxy AI (Circle to Search, Live Translate, Note Assist):** Access via Galaxy AI settings.
+   - **Samsung DeX:** Connect wirelessly to any PC or monitor for a desktop workstation experience.
+   - **Samsung Knox Vault:** Hardware-isolated security protecting PIN, biometric, and cryptographic keys.
+   - **Camera Modes:** Expert RAW, 8K Video Recording, Nightography, Astro-hyperlapse, and Single Take.
+3. **Battery & Device Care:**
+   - Protect Battery feature limits charging to 80% to maximize long-term lithium-ion lifespan.
+   - Supports 25W/45W Super Fast Charging with certified USB PD 3.0 PPS adapters.
+4. **Phone Troubleshooting & Diagnostics:**
+   - **Force Restart:** Press and hold Volume Down + Side Key simultaneously for 10-15 seconds.
+   - **Screen Freeze:** Clear cache partition in Android Recovery Mode or use Device Care auto-optimization.
+   - **Moisture Detected Warning:** Dry the USB-C port thoroughly before plugging in a charger.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

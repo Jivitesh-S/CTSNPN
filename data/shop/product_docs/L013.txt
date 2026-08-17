@@ -1,0 +1,57 @@
+# Samsung Galaxy Book2 (L013) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** LAPTOP
+**Model ID:** L013
+**Store Pricing:** Rs. 58,990
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2022-03
+**Official Support Reference:** https://www.samsung.com/in/support/model/L013/
+
+---
+
+## 📖 Product Overview & Description
+Everyday laptop with 15.6-inch FHD screen, 12th Gen Intel Core i5-1235U, dual SSD slots, and metal chassis.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Display:** 15.6-inch FHD Anti-Glare LED
+- **Processor:** 12th Gen Intel Core i5-1235U
+- **Ram Storage:** 8GB/16GB RAM, 512GB SSD
+- **Graphics:** Intel Iris Xe
+- **Battery:** 54Wh, 45W charger
+- **Weight:** 1.57 kg
+- **Extras:** Dual SSD slots
+
+---
+
+
+### 💻 Galaxy Book Laptop Manual & Technical Reference
+1. **First-Time Setup & Windows 11 Activation:**
+   - Connect the included USB-C Fast Charger before turning on for the first time.
+   - Press the Power Button with integrated Fingerprint Sensor for instant Windows Hello login.
+   - Run Samsung Update and Windows Update to install latest Intel/NVIDIA graphics drivers.
+2. **Samsung Ecosystem Integration:**
+   - **Second Screen:** Use your Galaxy Tab S9/S8 as a wireless secondary display.
+   - **Multi Control:** Use laptop keyboard and touchpad to control your Galaxy smartphone seamlessly.
+   - **Quick Share:** High-speed peer-to-peer file transfer between Samsung devices.
+   - **Samsung Studio:** AI-powered video editing and subtitle generation.
+3. **Performance & Cooling Modes:**
+   - Press Fn + F11 to toggle Performance Modes: Silent, Optimized, and High Performance.
+   - Dual-fan vapor chamber thermal management prevents CPU/GPU throttling during 4K video rendering.
+4. **Laptop Maintenance & Care:**
+   - Clean the 3K AMOLED screen only with a dry microfiber cloth (avoid alcohol sprays).
+   - Keep air intake vents on the bottom panel clear of dust and fabric.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

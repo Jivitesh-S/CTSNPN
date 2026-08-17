@@ -1,0 +1,58 @@
+# Samsung 9kg EcoBubble Top Load (WA90BG4546BD) (WM011) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** WASHING_MACHINE
+**Model ID:** WM011
+**Store Pricing:** Rs. 25,990
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 36 Months Manufacturer Brand Warranty
+**Launch Date:** 2023-08
+**Official Support Reference:** https://www.samsung.com/in/support/model/WM011/
+
+---
+
+## 📖 Product Overview & Description
+9kg Fully Automatic Top Load with EcoBubble, Magic Filter (lint free), Deep Softener mode, and 5-Star efficiency.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Capacity:** 9 kg
+- **Type:** Top Load Fully Automatic
+- **Spin Speed:** 700 RPM
+- **Technology:** EcoBubble, Dual Storm, Magic Filter
+- **Motor:** Digital Inverter Motor (20-Year Warranty)
+- **Energy Rating:** 5 Star
+
+---
+
+
+### 🧺 Washing Machine & Dryer Technical Manual & Maintenance Guide
+1. **Installation & Leveling:**
+   - **Transit Bolts:** Remove all 4 shipping bolts from the back panel before first wash to prevent severe vibration!
+   - Level all 4 rubber feet using a spirit level and tighten locking nuts firmly.
+   - Inlet water pressure must be between 50 kPa and 800 kPa (0.5 to 8.0 bar).
+2. **Core Wash Technologies & Programs:**
+   - **AI EcoBubble:** Injects air into detergent to create active bubbles that penetrate fabric 40x faster in cold water.
+   - **Hygiene Steam:** In-built heater boils water to 60°C/90°C to eliminate 99.9% of bacteria and allergens.
+   - **AI Wash (4 Sensors):** Auto-senses load weight, fabric softness, and water turbidity to dose optimal detergent.
+   - **AirWash:** Deodorizes and refreshes suits and delicate fabrics without water or harsh chemicals.
+3. **Error Code Reference & Rapid Solutions:**
+   - **4C / 4E:** Water Supply Error. Check inlet tap is open, hose unkinked, and clean mesh filter at rear inlet.
+   - **5C / 5E / Nd:** Drainage Fault. Clean bottom-right emergency pump filter of coins, lint, and debris.
+   - **Ub / UE:** Unbalanced Load. Rearrange bulky items evenly across the drum and rerun spin cycle.
+   - **dC / dE:** Door Latch Open. Ensure laundry is not trapped in rubber gasket and push door until it clicks.
+   - **AC6 / 3C:** Motor Communication Fault. Power cycle machine at main switch for 15 minutes.
+4. **Maintenance & Cleaning Cycles:**
+   - Run **Drum Clean+** cycle every 40 washes (no bleach or detergent required) to remove soap scum and odor.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 36 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

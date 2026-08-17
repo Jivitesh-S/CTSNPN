@@ -1,168 +1,258 @@
 import React, { useState, useEffect } from "react";
-import { Sparkles, Tv, ArrowRight, Zap, ShieldCheck } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
 
 export function TvIntroPortal({ onComplete }) {
-  const [phase, setPhase] = useState("enter"); // 'enter' -> 'zoom' -> 'complete'
+  const [phase, setPhase] = useState("loading"); // 'loading' -> 'complete-fade' -> 'done'
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Progress bar animation
-    const progressInterval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(progressInterval);
-          return 100;
-        }
-        return prev + 2.5;
-      });
-    }, 45);
+    // Smooth progress increment from 0 to 100%
+    const startTime = Date.now();
+    const duration = 2600; // 2.6 seconds total
 
-    // Transition to zoom phase at ~1.9s
-    const zoomTimer = setTimeout(() => {
-      setPhase("zoom");
-    }, 2000);
+    const timer = setInterval(() => {
+      const elapsed = Date.now() - startTime;
+      const rawProgress = Math.min(100, (elapsed / duration) * 100);
+      
+      // Natural ease-out progress curve
+      const eased = Math.min(100, Math.round(100 * (1 - Math.pow(1 - rawProgress / 100, 1.6))));
+      setProgress(eased);
 
-    // Complete intro at ~2.8s
-    const completeTimer = setTimeout(() => {
-      setPhase("complete");
-      if (onComplete) onComplete();
-    }, 2900);
+      if (rawProgress >= 100) {
+        clearInterval(timer);
+        setProgress(100);
+        
+        // Brief pause at 100% before transition
+        setTimeout(() => {
+          setPhase("complete-fade");
+          setTimeout(() => {
+            setPhase("done");
+            if (onComplete) onComplete();
+          }, 600);
+        }, 350);
+      }
+    }, 25);
 
-    return () => {
-      clearInterval(progressInterval);
-      clearTimeout(zoomTimer);
-      clearTimeout(completeTimer);
-    };
+    return () => clearInterval(timer);
   }, [onComplete]);
 
   const handleSkip = () => {
-    setPhase("complete");
-    if (onComplete) onComplete();
+    setPhase("complete-fade");
+    setTimeout(() => {
+      setPhase("done");
+      if (onComplete) onComplete();
+    }, 200);
   };
 
-  if (phase === "complete") return null;
+  if (phase === "done") return null;
+
+  // Normalized progress fractions for staggered stroke reveals
+  const p = progress / 100;
+
+  // Calculate stroke visibility and assembly transforms for letter fragments
+  const getFragmentStyle = (startThreshold, endThreshold, initialTransform) => {
+    if (p < startThreshold) {
+      return {
+        opacity: 0,
+        transform: initialTransform,
+        filter: "blur(6px)"
+      };
+    }
+    const localP = Math.min(1, Math.max(0, (p - startThreshold) / (endThreshold - startThreshold)));
+    return {
+      opacity: localP,
+      transform: `translate(${initialTransform.x * (1 - localP)}px, ${initialTransform.y * (1 - localP)}px) rotate(${initialTransform.rot * (1 - localP)}deg) scale(${initialTransform.scale + (1 - initialTransform.scale) * localP})`,
+      filter: `blur(${(1 - localP) * 4}px)`,
+      transition: "all 0.12s cubic-bezier(0.16, 1, 0.3, 1)"
+    };
+  };
 
   return (
-    <div 
-      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#05070c] overflow-hidden transition-all duration-700 ${
-        phase === "zoom" ? "opacity-0 pointer-events-none scale-125" : "opacity-100"
+    <div
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-between bg-[#070b14] overflow-hidden select-none transition-all duration-700 ${
+        phase === "complete-fade" ? "opacity-0 scale-105 pointer-events-none" : "opacity-100 scale-100"
       }`}
-      style={{ perspective: "1400px" }}
     >
-      {/* Deep Space Ambient Nebulas (Cyan / Electric Blue) */}
-      <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-cyan-500/25 via-sky-600/15 to-blue-800/25 blur-[160px] animate-pulse pointer-events-none" />
-      <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] rounded-full bg-cyan-400/15 blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] rounded-full bg-blue-600/20 blur-[150px] pointer-events-none" />
+      {/* Ambient background glows matching application's blue / indigo / purple design system */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-blue-600/20 via-indigo-600/20 to-purple-600/15 blur-[140px] pointer-events-none animate-pulse" />
+      <div className="absolute top-1/4 left-1/3 w-[350px] h-[350px] rounded-full bg-cyan-500/15 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-purple-600/15 blur-[130px] pointer-events-none" />
 
-      {/* Speed lines & particle warp during zoom */}
-      {phase === "zoom" && (
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(56,189,248,0.3)_60%,#000_100%)] animate-ping pointer-events-none" />
-      )}
+      {/* Subtle background tech grid */}
+      <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#60a5fa_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
 
-      {/* Main TV Frame Container with 3D Warp Transform */}
-      <div 
-        className={`relative flex flex-col items-center justify-center transition-all ease-in-out ${
-          phase === "zoom" 
-            ? "duration-900 scale-[9] translate-z-[900px] opacity-0 filter blur-sm" 
-            : "duration-1000 scale-100 opacity-100 animate-fadeIn"
-        }`}
-        style={{ transformStyle: "preserve-3d" }}
-      >
+      {/* Top Header Placeholder / Brand Badge */}
+      <div className="w-full pt-8 sm:pt-12 flex justify-center items-center z-10">
+        <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] backdrop-blur-md">
+          <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+          <span className="text-[11px] sm:text-xs font-semibold tracking-wider text-slate-300 uppercase font-['Space_Grotesk']">
+            AI Assistant Engine
+          </span>
+        </div>
+      </div>
+
+      {/* Center: Dynamic Fragment & Stroke Assembly Wordmark (Functional Inspiration from Image 2 & 3) */}
+      <div className="relative my-auto flex flex-col items-center justify-center z-10 w-full max-w-2xl px-6">
         
-        {/* Outer TV Glow & Neon Aura (Cyan / Sky-Blue) */}
-        <div className="absolute -inset-6 rounded-[36px] bg-gradient-to-r from-cyan-400 via-sky-500 via-blue-600 to-teal-400 opacity-75 blur-2xl animate-pulse" />
-
-        {/* TV Outer Bezel */}
-        <div className="relative w-[340px] sm:w-[540px] md:w-[680px] h-[210px] sm:h-[330px] md:h-[410px] rounded-[28px] p-[3px] bg-gradient-to-tr from-cyan-400 via-sky-500 to-blue-600 shadow-[0_0_80px_rgba(56,189,248,0.5)] flex flex-col justify-between overflow-hidden">
-          
-          {/* Bezel border sweep highlight */}
-          <div className="absolute inset-0 bg-[linear-gradient(110deg,transparent_20%,rgba(255,255,255,0.6)_50%,transparent_80%)] animate-tv-sweep pointer-events-none" />
-
-          {/* TV Screen Display Glass */}
-          <div className="relative w-full h-full rounded-[24px] bg-[#080d16] p-5 flex flex-col justify-between items-center text-center overflow-hidden border border-white/10 shadow-inner">
-            
-            {/* Screen Inner Quantum Matrix Grid */}
-            <div 
-              className="absolute inset-0 opacity-15 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" 
-            />
-
-            {/* Screen Top Status Bar */}
-            <div className="w-full flex items-center justify-between z-10 text-[10px] sm:text-xs text-slate-400">
-              <div className="flex items-center gap-1.5 text-cyan-400 font-semibold tracking-wider">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                <span>NEO QLED 8K • AI ENGINE</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-400">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                <span>2,300 Manuals Verified</span>
-              </div>
+        {/* Brand Icon Core that unlocks and glows as progress increases */}
+        <div 
+          className="relative mb-6 flex items-center justify-center transition-all duration-500"
+          style={{
+            opacity: Math.min(1, p * 1.4),
+            transform: `scale(${0.6 + p * 0.4})`,
+          }}
+        >
+          <div className="absolute -inset-3 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 opacity-60 blur-xl animate-pulse" />
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 p-[2px] shadow-2xl shadow-blue-500/30 flex items-center justify-center ring-1 ring-white/30">
+            <div className="w-full h-full rounded-[14px] bg-[#0c1222]/90 backdrop-blur-md flex items-center justify-center">
+              <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.8)]" />
             </div>
-
-            {/* Center Quantum AI Core Animation */}
-            <div className="relative my-auto flex flex-col items-center justify-center z-10 space-y-3">
-              
-              {/* Glowing pulsating energy rings */}
-              <div className="relative flex items-center justify-center w-20 h-20 sm:w-28 sm:h-28">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-400 via-sky-500 to-blue-600 blur-xl opacity-80 animate-pulse" />
-                <div className="absolute -inset-3 rounded-full border border-cyan-400/40 animate-ping opacity-40" />
-                <div className="absolute -inset-6 rounded-full border border-sky-400/25 animate-spin" style={{ animationDuration: "12s" }} />
-
-                {/* Center Core Glass Disc */}
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-cyan-400 via-sky-500 to-blue-600 p-[2px] shadow-[0_0_30px_rgba(56,189,248,0.8)]">
-                  <div className="w-full h-full rounded-full bg-[#09111e] flex items-center justify-center">
-                    <Sparkles className="w-8 h-8 sm:w-10 sm:h-10 text-white drop-shadow-[0_0_15px_#fff] animate-bounce" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Title inside the TV */}
-              <div className="space-y-1">
-                <h2 className="font-heading text-lg sm:text-2xl md:text-3xl font-extrabold text-white tracking-tight">
-                  Intelligent <span className="text-gradient-primary">Product Support</span>
-                </h2>
-                <p className="text-[11px] sm:text-xs text-slate-300 font-medium">
-                  Entering Interactive Support Matrix...
-                </p>
-              </div>
-
-            </div>
-
-            {/* Bottom Progress Bar inside screen */}
-            <div className="w-full max-w-xs sm:max-w-md z-10 space-y-1.5">
-              <div className="h-1.5 w-full rounded-full bg-white/10 overflow-hidden p-[1px]">
-                <div 
-                  className="h-full rounded-full user-bubble-gradient transition-all duration-100 ease-out shadow-[0_0_12px_rgba(56,189,248,0.8)]"
-                  style={{ width: `${progress}%` }}
-                />
-              </div>
-              <div className="flex justify-between text-[10px] text-slate-400 px-1 font-mono">
-                <span>SYSTEM_BOOT</span>
-                <span className="text-cyan-400 font-semibold">{Math.min(100, Math.round(progress))}%</span>
-              </div>
-            </div>
-
-            {/* Screen Flash Flare on zoom */}
-            {phase === "zoom" && (
-              <div className="absolute inset-0 bg-white opacity-95 animate-ping z-50 pointer-events-none" />
-            )}
-
           </div>
-
-          {/* Bottom Bezel Samsung Emblem */}
-          <div className="w-full py-1 bg-[#0c121e] flex items-center justify-center border-t border-white/5">
-            <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 tracking-[0.25em] uppercase">
-              SAMSUNG
-            </span>
-          </div>
-
         </div>
 
-        {/* TV Stand Base (Metallic / Glass Reflection) */}
-        <div className="relative flex flex-col items-center z-0 -mt-1">
-          {/* Stand Neck */}
-          <div className="w-10 sm:w-16 h-3 sm:h-5 bg-gradient-to-b from-slate-700 to-slate-900 border-x border-white/10" />
-          {/* Stand Foot Plate */}
-          <div className="w-40 sm:w-64 md:w-80 h-2 sm:h-3 rounded-full bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 border border-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.8)]" />
+        {/* Dynamic Stroke Assembly SVG & Script Wordmark */}
+        <div className="relative w-full max-w-md sm:max-w-lg h-24 sm:h-32 flex items-center justify-center">
+          <svg
+            viewBox="0 0 540 120"
+            className="w-full h-full overflow-visible"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="brandLinearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#60a5fa" />
+                <stop offset="50%" stopColor="#818cf8" />
+                <stop offset="100%" stopColor="#c084fc" />
+              </linearGradient>
+              <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            {/* Fragment 1: First Initial Letter 'T' Stem & Swash (Appears 0% - 35%) */}
+            <g style={getFragmentStyle(0, 0.35, { x: -35, y: -20, rot: -18, scale: 0.6 })}>
+              <path
+                d="M 45 35 C 65 30, 95 30, 115 35 M 80 35 C 80 55, 78 80, 75 95"
+                stroke="url(#brandLinearGrad)"
+                strokeWidth="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="180"
+                strokeDashoffset={Math.max(0, 180 * (1 - p / 0.4))}
+                filter="url(#glowEffect)"
+              />
+            </g>
+
+            {/* Fragment 2: 'e' Loop & Arch (Appears 15% - 48%) */}
+            <g style={getFragmentStyle(0.15, 0.48, { x: -20, y: 25, rot: 25, scale: 0.7 })}>
+              <path
+                d="M 125 70 C 120 50, 145 45, 150 62 C 150 78, 125 88, 155 88"
+                stroke="url(#brandLinearGrad)"
+                strokeWidth="9"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="150"
+                strokeDashoffset={Math.max(0, 150 * (1 - Math.max(0, p - 0.15) / 0.35))}
+                filter="url(#glowEffect)"
+              />
+            </g>
+
+            {/* Fragment 3: 'c' Arc & 'h' Ascender (Appears 28% - 62%) */}
+            <g style={getFragmentStyle(0.28, 0.62, { x: 15, y: -30, rot: -15, scale: 0.65 })}>
+              <path
+                d="M 195 55 C 175 50, 168 85, 192 88 M 215 25 L 215 88 M 215 58 C 228 48, 245 50, 245 88"
+                stroke="url(#brandLinearGrad)"
+                strokeWidth="9"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="220"
+                strokeDashoffset={Math.max(0, 220 * (1 - Math.max(0, p - 0.28) / 0.35))}
+                filter="url(#glowEffect)"
+              />
+            </g>
+
+            {/* Fragment 4: 'S' Dynamic Curve & Tail (Appears 42% - 75%) */}
+            <g style={getFragmentStyle(0.42, 0.75, { x: 30, y: 20, rot: 22, scale: 0.7 })}>
+              <path
+                d="M 305 45 C 285 35, 270 52, 288 66 C 308 80, 290 95, 270 88"
+                stroke="url(#brandLinearGrad)"
+                strokeWidth="9.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="180"
+                strokeDashoffset={Math.max(0, 180 * (1 - Math.max(0, p - 0.42) / 0.35))}
+                filter="url(#glowEffect)"
+              />
+            </g>
+
+            {/* Fragment 5: 't' Cross & 'o' Loop (Appears 55% - 88%) */}
+            <g style={getFragmentStyle(0.55, 0.88, { x: -15, y: -25, rot: 14, scale: 0.75 })}>
+              <path
+                d="M 330 38 L 330 88 M 320 52 L 342 52 M 355 68 C 355 50, 385 50, 385 68 C 385 88, 355 88, 355 68"
+                stroke="url(#brandLinearGrad)"
+                strokeWidth="9"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="190"
+                strokeDashoffset={Math.max(0, 190 * (1 - Math.max(0, p - 0.55) / 0.35))}
+                filter="url(#glowEffect)"
+              />
+            </g>
+
+            {/* Fragment 6: 'r' & 'e' Finish Swash (Appears 68% - 98%) */}
+            <g style={getFragmentStyle(0.68, 0.98, { x: 40, y: -15, rot: -20, scale: 0.7 })}>
+              <path
+                d="M 405 52 L 405 88 M 405 62 C 415 50, 428 52, 432 58 M 445 70 C 440 50, 465 45, 470 62 C 470 78, 445 88, 485 88"
+                stroke="url(#brandLinearGrad)"
+                strokeWidth="9"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="210"
+                strokeDashoffset={Math.max(0, 210 * (1 - Math.max(0, p - 0.68) / 0.3))}
+                filter="url(#glowEffect)"
+              />
+            </g>
+          </svg>
+        </div>
+
+        {/* Subtitle / Brand Typography */}
+        <div 
+          className="mt-2 text-center transition-all duration-700 ease-out"
+          style={{
+            opacity: Math.max(0, (p - 0.5) / 0.5),
+            transform: `translateY(${(1 - Math.max(0, (p - 0.5) / 0.5)) * 12}px)`,
+          }}
+        >
+          <h2 className="font-['Space_Grotesk'] text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-white drop-shadow-md">
+            Tech Store <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">Assistant</span>
+          </h2>
+          <p className="text-[12px] sm:text-xs text-slate-400 font-['Lexend'] mt-1 font-normal tracking-wide">
+            Intelligent Product Support & Concierge
+          </p>
+        </div>
+
+      </div>
+
+      {/* Bottom Progress Counter & Slim Minimalist Progress Bar (Functional Inspiration from Image 2 & 3) */}
+      <div className="w-full pb-10 sm:pb-14 flex flex-col items-center justify-center z-20 px-6">
+        
+        {/* Percentage Counter with `%` space formatting */}
+        <div className="mb-3 text-center">
+          <span className="font-['Space_Grotesk'] font-extrabold text-2xl sm:text-3xl tracking-widest text-slate-100 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">
+            {Math.min(100, Math.round(progress))} %
+          </span>
+        </div>
+
+        {/* Sleek Minimal Progress Bar Line */}
+        <div className="w-48 sm:w-64 md:w-80 h-[3px] sm:h-[4px] rounded-full bg-white/[0.12] overflow-hidden p-0 backdrop-blur-sm">
+          <div
+            className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 transition-all duration-75 ease-out shadow-[0_0_12px_rgba(96,165,250,0.8)]"
+            style={{ width: `${progress}%` }}
+          />
         </div>
 
       </div>
@@ -170,12 +260,13 @@ export function TvIntroPortal({ onComplete }) {
       {/* Skip Button in Bottom Corner */}
       <button
         onClick={handleSkip}
-        className="absolute bottom-6 right-6 z-50 flex items-center gap-1.5 px-4 py-2 rounded-full glass-panel hover:border-cyan-500/50 text-slate-300 hover:text-white text-xs font-medium transition shadow-lg group"
+        className="absolute bottom-6 right-6 z-50 flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/[0.06] hover:bg-white/[0.12] border border-white/[0.1] hover:border-white/25 text-slate-400 hover:text-white text-xs font-medium backdrop-blur-md transition-all duration-200 shadow-lg group cursor-pointer"
       >
-        <span>Skip Intro</span>
-        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition" />
+        <span>Skip</span>
+        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
       </button>
 
     </div>
   );
 }
+

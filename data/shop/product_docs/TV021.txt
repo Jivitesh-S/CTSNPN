@@ -1,0 +1,57 @@
+# Samsung 55" Crystal 4K UHD Smart TV (AU8000 - 2021) (TV021) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** TV
+**Model ID:** TV021
+**Store Pricing:** Rs. 38,990
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 24 Months Manufacturer Brand Warranty
+**Launch Date:** 2021-04
+**Official Support Reference:** https://www.samsung.com/in/support/model/TV021/
+
+---
+
+## 📖 Product Overview & Description
+Slim Crystal 4K UHD TV with Dynamic Crystal Color, Crystal Processor 4K, PC on TV mode, and Bixby/Alexa built-in.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Screen Size:** 55-inch
+- **Resolution:** 4K UHD (3840 x 2160)
+- **Display Tech:** LED Display
+- **Refresh Rate:** 60Hz
+- **Processor:** Crystal Processor 4K
+- **Audio:** 20W Stereo with Q-Symphony
+- **Ports:** 3x HDMI, 2x USB
+
+---
+
+
+### 📺 Smart TV Installation, Calibration & User Guide
+1. **Unboxing & Mounting Instructions:**
+   - Handle panel from the outer metal bezels; do not apply pressure to the center glass screen.
+   - Supports standard VESA Wall Mounts and Samsung Slim-Fit No-Gap Wall Mounts.
+   - Connect external HDMI sources to HDMI 2.1 ports (Port 3 is dedicated for eARC soundbars).
+2. **Tizen OS & SmartThings Hub:**
+   - Built-in SmartThings Hub allows direct control of Matter and Zigbee smart home appliances.
+   - **Gaming Hub:** Play Xbox Cloud Gaming, GeForce NOW, and PlayStation titles directly without a console at up to 144Hz VRR.
+   - **Q-Symphony:** Simultaneously synchronizes TV speakers with Samsung Soundbars for 3D surround sound.
+3. **Picture Calibration & Art Mode:**
+   - Filmmaker Mode disables motion smoothing to present movies as intended by the director.
+   - Art Store (The Frame / Neo QLED) provides 2,500+ museum-quality digital artworks with ambient brightness auto-dimming.
+4. **TV Diagnostics & Troubleshooting:**
+   - **Self Diagnosis:** Go to Settings > Support > Device Care > Picture Test / Sound Test.
+   - **Cold Reboot:** Hold the Remote Power button for 5 seconds until the TV restarts.
+   - **Red Light Blinking:** Power reset by unplugging from wall for 60 seconds to discharge static capacitors.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 24 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

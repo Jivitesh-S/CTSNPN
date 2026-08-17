@@ -1,35 +1,57 @@
-AI Suggested Searches
-Galaxy Book6 Pro, 40.62 cm, Ultra X7, 32 GB, Copilot+ PC
-Remaster picture feature on Samsung Galaxy Book4 series
-Moisture prevention tips for Samsung Laptops (Galaxy Book)
-Additional Information
-Support Alert Moisture prevention tips for Samsung Laptops (Galaxy Book) Jun 16, 2026
-Support News End of support for Windows 10 Aug 18, 2025
-support product detail
-Software Using the SW Update Application How to Video for Samsung PC. Find more about 'Using the SW Update Application' with Samsung Support.
-Guide/Others How to fix Samsung laptop battery is not charging FAQ for Laptop. Find more about How to resolve charging related issues in Samsung Laptop?
-Guide/Others How to realign the taskbar on your Samsung Galaxy Book2 Series? DIY video to know how to realign the taskbar on your Samsung Galaxy Book2 Series
-Guide/Others How to use the ‘Quick Share’ feature on your Samsung Galaxy Book2 Series? DIY video to know how to use the Quick Share feature on your Samsung Galaxy Book2 Series
-Hardware How to improve the battery life of your Samsung Galaxy Book2 Series? DIY video to know how to improve the battery life of your samsung galaxy book2 series
-What is MIMO technology? FAQ for Samsung PC. Find more about 'What is MIMO technology?' with Samsung Support.
-Guide/Others How to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series? DIY video to know how to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series
-Guide/Others How to turn on Battery saver Find out more about How to turn on Battery saver with Samsung Support
-Guide/Others Moisture prevention tips for Samsung Laptops (Galaxy Book) FAQ for Samsung Laptop. Find more about "moisture prevention tips for samsung laptops" with Samsung support.
-Guide/Others End of support for Windows 10 FAQ for Samsung PC. Find more about end of support for Windows 10 with Samsung Support.
-Guide/Others How to use PC Diagnostics on your Samsung Galaxy Book6 FAQ for Samsung PC. Find out how to use PC Diagnostics on your Samsung Galaxy Book6 with Samsung Support.
-{{filterInfo.title}}
-{{contentInfo.symptomName}} {{contentInfo.title}} {{contentInfo.content}}
-{"softwares":[],"manuals":[{"description":"User Manual(Windows 11)","englishDescription":"User Manual(Windows 11)","fileName":"94xXJG_96xXJG_Win11_UG_ENG_Rev.1.1_260511.pdf","fileModifiedDate":"Jun 08. 2026","fileModifiedDateCalendar":1780869660000,"fileVersion":"1.1","fileSize":"1.57","contentsTypeCode":"UM","filePath":"UM/202606/20260608155618564/94xXJG_96xXJG_Win11_UG_ENG_Rev.1.1_260511.pdf","fileID":11488727,"viewCount":0,"downloadUrl":"https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_IN&OriginYN=N&ModelType=N&ModelName=NP960XJGD-EXP&CttFileID=11488727&CDCttType=UM&VPath=UM%2F202606%2F20260608155618564%2F94xXJG_96xXJG_Win11_UG_ENG_Rev.1.1_260511.pdf","osList":null,"areaList":[{"code":"AT","orgCode":"AT"},{"code":"BE","orgCode":"BE"},{"code":"CA","orgCode":"CA"},{"code":"CL","orgCode":"CL"},{"code":"DE","orgCode":"DE"},{"code":"DK","orgCode":"DK"},{"code":"ES","orgCode":"ES"},{"code":"FI","orgCode":"FI"},{"code":"FR","orgCode":"FR"},{"code":"GB","orgCode":"GB"},{"code":"HK","orgCode":"HK"},{"code":"HU","orgCode":"HU"},{"code":"IE","orgCode":"IE"},{"code":"IN","orgCode":"IN"},{"code":"IS","orgCode":"IS"},{"code":"IT","orgCode":"IT"},{"code":"LU","orgCode":"LU"},{"code":"NL","orgCode":"NL"},{"code":"NO","orgCode":"NO"},{"code":"PL","orgCode":"PL"},{"code":"SE","orgCode":"SE"},{"code":"UA","orgCode":"UA"}],"languageList":[{"code":"EN","orgCode":"EN","name":"ENGLISH"}]}]}
-https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx
-Language Click to Expand
-{{file.description}} ver {{file.fileVersion}} {{file.fileSize}} MB {{file.fileModifiedDate}} {{file.osNames}} {{file.languageName}} {{file.languageName}} {{file.allLanguageNames}} {{file.languageName}} Layer Popup Close Download
-ver {{file.fileVersion}}
-{{file.fileSize}} MB
-{{file.fileModifiedDate}}
-ADDITIONAL INFORMATION
-Face-to-face support
-Digital Service Center
-Phone Support (India)
-Phone Support (Bangladesh, Sri Lanka, Nepal)
-Apps & Services Customer Support
-RC01_Static Content : This text is only displayed on the editor page
+# Samsung Galaxy Book Go (L015) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** LAPTOP
+**Model ID:** L015
+**Store Pricing:** Rs. 34,990
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2021-06
+**Official Support Reference:** https://www.samsung.com/in/support/model/L015/
+
+---
+
+## 📖 Product Overview & Description
+Always-connected, fanless, ultra-budget laptop with Qualcomm Snapdragon 7c Gen 2 processor, 18-hour battery, and 4G LTE.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Display:** 14.0-inch FHD TFT LCD (1920x1080), 180-degree hinge
+- **Processor:** Qualcomm Snapdragon 7c Gen 2 Compute Platform (Octa-core)
+- **Ram Storage:** 4GB/8GB LPDDR4X, 128GB eUFS
+- **Graphics:** Qualcomm Adreno GPU
+- **Battery:** 42.3Wh, up to 18 hours battery life, 25W USB-C fast charging
+- **Weight:** 1.38 kg
+- **Extras:** Silent fanless design, 180-degree lay-flat hinge, Military-grade MIL-STD-810G durability
+
+---
+
+
+### 💻 Galaxy Book Laptop Manual & Technical Reference
+1. **First-Time Setup & Windows 11 Activation:**
+   - Connect the included USB-C Fast Charger before turning on for the first time.
+   - Press the Power Button with integrated Fingerprint Sensor for instant Windows Hello login.
+   - Run Samsung Update and Windows Update to install latest Intel/NVIDIA graphics drivers.
+2. **Samsung Ecosystem Integration:**
+   - **Second Screen:** Use your Galaxy Tab S9/S8 as a wireless secondary display.
+   - **Multi Control:** Use laptop keyboard and touchpad to control your Galaxy smartphone seamlessly.
+   - **Quick Share:** High-speed peer-to-peer file transfer between Samsung devices.
+   - **Samsung Studio:** AI-powered video editing and subtitle generation.
+3. **Performance & Cooling Modes:**
+   - Press Fn + F11 to toggle Performance Modes: Silent, Optimized, and High Performance.
+   - Dual-fan vapor chamber thermal management prevents CPU/GPU throttling during 4K video rendering.
+4. **Laptop Maintenance & Care:**
+   - Clean the 3K AMOLED screen only with a dry microfiber cloth (avoid alcohol sprays).
+   - Keep air intake vents on the bottom panel clear of dust and fabric.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

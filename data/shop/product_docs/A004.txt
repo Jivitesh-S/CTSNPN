@@ -1,0 +1,48 @@
+# Samsung Galaxy Watch6 (40mm BT) (A004) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** ACCESSORY
+**Model ID:** A004
+**Store Pricing:** Rs. 19,999
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2023-07
+**Official Support Reference:** https://www.samsung.com/in/support/model/A004/
+
+---
+
+## 📖 Product Overview & Description
+Sleek everyday health watch with 20% larger display, thinner bezels, personalized heart rate zones, and One-Click band mechanism.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Display:** 1.3-inch Super AMOLED
+- **Processor:** Exynos W930
+- **Battery:** 300mAh
+- **Durability:** Armor Aluminum, 5ATM + IP68
+
+---
+
+
+### ⌚ Wearable & Accessory Technical Guide
+1. **Pairing & Galaxy Wearable App:**
+   - Open charging case or power on watch next to any Samsung phone for instant pop-up pairing.
+   - Manage EQ presets, ANC noise control, gesture touch shortcuts, and widget layouts.
+2. **Health Tracking & Sensor Calibration:**
+   - BioActive sensor tracks ECG, blood pressure, BIA body composition, and sleep apnea metrics.
+   - Dual-frequency GPS provides centimeter-accurate tracking for outdoor runs and cycling.
+3. **Charging & Battery Longevity:**
+   - Fast wireless charging cradle reaches 50% in 30 minutes.
+   - Power Saving mode extends battery life up to 100 hours by disabling always-on display.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

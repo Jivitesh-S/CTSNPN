@@ -3,6 +3,7 @@ import sqlite3
 import threading
 from datetime import datetime
 from pathlib import Path
+from typing import Optional, List, Dict
 
 
 # ============================================================
@@ -128,11 +129,48 @@ def _init_schema():
         """
     )
 
+    _conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS orders (
+            order_id TEXT PRIMARY KEY,
+            customer_name TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            email TEXT,
+            telegram_chat_id TEXT,
+            model_bought TEXT NOT NULL,
+            product_category TEXT,
+            purchase_date TEXT NOT NULL,
+            price INTEGER,
+            status TEXT NOT NULL,
+            warranty_months INTEGER DEFAULT 12,
+            return_window_days INTEGER DEFAULT 14,
+            created_at TEXT
+        )
+        """
+    )
+
+    _conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS service_tokens (
+            token_id TEXT PRIMARY KEY,
+            order_id TEXT NOT NULL,
+            customer_name TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            model_name TEXT NOT NULL,
+            request_type TEXT NOT NULL,
+            reason TEXT,
+            status TEXT NOT NULL DEFAULT 'Pending Contact',
+            admin_notes TEXT,
+            created_at TEXT
+        )
+        """
+    )
+
     _conn.commit()
 
 
 # ============================================================
-# SEED: TechStore shop + its existing products (first run)
+# SEED: TechStore shop + its existing products & dummy orders
 # ============================================================
 
 def _seed():
@@ -141,38 +179,147 @@ def _seed():
         "SELECT COUNT(*) FROM shops"
     ).fetchone()[0]
 
-    if count > 0:
-        return
+    if count == 0:
+        techstore = {
+            "id": "S001",
+            "name": "TechStore",
+            "description": (
+                "TechStore is a gadget shop selling smartphones, "
+                "laptops and accessories."
+            ),
+            "category": "electronics",
+            "address": "Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Greater Chennai, Tamil Nadu 600066",
+            "city": "Chennai",
+            "pincode": "600066",
+            "phone": "+91 9087086182",
+            "email": "",
+            "timings": "10:00 AM - 9:00 PM, all days",
+        }
 
-    techstore = {
-        "id": "S001",
-        "name": "TechStore",
-        "description": (
-            "TechStore is a gadget shop selling smartphones, "
-            "laptops and accessories."
-        ),
-        "category": "electronics",
-        "address": "123, Tech Market Road, City Center",
-        "city": "City Center",
-        "pincode": "560001",
-        "phone": "+91 9087086182",
-        "email": "",
-        "timings": "10:00 AM - 9:00 PM, all days",
-    }
+        _insert_shop_raw(techstore)
 
-    _insert_shop_raw(techstore)
-
+    # Always ensure products table contains catalog.json products
+    prod_count = _conn.execute("SELECT COUNT(*) FROM products WHERE shop_id = 'S001'").fetchone()[0]
     if CATALOG_FILE.exists():
-
         with open(CATALOG_FILE, "r", encoding="utf-8") as file:
             products = json.load(file)
 
-        for product in products:
-            product = dict(product)
-            product["shop_id"] = "S001"
-            _insert_product_raw(product)
+        if prod_count < len(products):
+            for product in products:
+                product = dict(product)
+                product["shop_id"] = "S001"
+                _insert_product_raw(product)
+
+    # Seed initial dummy orders if empty
+    orders_count = _conn.execute("SELECT COUNT(*) FROM orders").fetchone()[0]
+
+    if orders_count == 0:
+        seed_orders = [
+            {
+                "order_id": "ORD-1001",
+                "customer_name": "Rupika S",
+                "phone": "+91 98765 43210",
+                "email": "rupika@example.com",
+                "telegram_chat_id": "8660932733",
+                "model_bought": "Samsung Galaxy S24 Ultra",
+                "product_category": "phone",
+                "purchase_date": "2026-08-15",
+                "price": 129999,
+                "status": "Processing",
+                "warranty_months": 12,
+                "return_window_days": 14,
+                "created_at": datetime.now().isoformat(),
+            },
+            {
+                "order_id": "ORD-1002",
+                "customer_name": "Aravind Kumar",
+                "phone": "+91 90870 86182",
+                "email": "aravind.k@example.com",
+                "telegram_chat_id": "8660932733",
+                "model_bought": "Samsung Galaxy Book4",
+                "product_category": "laptop",
+                "purchase_date": "2026-08-13",
+                "price": 54990,
+                "status": "Shipped",
+                "warranty_months": 12,
+                "return_window_days": 14,
+                "created_at": datetime.now().isoformat(),
+            },
+            {
+                "order_id": "ORD-1003",
+                "customer_name": "Priya Sharma",
+                "phone": "+91 98401 23456",
+                "email": "priya.s@example.com",
+                "telegram_chat_id": "8660932733",
+                "model_bought": "Samsung Galaxy Z Flip6",
+                "product_category": "phone",
+                "purchase_date": "2026-08-10",
+                "price": 109999,
+                "status": "Delivered",
+                "warranty_months": 12,
+                "return_window_days": 14,
+                "created_at": datetime.now().isoformat(),
+            },
+            {
+                "order_id": "ORD-1004",
+                "customer_name": "Karthik Raman",
+                "phone": "+91 94440 98765",
+                "email": "karthik.r@example.com",
+                "telegram_chat_id": "8660932733",
+                "model_bought": "Samsung Galaxy Buds3 Pro",
+                "product_category": "audio",
+                "purchase_date": "2026-07-01",
+                "price": 19999,
+                "status": "Delivered",
+                "warranty_months": 12,
+                "return_window_days": 7,
+                "created_at": datetime.now().isoformat(),
+            },
+            {
+                "order_id": "ORD-1005",
+                "customer_name": "Sneha Patel",
+                "phone": "+91 91234 56789",
+                "email": "sneha.p@example.com",
+                "telegram_chat_id": "8660932733",
+                "model_bought": "Samsung Neo QLED 8K TV",
+                "product_category": "tv",
+                "purchase_date": "2026-08-16",
+                "price": 319990,
+                "status": "Processing",
+                "warranty_months": 24,
+                "return_window_days": 14,
+                "created_at": datetime.now().isoformat(),
+            },
+        ]
+
+        for order in seed_orders:
+            _conn.execute(
+                """
+                INSERT OR REPLACE INTO orders (
+                    order_id, customer_name, phone, email, telegram_chat_id,
+                    model_bought, product_category, purchase_date, price,
+                    status, warranty_months, return_window_days, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    order["order_id"],
+                    order["customer_name"],
+                    order["phone"],
+                    order["email"],
+                    order["telegram_chat_id"],
+                    order["model_bought"],
+                    order["product_category"],
+                    order["purchase_date"],
+                    order["price"],
+                    order["status"],
+                    order["warranty_months"],
+                    order["return_window_days"],
+                    order["created_at"],
+                ),
+            )
 
     _conn.commit()
+
 
 
 # ============================================================
@@ -504,3 +651,134 @@ def export_catalog():
         )
 
     return products
+
+
+# ============================================================
+# ORDERS & SERVICE TOKENS
+# ============================================================
+
+def get_order(order_id: str) -> Optional[dict]:
+    if not order_id:
+        return None
+    conn = _get_conn()
+    row = conn.execute(
+        "SELECT * FROM orders WHERE UPPER(order_id) = UPPER(?)",
+        (order_id.strip(),),
+    ).fetchone()
+    return dict(row) if row else None
+
+
+def list_orders() -> List[dict]:
+    conn = _get_conn()
+    rows = conn.execute(
+        "SELECT * FROM orders ORDER BY created_at DESC"
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def update_order_status(order_id: str, status: str) -> bool:
+    conn = _get_conn()
+    cursor = conn.execute(
+        "UPDATE orders SET status = ? WHERE UPPER(order_id) = UPPER(?)",
+        (status, order_id.strip()),
+    )
+    conn.commit()
+    return cursor.rowcount > 0
+
+
+def create_service_token(
+    order_id: str,
+    customer_name: str,
+    phone: str,
+    model_name: str,
+    request_type: str,
+    reason: str = "",
+    status: str = "Pending Contact"
+) -> dict:
+    conn = _get_conn()
+    import random
+    prefix = "CAN" if "cancel" in request_type.lower() else "REP" if "replace" in request_type.lower() else "SRV"
+    token_id = f"{prefix}-{random.randint(1000, 9999)}"
+    now = datetime.now().isoformat()
+
+    conn.execute(
+        """
+        INSERT INTO service_tokens (
+            token_id, order_id, customer_name, phone, model_name,
+            request_type, reason, status, admin_notes, created_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (
+            token_id,
+            order_id.upper(),
+            customer_name,
+            phone,
+            model_name,
+            request_type,
+            reason or f"{request_type} request for {order_id}",
+            status,
+            "",
+            now,
+        ),
+    )
+    conn.commit()
+
+    # Also update order status accordingly
+    if "cancel" in request_type.lower():
+        update_order_status(order_id, "Cancelled")
+    elif "replace" in request_type.lower():
+        update_order_status(order_id, "Replacement Requested")
+
+    return get_service_token(token_id)
+
+
+def get_service_token(token_id: str) -> Optional[dict]:
+    conn = _get_conn()
+    row = conn.execute(
+        "SELECT * FROM service_tokens WHERE UPPER(token_id) = UPPER(?)",
+        (token_id.strip(),),
+    ).fetchone()
+    return dict(row) if row else None
+
+
+def list_service_tokens() -> List[dict]:
+    conn = _get_conn()
+    rows = conn.execute(
+        "SELECT * FROM service_tokens WHERE status != 'Rejected' ORDER BY created_at DESC"
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def delete_service_token(token_id: str) -> bool:
+    """Deletes a service token from the database."""
+    conn = _get_conn()
+    cursor = conn.execute(
+        "DELETE FROM service_tokens WHERE UPPER(token_id) = UPPER(?)",
+        (token_id.strip(),),
+    )
+    conn.commit()
+    return cursor.rowcount > 0
+
+
+def update_service_token_status(token_id: str, status: str, admin_notes: str = "") -> bool:
+    conn = _get_conn()
+    cursor = conn.execute(
+        """
+        UPDATE service_tokens 
+        SET status = ?, admin_notes = COALESCE(NULLIF(?, ''), admin_notes)
+        WHERE UPPER(token_id) = UPPER(?)
+        """,
+        (status, admin_notes, token_id.strip()),
+    )
+    conn.commit()
+
+    # If rejected, restore order status back to active Processing state
+    if status.lower() == "rejected":
+        token = get_service_token(token_id)
+        if token and token.get("order_id"):
+            update_order_status(token["order_id"], "Processing")
+
+    return cursor.rowcount > 0
+
+
+

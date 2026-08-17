@@ -1,0 +1,57 @@
+# Samsung Galaxy M35 5G (P037) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** PHONE
+**Model ID:** P037
+**Store Pricing:** Rs. 19,999
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2024-07
+**Official Support Reference:** https://www.samsung.com/in/support/model/P037/
+
+---
+
+## 📖 Product Overview & Description
+Battery beast featuring massive 6000mAh battery, 120Hz Super AMOLED display, Exynos 1380, and vapor cooling chamber.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Display:** 6.6-inch Super AMOLED, 120Hz, 1000 nits
+- **Processor:** Exynos 1380 (5nm) with Vapor Cooling
+- **Ram Storage:** 6GB/8GB RAM, 128GB/256GB
+- **Camera:** 50MP main (OIS) + 8MP ultra-wide + 2MP macro
+- **Battery:** 6000mAh, 25W charging
+- **Extras:** Corning Gorilla Glass Victus+, Knox Vault
+
+---
+
+
+### 📱 Mobile Operating & Setup Guide
+1. **Initial Setup & SIM Insertion:**
+   - Use the SIM ejector tool to insert Nano-SIM or activate eSIM.
+   - Power on by holding the Side Power Key for 3 seconds.
+   - Use Samsung Smart Switch to transfer contacts, photos, and apps from your old device.
+2. **Key Software & AI Features:**
+   - **Galaxy AI (Circle to Search, Live Translate, Note Assist):** Access via Galaxy AI settings.
+   - **Samsung DeX:** Connect wirelessly to any PC or monitor for a desktop workstation experience.
+   - **Samsung Knox Vault:** Hardware-isolated security protecting PIN, biometric, and cryptographic keys.
+   - **Camera Modes:** Expert RAW, 8K Video Recording, Nightography, Astro-hyperlapse, and Single Take.
+3. **Battery & Device Care:**
+   - Protect Battery feature limits charging to 80% to maximize long-term lithium-ion lifespan.
+   - Supports 25W/45W Super Fast Charging with certified USB PD 3.0 PPS adapters.
+4. **Phone Troubleshooting & Diagnostics:**
+   - **Force Restart:** Press and hold Volume Down + Side Key simultaneously for 10-15 seconds.
+   - **Screen Freeze:** Clear cache partition in Android Recovery Mode or use Device Care auto-optimization.
+   - **Moisture Detected Warning:** Dry the USB-C port thoroughly before plugging in a charger.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.

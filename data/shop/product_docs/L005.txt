@@ -1,36 +1,57 @@
-Galaxy Book4 Pro, 40.62 cm, Core™ Ultra 5, 16 GB, Intel® Arc™ Graphics
-Remaster picture feature on Samsung Galaxy Book4 series
-Moisture prevention tips for Samsung Laptops (Galaxy Book)
-Additional Information
-Support Alert Intel CPU Firmware Update Aug 27, 2018
-Support Alert End of support for Windows XP Aug 08, 2017
-support product detail
-Guide/Others How to fix Samsung laptop battery is not charging? FAQ for Laptop. Find more about How to resolve charging related issues in Samsung Laptop?
-Guide/Others How to use the ‘Second Screen’ feature on your Samsung Galaxy Book2 Series? DIY video to know how to use the second screen feature on your samsung galaxy book2 series
-Guide/Others How to realign the taskbar on your Samsung Galaxy Book2 Series? DIY video to know how to realign the taskbar on your Samsung Galaxy Book2 Series
-Guide/Others How to use the ‘Quick Share’ feature on your Samsung Galaxy Book2 Series? DIY video to know how to use the Quick Share feature on your Samsung Galaxy Book2 Series
-Hardware How to improve the battery life of your Samsung Galaxy Book2 Series? DIY video to know how to improve the battery life of your samsung galaxy book2 series
-Software Using the SW Update Application How to Video for Samsung PC. Find more about 'Using the SW Update Application' with Samsung Support.
-What is MIMO technology? FAQ for Samsung PC. Find more about 'What is MIMO technology?' with Samsung Support.
-Guide/Others How to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series? DIY video to know how to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series
-Guide/Others How to turn on Battery saver Find out more about How to turn on Battery saver with Samsung Support
-Guide/Others Moisture prevention tips for Samsung Laptops (Galaxy Book) FAQ for Samsung Laptop. Find more about "moisture prevention tips for samsung laptops" with Samsung support.
-Guide/Others Remaster picture feature on Samsung Galaxy Book4 series FAQ for Samsung Laptop. Find more about 'remaster picture feature on samsung galaxy book4 series' with Samsung support.
-{{filterInfo.title}}
-{{contentInfo.symptomName}} {{contentInfo.title}} {{contentInfo.content}}
-{"softwares":[],"manuals":[{"description":"User Manual(Windows 11)","englishDescription":"User Manual(Windows 11)","fileName":"94xXGK_96xXGK_96xXGL_Win11_UM_ENG_Rev.1.0_231124.pdf","fileModifiedDate":"Jan 11. 2024","fileModifiedDateCalendar":1704908640000,"fileVersion":"1.0","fileSize":"1.94","contentsTypeCode":"UM","filePath":"UM/202401/20240111114331137/94xXGK_96xXGK_96xXGL_Win11_UM_ENG_Rev.1.0_231124.pdf","fileID":9452841,"viewCount":0,"downloadUrl":"https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_IN&OriginYN=N&ModelType=N&ModelName=NP960XGKA-EXP&CttFileID=9452841&CDCttType=UM&VPath=UM%2F202401%2F20240111114331137%2F94xXGK_96xXGK_96xXGL_Win11_UM_ENG_Rev.1.0_231124.pdf","osList":null,"areaList":[{"code":"BE","orgCode":"BE"},{"code":"BR","orgCode":"BR"},{"code":"CA","orgCode":"CA"},{"code":"CL","orgCode":"CL"},{"code":"CZ","orgCode":"CZ"},{"code":"DE","orgCode":"DE"},{"code":"DK","orgCode":"DK"},{"code":"ES","orgCode":"ES"},{"code":"FI","orgCode":"FI"},{"code":"FR","orgCode":"FR"},{"code":"GB","orgCode":"GB"},{"code":"HK","orgCode":"HK"},{"code":"HU","orgCode":"HU"},{"code":"IE","orgCode":"IE"},{"code":"IN","orgCode":"IN"},{"code":"IS","orgCode":"IS"},{"code":"IT","orgCode":"IT"},{"code":"LU","orgCode":"LU"},{"code":"MO","orgCode":"MO"},{"code":"NL","orgCode":"NL"},{"code":"NO","orgCode":"NO"},{"code":"PL","orgCode":"PL"},{"code":"PT","orgCode":"PT"},{"code":"RO","orgCode":"RO"},{"code":"SE","orgCode":"SE"},{"code":"TW","orgCode":"TW"},{"code":"UA","orgCode":"UA"},{"code":"US","orgCode":"US"}],"languageList":[{"code":"EN","orgCode":"EN","name":"ENGLISH"}]}]}
-https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx
-Language Click to Expand
-{{file.description}} ver {{file.fileVersion}} {{file.fileSize}} MB {{file.fileModifiedDate}} {{file.osNames}} {{file.languageName}} {{file.languageName}} {{file.allLanguageNames}} {{file.languageName}} Layer Popup Close Download
-ver {{file.fileVersion}}
-{{file.fileSize}} MB
-{{file.fileModifiedDate}}
-ADDITIONAL INFORMATION
-Face-to-face support
-Digital Service Center
-Request Callback Service
-Face-to-Face Support
-Phone Support (India)
-Phone Support (Bangladesh, Sri Lanka, Nepal)
-Apps & Services Customer Support
-RC01_Static Content : This text is only displayed on the editor page
+# Samsung Galaxy Book4 360 (L005) - Official Product Manual & Technical Reference Sheet
+**Brand:** Samsung
+**Category:** LAPTOP
+**Model ID:** L005
+**Store Pricing:** Rs. 114,990
+**Current Stock Status:** In stock
+**Official Warranty Coverage:** 12 Months Manufacturer Brand Warranty
+**Launch Date:** 2024-02
+**Official Support Reference:** https://www.samsung.com/in/support/model/L005/
+
+---
+
+## 📖 Product Overview & Description
+Versatile 15.6-inch FHD Super AMOLED 2-in-1 touchscreen laptop with Intel Core 7 150U and S-Pen compatibility.
+
+---
+
+## ⚙️ Detailed Technical Specifications
+- **Display:** 15.6-inch FHD Super AMOLED Touchscreen (1920x1080)
+- **Processor:** Intel Core 7 150U (10 cores, up to 5.4GHz)
+- **Ram Storage:** 16GB LPDDR5, 512GB SSD
+- **Graphics:** Intel Graphics
+- **Battery:** 68Wh, 65W adapter
+- **Weight:** 1.46 kg
+- **Extras:** 360 convertible hinge, Dolby Atmos
+
+---
+
+
+### 💻 Galaxy Book Laptop Manual & Technical Reference
+1. **First-Time Setup & Windows 11 Activation:**
+   - Connect the included USB-C Fast Charger before turning on for the first time.
+   - Press the Power Button with integrated Fingerprint Sensor for instant Windows Hello login.
+   - Run Samsung Update and Windows Update to install latest Intel/NVIDIA graphics drivers.
+2. **Samsung Ecosystem Integration:**
+   - **Second Screen:** Use your Galaxy Tab S9/S8 as a wireless secondary display.
+   - **Multi Control:** Use laptop keyboard and touchpad to control your Galaxy smartphone seamlessly.
+   - **Quick Share:** High-speed peer-to-peer file transfer between Samsung devices.
+   - **Samsung Studio:** AI-powered video editing and subtitle generation.
+3. **Performance & Cooling Modes:**
+   - Press Fn + F11 to toggle Performance Modes: Silent, Optimized, and High Performance.
+   - Dual-fan vapor chamber thermal management prevents CPU/GPU throttling during 4K video rendering.
+4. **Laptop Maintenance & Care:**
+   - Clean the 3K AMOLED screen only with a dry microfiber cloth (avoid alcohol sprays).
+   - Keep air intake vents on the bottom panel clear of dust and fabric.
+
+
+---
+
+## 🛡️ Warranty Terms & TechStore Service Desk Support
+- **Warranty Period:** 12 Months from date of purchase.
+- **Genuine Replacement:** 100% free parts and labor for manufacturing and hardware defects.
+- **Service Center Support:** TechStore Walk-in Service Center:
+  - **Address:** Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066
+  - **Hours:** 10:00 AM – 9:00 PM Daily (Monday to Sunday)
+  - **Helpline Phone:** +91 9087086182
+  - **WhatsApp Support:** Instant technician assistance available online.
