@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { 
   Sparkles, 
   Copy, 
@@ -10,7 +12,10 @@ import {
   RotateCw,
   Store,
   CheckCircle2,
-  FileText
+  FileText,
+  Phone,
+  PhoneCall,
+  MessageCircle
 } from "lucide-react";
 
 export function MessageItem({ message, onRetry }) {
@@ -46,48 +51,94 @@ export function MessageItem({ message, onRetry }) {
     window.speechSynthesis.speak(utterance);
   };
 
-  // Helper to format assistant response with bold highlights and numbered steps
-  const formatContent = (text) => {
-    if (!text) return null;
+  // ONLY show calling / WhatsApp options when explicitly asking for human assistance / contact details
+  const isHumanAssistance = Boolean(
+    message.intent === "human_assistance" ||
+    message.action === "human_support" ||
+    message.action === "call_store"
+  );
 
-    const lines = text.split('\n');
-    return lines.map((line, index) => {
-      // Step line e.g., "1. Go to Settings"
-      const stepMatch = line.match(/^(\d+\.)\s*(.*)$/);
-      if (stepMatch) {
+  const phoneNumber = message.phone || "+91 9087086182";
+  const telUrl = message.tel || "tel:+919087086182";
+  const waUrl = message.whatsapp || "https://wa.me/919087086182?text=Hello%20TechStore%2C%20I%20need%20human%20assistance";
+
+  const markdownComponents = {
+    a: ({ node, href, children, ...props }) => {
+      const isTel = href && href.startsWith("tel:");
+      if (isTel) {
         return (
-          <div key={index} className="flex items-start gap-2.5 my-1.5 pl-1">
-            <span className="flex-shrink-0 flex items-center justify-center w-5 h-5 rounded-full bg-blue-50 text-blue-900 text-xs font-semibold border border-blue-200">
-              {stepMatch[1].replace('.', '')}
-            </span>
-            <span className="text-slate-800 text-[14.5px] leading-relaxed">
-              {stepMatch[2]}
-            </span>
-          </div>
+          <a
+            href={href}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 my-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs font-semibold shadow-xs transition"
+            {...props}
+          >
+            <PhoneCall className="w-3.5 h-3.5" />
+            {children}
+          </a>
         );
       }
-
-      // Note line e.g., "Note: Make sure..."
-      if (line.toLowerCase().startsWith('note:')) {
-        return (
-          <div key={index} className="my-2.5 p-3 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-start gap-2">
-            <FileText className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
-            <span>{line}</span>
-          </div>
-        );
-      }
-
-      // Empty line
-      if (!line.trim()) {
-        return <div key={index} className="h-2" />;
-      }
-
       return (
-        <p key={index} className="text-slate-800 text-[14.5px] leading-relaxed">
-          {line}
-        </p>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline font-medium"
+          {...props}
+        >
+          {children}
+        </a>
       );
-    });
+    },
+    table: ({ node, ...props }) => (
+      <div className="my-3.5 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-xs">
+        <table className="w-full text-left text-[13.5px] border-collapse" {...props} />
+      </div>
+    ),
+    thead: ({ node, ...props }) => (
+      <thead className="bg-slate-100/90 border-b border-slate-200 text-slate-800 font-semibold" {...props} />
+    ),
+    th: ({ node, ...props }) => (
+      <th className="px-4 py-3 font-semibold text-slate-800 text-xs tracking-wider uppercase border-r border-slate-200 last:border-r-0 whitespace-nowrap" {...props} />
+    ),
+    tbody: ({ node, ...props }) => (
+      <tbody className="divide-y divide-slate-100" {...props} />
+    ),
+    tr: ({ node, ...props }) => (
+      <tr className="hover:bg-blue-50/50 transition-colors even:bg-slate-50/60" {...props} />
+    ),
+    td: ({ node, ...props }) => (
+      <td className="px-4 py-2.5 text-slate-700 border-r border-slate-100 last:border-r-0 align-top text-[13.5px] leading-relaxed" {...props} />
+    ),
+    p: ({ node, ...props }) => (
+      <p className="text-slate-800 text-[14.5px] leading-relaxed my-2 first:mt-0 last:mb-0" {...props} />
+    ),
+    ul: ({ node, ...props }) => (
+      <ul className="my-2 space-y-1.5 list-disc list-outside pl-5 text-slate-800 text-[14.5px] leading-relaxed" {...props} />
+    ),
+    ol: ({ node, ...props }) => (
+      <ol className="my-2 space-y-2 list-decimal list-outside pl-5 text-slate-800 text-[14.5px] leading-relaxed" {...props} />
+    ),
+    li: ({ node, ...props }) => (
+      <li className="text-slate-800 leading-relaxed text-[14.5px] pl-1" {...props} />
+    ),
+    strong: ({ node, ...props }) => (
+      <strong className="font-semibold text-slate-900" {...props} />
+    ),
+    blockquote: ({ node, ...props }) => (
+      <div className="my-3 p-3.5 rounded-xl bg-amber-50/80 border border-amber-200 text-amber-900 text-xs flex items-start gap-2.5">
+        <FileText className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+        <div className="leading-relaxed" {...props} />
+      </div>
+    ),
+    code: ({ node, inline, ...props }) => (
+      inline ? (
+        <code className="px-1.5 py-0.5 rounded bg-slate-100 text-blue-900 text-xs font-mono border border-slate-200" {...props} />
+      ) : (
+        <pre className="my-2 p-3.5 rounded-xl bg-slate-900 text-slate-100 text-xs overflow-x-auto font-mono">
+          <code {...props} />
+        </pre>
+      )
+    ),
   };
 
   if (isUser) {
@@ -135,9 +186,51 @@ export function MessageItem({ message, onRetry }) {
             )}
           </div>
 
+          {/* Human Assistance Options Banner (ONLY shown on human_assistance intent) */}
+          {isHumanAssistance && (
+            <div className="my-3.5 p-4 rounded-2xl bg-gradient-to-r from-slate-900 via-blue-950 to-indigo-950 text-white shadow-md border border-slate-700/60">
+              <div className="flex items-center gap-3 mb-3 pb-2.5 border-b border-white/10">
+                <div className="w-9 h-9 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center flex-shrink-0">
+                  <PhoneCall className="w-4 h-4 text-emerald-400" />
+                </div>
+                <div>
+                  <p className="text-[11px] text-blue-200 uppercase tracking-wider font-semibold">Direct Human Support Options</p>
+                  <p className="text-xs text-slate-300">Choose your preferred way to connect with our store team:</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                {/* Option 1: Call Button */}
+                <a
+                  href={telUrl}
+                  className="flex-1 px-4 py-2.5 bg-blue-600 hover:bg-blue-500 active:scale-95 text-white text-xs font-semibold rounded-xl shadow-xs transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Phone className="w-3.5 h-3.5 text-white" />
+                  Call {phoneNumber}
+                </a>
+
+                {/* Option 2: WhatsApp Button */}
+                <a
+                  href={waUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-semibold rounded-xl shadow-xs transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-white" />
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+          )}
+
           {/* Formatted Text Body */}
-          <div className="space-y-1.5">
-            {formatContent(message.content)}
+          <div className="text-slate-800 text-[14.5px]">
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={markdownComponents}
+            >
+              {message.content}
+            </ReactMarkdown>
           </div>
 
           {/* Bottom Action Toolbar */}

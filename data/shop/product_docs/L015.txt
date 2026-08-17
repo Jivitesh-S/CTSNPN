@@ -1,0 +1,35 @@
+AI Suggested Searches
+Galaxy Book6 Pro, 40.62 cm, Ultra X7, 32 GB, Copilot+ PC
+Remaster picture feature on Samsung Galaxy Book4 series
+Moisture prevention tips for Samsung Laptops (Galaxy Book)
+Additional Information
+Support Alert Moisture prevention tips for Samsung Laptops (Galaxy Book) Jun 16, 2026
+Support News End of support for Windows 10 Aug 18, 2025
+support product detail
+Software Using the SW Update Application How to Video for Samsung PC. Find more about 'Using the SW Update Application' with Samsung Support.
+Guide/Others How to fix Samsung laptop battery is not charging FAQ for Laptop. Find more about How to resolve charging related issues in Samsung Laptop?
+Guide/Others How to realign the taskbar on your Samsung Galaxy Book2 Series? DIY video to know how to realign the taskbar on your Samsung Galaxy Book2 Series
+Guide/Others How to use the ‘Quick Share’ feature on your Samsung Galaxy Book2 Series? DIY video to know how to use the Quick Share feature on your Samsung Galaxy Book2 Series
+Hardware How to improve the battery life of your Samsung Galaxy Book2 Series? DIY video to know how to improve the battery life of your samsung galaxy book2 series
+What is MIMO technology? FAQ for Samsung PC. Find more about 'What is MIMO technology?' with Samsung Support.
+Guide/Others How to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series? DIY video to know how to connect your Galaxy Buds2 to your Samsung Galaxy Book2 Series
+Guide/Others How to turn on Battery saver Find out more about How to turn on Battery saver with Samsung Support
+Guide/Others Moisture prevention tips for Samsung Laptops (Galaxy Book) FAQ for Samsung Laptop. Find more about "moisture prevention tips for samsung laptops" with Samsung support.
+Guide/Others End of support for Windows 10 FAQ for Samsung PC. Find more about end of support for Windows 10 with Samsung Support.
+Guide/Others How to use PC Diagnostics on your Samsung Galaxy Book6 FAQ for Samsung PC. Find out how to use PC Diagnostics on your Samsung Galaxy Book6 with Samsung Support.
+{{filterInfo.title}}
+{{contentInfo.symptomName}} {{contentInfo.title}} {{contentInfo.content}}
+{"softwares":[],"manuals":[{"description":"User Manual(Windows 11)","englishDescription":"User Manual(Windows 11)","fileName":"94xXJG_96xXJG_Win11_UG_ENG_Rev.1.1_260511.pdf","fileModifiedDate":"Jun 08. 2026","fileModifiedDateCalendar":1780869660000,"fileVersion":"1.1","fileSize":"1.57","contentsTypeCode":"UM","filePath":"UM/202606/20260608155618564/94xXJG_96xXJG_Win11_UG_ENG_Rev.1.1_260511.pdf","fileID":11488727,"viewCount":0,"downloadUrl":"https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_IN&OriginYN=N&ModelType=N&ModelName=NP960XJGD-EXP&CttFileID=11488727&CDCttType=UM&VPath=UM%2F202606%2F20260608155618564%2F94xXJG_96xXJG_Win11_UG_ENG_Rev.1.1_260511.pdf","osList":null,"areaList":[{"code":"AT","orgCode":"AT"},{"code":"BE","orgCode":"BE"},{"code":"CA","orgCode":"CA"},{"code":"CL","orgCode":"CL"},{"code":"DE","orgCode":"DE"},{"code":"DK","orgCode":"DK"},{"code":"ES","orgCode":"ES"},{"code":"FI","orgCode":"FI"},{"code":"FR","orgCode":"FR"},{"code":"GB","orgCode":"GB"},{"code":"HK","orgCode":"HK"},{"code":"HU","orgCode":"HU"},{"code":"IE","orgCode":"IE"},{"code":"IN","orgCode":"IN"},{"code":"IS","orgCode":"IS"},{"code":"IT","orgCode":"IT"},{"code":"LU","orgCode":"LU"},{"code":"NL","orgCode":"NL"},{"code":"NO","orgCode":"NO"},{"code":"PL","orgCode":"PL"},{"code":"SE","orgCode":"SE"},{"code":"UA","orgCode":"UA"}],"languageList":[{"code":"EN","orgCode":"EN","name":"ENGLISH"}]}]}
+https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx
+Language Click to Expand
+{{file.description}} ver {{file.fileVersion}} {{file.fileSize}} MB {{file.fileModifiedDate}} {{file.osNames}} {{file.languageName}} {{file.languageName}} {{file.allLanguageNames}} {{file.languageName}} Layer Popup Close Download
+ver {{file.fileVersion}}
+{{file.fileSize}} MB
+{{file.fileModifiedDate}}
+ADDITIONAL INFORMATION
+Face-to-face support
+Digital Service Center
+Phone Support (India)
+Phone Support (Bangladesh, Sri Lanka, Nepal)
+Apps & Services Customer Support
+RC01_Static Content : This text is only displayed on the editor page

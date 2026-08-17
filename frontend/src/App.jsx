@@ -22,25 +22,25 @@ const SAMPLE_CATEGORIES = [
     icon: Sparkles,
     title: "Phone Prices & Specs",
     description: "Prices, specs and stock for all smartphones.",
-    query: "What phones do you have and their prices?"
+    query: "Phone Prices & Specs"
   },
   {
     icon: Sparkles,
-    title: "Stock Check",
-    description: "Is a product in stock right now? Ask about availability.",
-    query: "What products are in stock right now?"
+    title: "Laptop Buying Advice",
+    description: "Find the best laptop recommendations for your budget.",
+    query: "Laptop Buying Advice"
   },
   {
     icon: Sparkles,
-    title: "Warranty & Policies",
-    description: "Warranty, returns, delivery and repairs information.",
-    query: "What is your return and warranty policy?"
+    title: "Accessories in Stock",
+    description: "Check currently available accessories, watches & audio.",
+    query: "Accessories in Stock"
   },
   {
     icon: Sparkles,
-    title: "Buying Advice",
-    description: "Get recommendations for any budget.",
-    query: "Best phone under Rs. 25,000?"
+    title: "Warranty & Returns",
+    description: "Warranty, returns, replacement and repairs policy.",
+    query: "Warranty & Returns"
   }
 ];
 
@@ -145,6 +145,11 @@ function App() {
           content: data.answer,
           similarity_score: data.similarity_score,
           relevant: data.relevant,
+          intent: data.intent,
+          action: data.action,
+          phone: data.phone || (data.intent === "human_assistance" ? "+91 9087086182" : null),
+          tel: data.tel || (data.intent === "human_assistance" ? "tel:+919087086182" : null),
+          whatsapp: data.whatsapp || (data.intent === "human_assistance" ? "https://wa.me/919087086182?text=Hello%20TechStore%2C%20I%20need%20human%20assistance" : null),
         },
       ]);
     } catch (error) {

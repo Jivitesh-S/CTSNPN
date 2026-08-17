@@ -56,6 +56,52 @@ SUPPORT_CODE_MAP = {
     "A001": "SM-R630NZAAINU",  # Galaxy Buds3 Pro
     "A002": "SM-R530NZAAINU",  # Galaxy Buds2 Pro
     "A008": "SM-R390NZSAINU",  # Galaxy Fit3
+    # ---- 2025 / 2026 generation (live support pages) ----
+    "P020": "SM-S948BZKBINS",  # Galaxy S26 Ultra (verified live)
+    "P021": "SM-S947BZKBINS",  # Galaxy S26+
+    "P022": "SM-S942BZKBINS",  # Galaxy S26
+    "P023": "SM-F966BDBDINS",  # Galaxy Z Fold7
+    "P024": "SM-F766BLBAINS",  # Galaxy Z Flip7
+    "P025": "SM-F761BZGCINS",  # Galaxy Z Flip7 FE
+    "P026": "SM-A566EZKAINS",  # Galaxy A56 5G
+    "P027": "SM-A366EZKAINS",  # Galaxy A36 5G
+    "P028": "SM-S761BZGCINS",  # Galaxy S25 FE
+    "A015": "SM-L320NZKAINU",  # Galaxy Watch8 40mm
+    "A016": "SM-L330NZKAINU",  # Galaxy Watch8 44mm
+    "A017": "SM-L505NZKAINU",  # Galaxy Watch8 Classic
+    "A018": "SM-L716BZKAINU",  # Galaxy Watch Ultra 2
+    "A019": "SM-Q511NZAAINU",  # Galaxy Ring 2
+    "A020": "SM-R540NZAAINU",  # Galaxy Buds4
+    "A021": "SM-R640NZAAINU",  # Galaxy Buds4 Pro
+    "L015": "NP960XJG-KG4IN",  # Galaxy Book6 Pro
+    "L016": "NP960XJX-KG1IN",  # Galaxy Book6 Ultra
+    "L017": "NP750XJG-KG1IN",  # Galaxy Book6
+}
+
+# Official Samsung India product/specs page for each new product.
+# Used as a fallback when the per-model support page 404s, so the
+# doc still contains the full official specification content.
+
+SPECS_PAGE_MAP = {
+    "P020": "https://www.samsung.com/in/smartphones/galaxy-s26-ultra/specs/",
+    "P021": "https://www.samsung.com/in/smartphones/galaxy-s26-plus/specs/",
+    "P022": "https://www.samsung.com/in/smartphones/galaxy-s26/specs/",
+    "P023": "https://www.samsung.com/in/smartphones/galaxy-z-fold7/specs/",
+    "P024": "https://www.samsung.com/in/smartphones/galaxy-z-flip7/specs/",
+    "P025": "https://www.samsung.com/in/smartphones/galaxy-z-flip7-fe/specs/",
+    "P026": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a56-5g-awesome-graphite-256gb-sm-a566ezkhins",
+    "P027": "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a36-5g-awesome-black-256gb-sm-a366ezkkins/",
+    "P028": "https://news.samsung.com/in/meet-samsung-galaxy-s25-fe-the-gateway-to-the-galaxy-ai-and-flagship-essentials",
+    "A015": "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch8-40mm-graphite-bluetooth-sm-l320ndaains/",
+    "A016": "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch8-44mm-graphite-bluetooth-sm-l330ndaains/",
+    "A017": "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch8-classic-46mm-black-lte-sm-l505fzkains/",
+    "A018": "https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch-ultra2-titanium-silver-lte-sm-l715fzsains/",
+    "A019": "https://www.samsung.com/in/rings/all-rings/",
+    "A020": "https://www.samsung.com/in/audio-sound/galaxy-buds/galaxy-buds4-black-sm-r540nzkainu/",
+    "A021": "https://www.samsung.com/in/audio-sound/galaxy-buds4-pro/buy/",
+    "L015": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book6-pro/",
+    "L016": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book6-ultra-ultra-7-32gb-1tb-np960ujh-xg3in/",
+    "L017": "https://www.samsung.com/in/computers/galaxy-book/galaxy-book6-16-inch-touch-u7-ultra-7-16gb-512gb-np760xjg-kg2in/",
 }
 
 SUPPORT_URL_TEMPLATE = (
@@ -538,6 +584,51 @@ def extract_text(html: str) -> str:
     return "\n".join(unique)
 
 
+def fetch_live_doc_fallback(
+    product_id: str,
+    name: str,
+    out_file: Path,
+    failed: list,
+) -> None:
+    """Try the official Samsung specs/product page when the per-model
+    support page fails. On success the last failure entry is removed
+    so the run summary reflects the recovered doc."""
+
+    specs_url = SPECS_PAGE_MAP.get(product_id)
+
+    if not specs_url:
+        return
+
+    print(f"   fallback: {specs_url}")
+
+    try:
+
+        response = requests.get(
+            specs_url,
+            headers=HEADERS,
+            timeout=TIMEOUT_SECONDS,
+        )
+
+        if response.status_code != 200:
+            return
+
+        content = extract_text(response.text)
+
+        if len(content) < MIN_TEXT_LENGTH:
+            return
+
+        out_file.write_text(content, encoding="utf-8")
+
+        if failed:
+            failed.pop()
+
+        print(f"   fallback saved {len(content)} chars")
+
+    except Exception as error:
+
+        print(f"   fallback failed: {str(error)[:80]}")
+
+
 def fetch_live_docs() -> None:
 
     if not CATALOG_FILE.exists():
@@ -600,6 +691,13 @@ def fetch_live_docs() -> None:
                         f"HTTP {response.status_code}",
                     )
                 )
+
+                fetch_live_doc_fallback(
+                    product_id,
+                    name,
+                    out_file,
+                    failed,
+                )
                 continue
 
             content = extract_text(response.text)
@@ -612,6 +710,13 @@ def fetch_live_docs() -> None:
                         name,
                         "content too short",
                     )
+                )
+
+                fetch_live_doc_fallback(
+                    product_id,
+                    name,
+                    out_file,
+                    failed,
                 )
                 continue
 
@@ -632,6 +737,13 @@ def fetch_live_docs() -> None:
                     name,
                     str(error)[:80],
                 )
+            )
+
+            fetch_live_doc_fallback(
+                product_id,
+                name,
+                out_file,
+                failed,
             )
 
         time.sleep(0.5)

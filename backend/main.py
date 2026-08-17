@@ -112,6 +112,14 @@ class ChatResponse(BaseModel):
 
     shop_name: Optional[str] = None
 
+    action: Optional[str] = None
+
+    phone: Optional[str] = None
+
+    tel: Optional[str] = None
+
+    whatsapp: Optional[str] = None
+
 
 # =========================================================
 # SHOP MODELS

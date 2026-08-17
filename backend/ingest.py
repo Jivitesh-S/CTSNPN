@@ -7,6 +7,7 @@ from pathlib import Path
 import chromadb
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
+import torch
 
 from backend import db as shop_db
 
@@ -230,6 +231,7 @@ def build_records() -> list:
                         "shop_id": shop_id,
                         "shop_name": shop.get("name", shop_id),
                         "name": product.get("name", ""),
+                        "product_name": product.get("name", ""),
                         "brand": product.get("brand", ""),
                         "category": product.get("category", ""),
                         "price": product.get("price", 0),
@@ -590,6 +592,9 @@ def sync_index(
 
     if embedding_model is None:
 
+        print("Setting torch threads...")
+        torch.set_num_threads(os.cpu_count() or 8)
+
         print("Loading embedding model...")
 
         embedding_model = SentenceTransformer(EMBEDDING_MODEL)
@@ -641,8 +646,8 @@ def sync_index(
 
     embeddings = embedding_model.encode(
         documents,
-        show_progress_bar=False,
-        batch_size=32,
+        show_progress_bar=True,
+        batch_size=128,
         normalize_embeddings=True,
     )
 

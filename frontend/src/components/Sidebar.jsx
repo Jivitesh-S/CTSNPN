@@ -38,12 +38,12 @@ export function Sidebar({
   );
 
   const quickTopics = [
-    { icon: Smartphone, title: "Phone Prices & Specs", query: "Price of Samsung Galaxy S25?" },
-    { icon: Laptop, title: "Laptop Buying Advice", query: "Best laptop for students under Rs. 60,000?" },
-    { icon: Headphones, title: "Accessories in Stock", query: "Do you have Galaxy Buds3 Pro in stock?" },
-    { icon: PolicyIcon, title: "Warranty & Returns", query: "What is your return and replacement policy?" },
-    { icon: Wrench, title: "Troubleshooting", query: "My phone won't charge, what should I do?" },
-    { icon: ShoppingBag, title: "Best Sellers", query: "What is the best selling phone right now?" }
+    { icon: Smartphone, title: "Phone Prices & Specs", query: "Phone Prices & Specs" },
+    { icon: Laptop, title: "Laptop Buying Advice", query: "Laptop Buying Advice" },
+    { icon: Headphones, title: "Accessories in Stock", query: "Accessories in Stock" },
+    { icon: PolicyIcon, title: "Warranty & Returns", query: "Warranty & Returns" },
+    { icon: Wrench, title: "Troubleshooting", query: "Troubleshooting" },
+    { icon: ShoppingBag, title: "Best Sellers", query: "Best Sellers" }
   ];
 
   return (

@@ -17,7 +17,8 @@
       "extras": "Adaptive ANC, 360 Audio, IP57, wireless charging case"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-R630NZAAINU/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-R630NZAAINU/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -37,7 +38,8 @@
       "extras": "Intelligent ANC, 360 Audio, IPX7, wireless charging case"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-R530NZAAINU/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-R530NZAAINU/",
+    "launch_date": "2022-08"
   },
   {
     "shop_id": "S001",
@@ -57,7 +59,8 @@
       "extras": "ANC, 360 Audio, IP57, wireless charging case"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/audio-devices/buds3/"
+    "support_url": "https://www.samsung.com/in/support/audio-devices/buds3/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -77,7 +80,8 @@
       "extras": "ANC, wing tips, IPX2"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/audio-devices/buds-fe/"
+    "support_url": "https://www.samsung.com/in/support/audio-devices/buds-fe/",
+    "launch_date": "2023-10"
   },
   {
     "shop_id": "S001",
@@ -97,7 +101,8 @@
       "extras": "BioActive sensor, ECG, sleep coaching, 50m water resistance"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/wearables/watch7-40mm/"
+    "support_url": "https://www.samsung.com/in/support/wearables/watch7-40mm/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -117,7 +122,8 @@
       "extras": "BioActive sensor, ECG, dual-frequency GPS, 50m water resistance"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/wearables/watch7-44mm/"
+    "support_url": "https://www.samsung.com/in/support/wearables/watch7-44mm/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -137,7 +143,8 @@
       "extras": "Titanium body, 10ATM, dual-frequency GPS, BioActive sensor"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/wearables/watch-ultra/"
+    "support_url": "https://www.samsung.com/in/support/wearables/watch-ultra/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -157,7 +164,8 @@
       "extras": "100+ workout modes, sleep tracking, 5ATM water resistance"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-R390NZSAINU/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-R390NZSAINU/",
+    "launch_date": "2024-02"
   },
   {
     "shop_id": "S001",
@@ -177,7 +185,8 @@
       "extras": "Sleep tracking, heart rate, skin temperature, 10ATM"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/wearables/ring/"
+    "support_url": "https://www.samsung.com/in/support/wearables/ring/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -197,7 +206,8 @@
       "extras": "Super Fast Charging 2.0, compact design"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/45w-super-fast-charger/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/45w-super-fast-charger/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -217,7 +227,8 @@
       "extras": "Super Fast Charging, compact design"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/25w-super-fast-charger/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/25w-super-fast-charger/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -237,7 +248,8 @@
       "extras": "Fast charging, LED indicator"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/10000mah-25w-power-bank/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/10000mah-25w-power-bank/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -257,7 +269,8 @@
       "extras": "Laptop charging, LED indicator, travel-friendly"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/20000mah-45w-power-bank/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/20000mah-45w-power-bank/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -277,7 +290,8 @@
       "extras": "UWB precision find, IP67, ring hole"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/smarttag2/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/smarttag2/",
+    "launch_date": "2023-10"
   },
   {
     "shop_id": "S001",
@@ -302,7 +316,8 @@
       "extras": "Backlit keyboard, fingerprint reader"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -327,7 +342,8 @@
       "extras": "AMOLED touchscreen, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-pro/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-pro/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -352,7 +368,8 @@
       "extras": "360 hinge, S Pen in box, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-360/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-360/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -377,7 +394,8 @@
       "extras": "45 TOPS NPU, 120Hz AMOLED, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-edge/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-edge/",
+    "launch_date": "2024-06"
   },
   {
     "shop_id": "S001",
@@ -402,7 +420,8 @@
       "extras": "RTX 4070, studio-grade display, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-ultra/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book4-ultra/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -427,7 +446,8 @@
       "extras": "AMOLED touchscreen, Galaxy AI integration"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book5-pro/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book5-pro/",
+    "launch_date": "2025-02"
   },
   {
     "shop_id": "S001",
@@ -452,7 +472,8 @@
       "extras": "Fingerprint reader, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3/",
+    "launch_date": "2023-02"
   },
   {
     "shop_id": "S001",
@@ -477,7 +498,8 @@
       "extras": "S Pen in box, 360 hinge"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3-pro-360/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3-pro-360/",
+    "launch_date": "2023-02"
   },
   {
     "shop_id": "S001",
@@ -502,7 +524,8 @@
       "extras": "RTX 4050, studio display, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3-ultra/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3-ultra/",
+    "launch_date": "2023-02"
   },
   {
     "shop_id": "S001",
@@ -527,7 +550,8 @@
       "extras": "S Pen, 360 hinge, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3-360/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book3-360/",
+    "launch_date": "2023-02"
   },
   {
     "shop_id": "S001",
@@ -552,7 +576,8 @@
       "extras": "S Pen support, backlit keyboard"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book2-360/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book2-360/",
+    "launch_date": "2022-04"
   },
   {
     "shop_id": "S001",
@@ -577,7 +602,8 @@
       "extras": "Fanless silent design, LTE option"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book-go/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book-go/",
+    "launch_date": "2022-06"
   },
   {
     "shop_id": "S001",
@@ -602,7 +628,8 @@
       "extras": "Google AI, lightweight aluminum body"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/chromebook-plus/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/chromebook-plus/",
+    "launch_date": "2024-10"
   },
   {
     "shop_id": "S001",
@@ -627,7 +654,8 @@
       "extras": "S Pen in box, Galaxy AI integration"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/book5-pro-360/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/book5-pro-360/",
+    "launch_date": "2025-02"
   },
   {
     "shop_id": "S001",
@@ -651,7 +679,8 @@
       "extras": "S Pen included, Titanium frame, IP68, 7 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-S938BZBCINS/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-S938BZBCINS/",
+    "launch_date": "2025-01"
   },
   {
     "shop_id": "S001",
@@ -675,7 +704,8 @@
       "extras": "Galaxy AI, IP68, 7 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-S936BZSBINS/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-S936BZSBINS/",
+    "launch_date": "2025-01"
   },
   {
     "shop_id": "S001",
@@ -699,7 +729,8 @@
       "extras": "S Pen included, Titanium frame, IP68, 7 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-S928BZTCINS/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-S928BZTCINS/",
+    "launch_date": "2024-01"
   },
   {
     "shop_id": "S001",
@@ -723,7 +754,8 @@
       "extras": "Metal frame, IP67, Samsung Knox"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a555g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a555g/",
+    "launch_date": "2024-03"
   },
   {
     "shop_id": "S001",
@@ -747,7 +779,8 @@
       "extras": "2 days battery life, Gorilla Glass Victus+"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/m355g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/m355g/",
+    "launch_date": "2024-05"
   },
   {
     "shop_id": "S001",
@@ -771,7 +804,8 @@
       "extras": "Galaxy AI, IP68, 7 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-S931BZSCINS/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-S931BZSCINS/",
+    "launch_date": "2025-01"
   },
   {
     "shop_id": "S001",
@@ -795,7 +829,8 @@
       "extras": "Galaxy AI, IP68, 7 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/s24-fe/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/s24-fe/",
+    "launch_date": "2024-10"
   },
   {
     "shop_id": "S001",
@@ -819,7 +854,8 @@
       "extras": "IP67, Gorilla Glass Victus+"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a355g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a355g/",
+    "launch_date": "2024-03"
   },
   {
     "shop_id": "S001",
@@ -843,7 +879,8 @@
       "extras": "IP67, 6 generations OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a265g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a265g/",
+    "launch_date": "2025-03"
   },
   {
     "shop_id": "S001",
@@ -867,7 +904,8 @@
       "extras": "Expandable storage up to 1TB"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a255g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a255g/",
+    "launch_date": "2023-12"
   },
   {
     "shop_id": "S001",
@@ -891,7 +929,8 @@
       "extras": "6 generations OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a165g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a165g/",
+    "launch_date": "2024-10"
   },
   {
     "shop_id": "S001",
@@ -915,7 +954,8 @@
       "extras": "Expandable storage up to 1TB"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a155g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a155g/",
+    "launch_date": "2023-12"
   },
   {
     "shop_id": "S001",
@@ -939,7 +979,8 @@
       "extras": "Dedicated SD card slot"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/a06/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/a06/",
+    "launch_date": "2024-08"
   },
   {
     "shop_id": "S001",
@@ -963,7 +1004,8 @@
       "extras": "50MP selfie camera, slim 7.8mm design"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/m555g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/m555g/",
+    "launch_date": "2024-04"
   },
   {
     "shop_id": "S001",
@@ -987,7 +1029,8 @@
       "extras": "2 days battery life"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/m155g/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/m155g/",
+    "launch_date": "2024-04"
   },
   {
     "shop_id": "S001",
@@ -1011,7 +1054,8 @@
       "extras": "IP68, 5 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/s23-fe/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/s23-fe/",
+    "launch_date": "2023-10"
   },
   {
     "shop_id": "S001",
@@ -1035,7 +1079,8 @@
       "extras": "IP68, 4 years OS updates"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/mobile-devices/s23/"
+    "support_url": "https://www.samsung.com/in/support/mobile-devices/s23/",
+    "launch_date": "2023-02"
   },
   {
     "shop_id": "S001",
@@ -1059,7 +1104,8 @@
       "extras": "Armor Aluminum, IP48, Galaxy AI"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-F741BLBAINS/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-F741BLBAINS/",
+    "launch_date": "2024-07"
   },
   {
     "shop_id": "S001",
@@ -1083,6 +1129,457 @@
       "extras": "Armor Aluminum, IP48, S Pen support, DeX"
     },
     "created_at": "2026-08-15T18:19:42.206621",
-    "support_url": "https://www.samsung.com/in/support/model/SM-F956BDBDINS/"
+    "support_url": "https://www.samsung.com/in/support/model/SM-F956BDBDINS/",
+    "launch_date": "2024-07"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P020",
+    "name": "Samsung Galaxy S26 Ultra",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 139999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Samsung's 2026 flagship with a 6.9-inch QHD+ Dynamic AMOLED 2X display with Privacy Display technology, Snapdragon 8 Elite Gen 5 for Galaxy, 200MP camera with 100x Space Zoom, S Pen and Galaxy AI.",
+    "specs": {
+      "display": "6.9-inch Dynamic AMOLED 2X, QHD+, 120Hz, Privacy Display",
+      "processor": "Snapdragon 8 Elite Gen 5 for Galaxy",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "200MP main + 50MP ultra-wide + 50MP 5x periscope + 10MP 3x; 12MP front",
+      "battery": "5000mAh, 60W fast charging, 25W wireless",
+      "os": "Android 16, One UI 8",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C",
+      "extras": "S Pen included, Titanium frame, IP68, Privacy Display, Galaxy AI, 7 years OS updates"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-02",
+    "support_url": "https://www.samsung.com/in/support/model/SM-S948BZKBINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P021",
+    "name": "Samsung Galaxy S26+",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 119999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Large-screen flagship with a 6.7-inch QHD+ Dynamic AMOLED 2X 120Hz display, 2nm Exynos 2600 processor and Galaxy AI for everyday power users.",
+    "specs": {
+      "display": "6.7-inch Dynamic AMOLED 2X, QHD+, 120Hz",
+      "processor": "Exynos 2600 (2nm)",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "50MP main + 12MP ultra-wide + 10MP 3x telephoto; 12MP front",
+      "battery": "4900mAh, 45W fast charging, 15W wireless",
+      "os": "Android 16, One UI 8",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C",
+      "extras": "Galaxy AI, IP68, Privacy Display, 7 years OS updates"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-02",
+    "support_url": "https://www.samsung.com/in/support/model/SM-S947BZKBINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P022",
+    "name": "Samsung Galaxy S26",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 87999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Compact flagship with a 6.3-inch FHD+ Dynamic AMOLED 2X 120Hz display, 2nm Exynos 2600 and the full Galaxy AI suite in a 167g pocket-friendly body.",
+    "specs": {
+      "display": "6.3-inch Dynamic AMOLED 2X, FHD+, 120Hz",
+      "processor": "Exynos 2600 (2nm)",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "50MP main + 12MP ultra-wide + 10MP 3x telephoto; 12MP front",
+      "battery": "4300mAh, 25W fast charging, 15W wireless",
+      "os": "Android 16, One UI 8",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C",
+      "extras": "Galaxy AI, IP68, 7 years OS updates"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-02",
+    "support_url": "https://www.samsung.com/in/support/model/SM-S942BZKBINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P023",
+    "name": "Samsung Galaxy Z Fold7",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 174999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Samsung's thinnest and lightest book-style foldable with an 8-inch QXGA+ AMOLED 120Hz inner display, 200MP camera with ProVisual Engine and Snapdragon 8 Elite.",
+    "specs": {
+      "display": "8-inch Dynamic AMOLED 2X, QXGA+, 120Hz (inner); 6.5-inch cover",
+      "processor": "Snapdragon 8 Elite",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "200MP main + 12MP ultra-wide + 10MP 3x telephoto; 10MP front",
+      "battery": "4400mAh, 25W fast charging, 15W wireless",
+      "os": "Android 15, One UI 8",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C",
+      "extras": "Armor Aluminum, IP48, S Pen support, Galaxy AI, Gemini Live"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-F966BDBDINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P024",
+    "name": "Samsung Galaxy Z Flip7",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 109999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Compact flip foldable with a 6.9-inch AMOLED 120Hz inner display, edge-to-edge 4.1-inch FlexWindow cover screen and Exynos 2500 processor.",
+    "specs": {
+      "display": "6.9-inch Dynamic AMOLED 2X, FHD+, 120Hz (inner); 4.1-inch FlexWindow",
+      "processor": "Exynos 2500",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "50MP main + 12MP ultra-wide; 10MP front",
+      "battery": "4300mAh, 25W fast charging, 15W wireless",
+      "os": "Android 15, One UI 8",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C",
+      "extras": "Armor FlexHinge, IPX8, Gorilla Glass Victus 2, Galaxy AI"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-F766BLBAINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P025",
+    "name": "Samsung Galaxy Z Flip7 FE",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 89999,
+    "stock": "Low stock",
+    "warranty_months": 12,
+    "description": "Fan Edition flip foldable with a 6.7-inch AMOLED 120Hz inner display, 3.4-inch cover screen and Exynos 2400 at a more accessible price.",
+    "specs": {
+      "display": "6.7-inch Dynamic AMOLED 2X, FHD+, 120Hz (inner); 3.4-inch cover",
+      "processor": "Exynos 2400",
+      "ram": "8GB",
+      "storage": "128GB",
+      "camera": "50MP main + 12MP ultra-wide; 10MP front",
+      "battery": "4000mAh, 25W fast charging",
+      "os": "Android 15, One UI 8",
+      "connectivity": "5G, Wi-Fi 6E, Bluetooth 5.3, USB-C",
+      "extras": "Zero Gap Hinge, IPX8, Galaxy AI, Dual Preview"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-F761BZGCINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P026",
+    "name": "Samsung Galaxy A56 5G",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 41999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Mid-range 5G phone with a 6.7-inch Super AMOLED 120Hz display, 50MP OIS main camera, Exynos 1580 and 6 generations of OS updates.",
+    "specs": {
+      "display": "6.7-inch Super AMOLED, FHD+, 120Hz",
+      "processor": "Exynos 1580",
+      "ram": "8GB",
+      "storage": "128GB",
+      "camera": "50MP OIS main + 12MP ultra-wide + 5MP macro; 12MP front",
+      "battery": "5000mAh, 45W fast charging",
+      "os": "Android 15, One UI 7",
+      "connectivity": "5G, Wi-Fi 6, Bluetooth 5.3, USB-C",
+      "extras": "IP67, Gorilla Glass Victus+, 6 years OS updates, Galaxy AI"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-03",
+    "support_url": "https://www.samsung.com/in/support/model/SM-A566EZKAINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P027",
+    "name": "Samsung Galaxy A36 5G",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 32999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Value 5G phone with a 6.7-inch Super AMOLED 120Hz display, Snapdragon 6 Gen 3 and a 50MP OIS camera with 6 years of updates.",
+    "specs": {
+      "display": "6.7-inch Super AMOLED, FHD+, 120Hz",
+      "processor": "Snapdragon 6 Gen 3",
+      "ram": "8GB",
+      "storage": "128GB",
+      "camera": "50MP OIS main + 8MP ultra-wide + 5MP macro; 12MP front",
+      "battery": "5000mAh, 45W fast charging",
+      "os": "Android 15, One UI 7",
+      "connectivity": "5G, Wi-Fi 6, Bluetooth 5.3, USB-C",
+      "extras": "IP67, Gorilla Glass Victus+, 6 years OS updates"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-03",
+    "support_url": "https://www.samsung.com/in/support/model/SM-A366EZKAINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "P028",
+    "name": "Samsung Galaxy S25 FE",
+    "brand": "Samsung",
+    "category": "phone",
+    "price": 59999,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Fan Edition flagship with a 6.7-inch AMOLED 120Hz display, Exynos 2400e and a 4900mAh battery with 45W charging.",
+    "specs": {
+      "display": "6.7-inch Dynamic AMOLED 2X, FHD+, 120Hz",
+      "processor": "Exynos 2400e",
+      "ram": "8GB",
+      "storage": "128GB",
+      "camera": "50MP main + 12MP ultra-wide + 8MP 3x telephoto; 10MP front",
+      "battery": "4900mAh, 45W fast charging, 15W wireless",
+      "os": "Android 15, One UI 7",
+      "connectivity": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C",
+      "extras": "Galaxy AI, IP68, 7 years OS updates"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-09",
+    "support_url": "https://www.samsung.com/in/support/model/SM-S761BZGCINS/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A015",
+    "name": "Samsung Galaxy Watch8 40mm",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 32999,
+    "stock": "In stock",
+    "warranty_months": 6,
+    "description": "Slim 40mm smartwatch with a 3nm processor, 3000 nits display, BioActive sensor, Energy Score and Galaxy AI health coaching on Wear OS.",
+    "specs": {
+      "type": "Smartwatch",
+      "display": "1.3-inch Super AMOLED, 3000 nits",
+      "battery": "300mAh, up to 2 days",
+      "connectivity": "Bluetooth 5.3, NFC",
+      "extras": "BioActive sensor, Energy Score, antioxidant index, sleep coaching, 5ATM"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-L320NZKAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A016",
+    "name": "Samsung Galaxy Watch8 44mm",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 35999,
+    "stock": "In stock",
+    "warranty_months": 6,
+    "description": "Larger 44mm smartwatch with Bluetooth, 3nm processor and advanced BioActive health tracking with Galaxy AI.",
+    "specs": {
+      "type": "Smartwatch",
+      "display": "1.5-inch Super AMOLED, 3000 nits",
+      "battery": "425mAh, up to 2 days",
+      "connectivity": "Bluetooth 5.3, NFC",
+      "extras": "BioActive sensor, Energy Score, dual-band GPS, 5ATM"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-L330NZKAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A017",
+    "name": "Samsung Galaxy Watch8 Classic 46mm",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 46999,
+    "stock": "In stock",
+    "warranty_months": 6,
+    "description": "Classic 46mm smartwatch with a rotating bezel, stainless steel frame, 3nm processor, 64GB storage and Galaxy AI health features.",
+    "specs": {
+      "type": "Smartwatch",
+      "display": "1.5-inch Super AMOLED, sapphire crystal",
+      "battery": "445mAh, fast wireless charging",
+      "connectivity": "Bluetooth 5.3, NFC, dual-band GPS",
+      "extras": "Rotating bezel, stainless steel, 64GB, Gemini, Energy Score, safety siren"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2025-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-L505NZKAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A018",
+    "name": "Samsung Galaxy Watch Ultra 2",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 62999,
+    "stock": "Low stock",
+    "warranty_months": 6,
+    "description": "Rugged titanium smartwatch with an 800mAh battery, 5000-nit display and Snapdragon Wear Elite for diving and extreme sports.",
+    "specs": {
+      "type": "Rugged smartwatch",
+      "display": "1.52-inch Super AMOLED, 5000 nits",
+      "battery": "800mAh, up to 100 hours power saving",
+      "connectivity": "LTE, Bluetooth, NFC, dual-band GPS",
+      "extras": "Titanium body, EN13319 diving, 10ATM, BioActive sensor, Gemini"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-07",
+    "support_url": "https://www.samsung.com/in/support/model/SM-L716BZKAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A019",
+    "name": "Samsung Galaxy Ring 2",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 40999,
+    "stock": "In stock",
+    "warranty_months": 6,
+    "description": "Second-gen smart ring with slimmer 2g titanium design, 24/7 sleep and heart health tracking and up to 8 days of battery.",
+    "specs": {
+      "type": "Smart ring",
+      "material": "Titanium, ~2g",
+      "battery": "Up to 8 days",
+      "connectivity": "Bluetooth 5.4",
+      "extras": "Sleep tracking, heart rate, skin temperature, 10ATM, Galaxy AI insights"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-02",
+    "support_url": "https://www.samsung.com/in/support/model/SM-Q511NZAAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A020",
+    "name": "Samsung Galaxy Buds4",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 16999,
+    "stock": "In stock",
+    "warranty_months": 6,
+    "description": "Open-fit TWS earbuds with ANC, Super Clear Call, 24-bit/96kHz hi-fi audio and a transparent clamshell charging case.",
+    "specs": {
+      "type": "Open-type true wireless earbuds",
+      "driver": "1-way dynamic (11mm)",
+      "battery": "6 hours (ANC on), 30 hours with case",
+      "connectivity": "Bluetooth 6.1, seamless switching",
+      "extras": "ANC, 360 Audio, head gestures, Super Clear Call, Galaxy AI"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-02",
+    "support_url": "https://www.samsung.com/in/support/model/SM-R540NZAAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "A021",
+    "name": "Samsung Galaxy Buds4 Pro",
+    "brand": "Samsung",
+    "category": "accessory",
+    "price": 22999,
+    "stock": "In stock",
+    "warranty_months": 6,
+    "description": "Premium TWS earbuds with a 2-way speaker system, dual amplifiers, enhanced adaptive ANC, Voice Detect and 24-bit/96kHz hi-fi audio.",
+    "specs": {
+      "type": "True wireless earbuds",
+      "driver": "2-way (woofer + tweeter), dual amplifiers",
+      "battery": "7 hours (ANC on), 30 hours with case",
+      "connectivity": "Bluetooth 6.1, seamless switching",
+      "extras": "Adaptive ANC, Voice Detect, Siren Detect, 360 Audio, IP57, head gestures"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-02",
+    "support_url": "https://www.samsung.com/in/support/model/SM-R640NZAAINU/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "L015",
+    "name": "Samsung Galaxy Book6 Pro 16\"",
+    "brand": "Samsung",
+    "category": "laptop",
+    "price": 178990,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Premium AI laptop with a 16-inch Dynamic AMOLED 2X display, Intel Core Ultra X7 (Series 3), up to 50 TOPS NPU and up to 30 hours of battery.",
+    "specs": {
+      "display": "16-inch Dynamic AMOLED 2X, 3K, 1000 nits",
+      "processor": "Intel Core Ultra X7 / 7 / 5 (Series 3)",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "graphics": "Intel Arc",
+      "battery": "Up to 30 hours, 65W USB-C charger",
+      "weight": "1.24 kg (14\")",
+      "os": "Windows 11 (Copilot+)",
+      "connectivity": "Wi-Fi 7, Bluetooth 5.4, Thunderbolt 4, HDMI 2.1",
+      "extras": "50 TOPS NPU, Galaxy AI, Copilot+ PC, backlit keyboard"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-03",
+    "support_url": "https://www.samsung.com/in/support/model/NP960XJG-KG4IN/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "L016",
+    "name": "Samsung Galaxy Book6 Ultra 16\"",
+    "brand": "Samsung",
+    "category": "laptop",
+    "price": 242990,
+    "stock": "Low stock",
+    "warranty_months": 12,
+    "description": "Creator powerhouse with a 16-inch Dynamic AMOLED 2X display, Intel Core Ultra X7 (Series 3), RTX 5070 GPU and 32GB RAM in a 15.4mm chassis.",
+    "specs": {
+      "display": "16-inch Dynamic AMOLED 2X, 3K, 1000 nits",
+      "processor": "Intel Core Ultra X7 (Series 3)",
+      "ram": "32GB",
+      "storage": "1TB SSD",
+      "graphics": "NVIDIA GeForce RTX 5070 Laptop",
+      "battery": "Up to 30 hours, 100W USB-C charger",
+      "weight": "1.86 kg",
+      "os": "Windows 11 (Copilot+)",
+      "connectivity": "Wi-Fi 7, Bluetooth 5.4, Thunderbolt 4, HDMI 2.1",
+      "extras": "RTX 5070, 50 TOPS NPU, Galaxy AI, vapor chamber cooling"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-03",
+    "support_url": "https://www.samsung.com/in/support/model/NP960XJX-KG1IN/"
+  },
+  {
+    "shop_id": "S001",
+    "id": "L017",
+    "name": "Samsung Galaxy Book6 16\"",
+    "brand": "Samsung",
+    "category": "laptop",
+    "price": 127990,
+    "stock": "In stock",
+    "warranty_months": 12,
+    "description": "Everyday AI laptop with a 16-inch FHD display, Intel Core Ultra 7/5 (Series 3) and up to 49 TOPS NPU for students and office work.",
+    "specs": {
+      "display": "16-inch IPS, FHD+, 350 nits",
+      "processor": "Intel Core Ultra 7 / 5 (Series 3)",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "graphics": "Intel iGPU",
+      "battery": "61.2Wh, 45W USB-C charger",
+      "weight": "1.75 kg",
+      "os": "Windows 11 (Copilot+)",
+      "connectivity": "Wi-Fi 7, Bluetooth 5.4, USB-C, HDMI, USB-A",
+      "extras": "Copilot+ PC, 49 TOPS NPU, backlit keyboard"
+    },
+    "created_at": "2026-08-15T18:19:42.206621",
+    "launch_date": "2026-03",
+    "support_url": "https://www.samsung.com/in/support/model/NP750XJG-KG1IN/"
   }
 ]

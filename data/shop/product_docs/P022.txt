@@ -1,0 +1,318 @@
+The Samsung Galaxy S26 is a series of flagship Android -based smartphones manufactured, developed, and marketed by Samsung Electronics as part of its flagship Galaxy S series . They collectively serve as the successor to the Galaxy S25 series . The S26, S26+, and S26 Ultra were announced on February 25, 2026 at Samsung 's Galaxy Unpacked event in San Francisco , alongside the Galaxy Buds 4 series , and were released on March 11, 2026. [ 1 ] [ 2 ] [ 3 ] [ 4 ]
+The Galaxy S26 Ultra not only popularizes the housing of an integrated S-Pen but also introduces a new hardware-level technology called the Privacy Display, the first smartphone in the world to have a feature that decreases screen visibility from certain angles for enhanced privacy. [ 5 ] [ 6 ]
+Before its official announcement, rumors about the Galaxy S26 began to surface as early as July 2025, where it would be produced in three different versions: a Galaxy S26 Pro, an S26 Edge, and an S26 Ultra. [ 7 ] [ 8 ] [ 9 ] First builds of One UI 8.5 for the Galaxy S26 series were also spotted, suggesting that the line-up would be shipped with Android 16 and One UI 8.5. [ 10 ]
+In October 2025, it was reported that Samsung had cancelled development of the Galaxy S26 Edge due to poor sales of the Galaxy S25 Edge. [ 11 ] [ 12 ] [ 13 ] Reports also confirm that the Galaxy S26 Pro would be known as the standard Galaxy S26, [ 14 ] [ 15 ] while the Galaxy S26+ would launch next year. [ 16 ] [ 13 ] [ 17 ] Soon after, reports suggested that the Galaxy S26 launch would be delayed due to the cancellation of the S26 Edge, along with development issues with the line-up. [ 18 ] [ 19 ] [ 20 ]
+In November 2025, reports confirm that the Galaxy S26 series would be unveiled on February 25, 2026, in San Francisco . [ 21 ] [ 22 ]
+In January 2026, reports suggested that the Galaxy S26 series would be available on March 11, 2026. [ 23 ] In addition, renders of the supposed devices, alongside alleged specs, were also reported. [ 24 ]
+A week before its launch, a picture was posted showing the actual Galaxy S26+ that was listed for sale on Craigslist . [ 25 ]
+The Galaxy S26 series were announced during the Samsung's Galaxy Unpacked event in San Francisco on February 25, 2026, with its introduction of a Privacy Display, along with 60W Super Fast Charging on the Galaxy S26 Ultra. [ 1 ] [ 5 ] [ 6 ] Pre-orders began on that same day and were made available on March 11, 2026, in multiple countries. [ 1 ] [ 26 ]
+The Galaxy S26 series currently includes three models: the Galaxy S26, Galaxy S26+, and the Galaxy S26 Ultra. [ 27 ]
+The Galaxy S26 features a flat 6.3 in (160 mm) display (a slight increase from its predecessor ). The Galaxy S26+ and Galaxy S26 Ultra offer similar internal hardware and screen sizes to its predecessor, at 6.7 in (170 mm) and 6.9 in (180 mm) , respectively. [ 28 ]
+The Galaxy S26 series reintroduces chipset split: the Snapdragon 8 Elite Gen 5 for Galaxy powers the S26 and S26+ in North America, China, and Japan, while the Exynos 2600 for the rest of the global markets. The S26 Ultra, however, will use the same Snapdragon 8 Elite Gen 5 for Galaxy chipset as standard worldwide. [ 30 ]
+The S26 and S26+ smartphones continue to have an aluminum body and a glass back, similar to the design of their predecessors. Both devices use Gorilla Glass Victus 3 for both the front display and rear glass panel. [ 31 ]
+The S26 Ultra, on the other hand, reverts to an aluminum frame (which was last used on the Galaxy S23 ), but still features a glass back; [ 32 ] however, the phone now features more rounded corners. [ 33 ] It still has the Gorilla Glass Armor 2 for its front display and rear panel. [ 34 ]
+The Galaxy S26 series features a Dynamic LTPO AMOLED 2X display across all models with HDR10+ support and a 120 Hz refresh rate, reaching up to 2600 nits. Each device also includes an ultrasonic in-screen fingerprint sensor. The S26 Ultra uses Corning ’s Gorilla Armor 2 protection on the front, while the S26 and S26+ use Gorilla Glass Victus 3 on both the front and back. [ 35 ]
+The Galaxy S26 Ultra features the Privacy Display, a display technology developed and supplied by Samsung Display . The technology was originally developed under the name Flex Magic Pixel. When the feature is enabled in device settings, the viewing angle of the screen becomes significantly narrower, making the display difficult to see from the side while appearing normal to the user. [ 36 ]
+The feature serves a similar purpose as external privacy screen protectors used to prevent others from viewing a phone screen in public places. However, unlike privacy films that add an additional polarizing layer on top of the display and may reduce brightness or clarity, Privacy Display is implemented at the panel level during manufacturing by selectively applying polarization to specific display elements. [ 37 ]
+It can also be enabled or disabled through software as needed. The feature can be applied only to specific areas of the display, such as notification pop-ups, or to certain applications where privacy protection is needed. [ 38 ] [ 39 ]
+The Galaxy S26 and S26+ use a triple rear camera system consisting of a 50 MP wide‑angle main camera, a 12 MP ultrawide camera, and a 10 MP telephoto camera with 3× optical zoom, alongside a 12 MP front‑facing camera. [ 40 ] The camera hardware specifications are unchanged from the Galaxy S25 and S25+. [ 41 ] [ 42 ]
+The Galaxy S26 Ultra features a quad‑camera system comprising a 200 MP primary camera with an f/1.4 lens, a 50 MP ultrawide camera, a 10 MP 3× telephoto, and a 50 MP periscope telephoto with 5× optical zoom. Compared to the Galaxy S25 Ultra, the primary camera aperture widens from f/1.7 to f/1.4, and the 5× telephoto aperture widens from f/3.4 to f/2.9. [ 43 ] The Galaxy S Ultra series introduces the new All Lens On Prism (ALoP) mechanism powering its 5× telephoto camera, instead of the traditional periscope lens found in previous models. [ 44 ] [ 45 ]
+On the software side, all models incorporate Samsung's ProVisual Engine for image processing and include a Horizon Lock option within the Super Steady video stabilization mode. Horizon Lock keeps the horizon level during video recording when the device is tilted or rotated, including rotations of up to 360 degrees. The mode supports recording at resolutions of up to 4K. [ 46 ] [ 47 ] [ 48 ]
+The Galaxy S26 models have similar battery capacities to the S25 series, except for the smallest model (which now has a slight increase of 300 mAh). For the first time in the series, each of the three devices now offer a distinct wired charging speed: the S26 supports up to 25 W, the S26+ accepts 45 W, and the S26 Ultra arrives to 60 W, with the latter marking the highest wired charging speed ever featured on a Galaxy smartphone. [ 49 ] [ 50 ] [ 51 ]
+All three support Qi2.2 inductive charging up to 25 W, and can charge other Qi-compatible devices wirelessly using battery power. Although the devices support Qi 2.2, they lack built-in magnets (required by the Qi standard), due to potential interference with the vertical camera array (on the three devices) and the S Pen on the Galaxy S26 Ultra. [ 52 ] [ 53 ] [ 54 ]
+Like its predecessor, all Galaxy S26 models were launched with 12 GB of RAM. The three models now start at 256 GB, dropping the 128 GB option previously available for the base model. [ 55 ] The 1 TB version of the S26 Ultra has 16 GB of RAM, and is available worldwide. [ 1 ]
+All models in the Galaxy S26 series, support 5G connectivity, Wi-Fi 7, Bluetooth 5.4, NFC, and USB Type-C 3.2 for data transfer and charging. Ultra-Wideband (UWB) is supported only on the S26+ and S26 Ultra models. [ 57 ]
+The Galaxy S26, S26+ and S26 Ultra came pre-installed with Android 16 and Samsung's custom One UI 8.5 software overlay and Samsung has promised 7 years of security patches and OS upgrades, which is similar to the previous flagships, the S24 and S25 series, eventually ceasing to receive updates in March 2033. [ 58 ]
+1 2 3 4 Chokkattu, Julian. "Everything Samsung Announced at Galaxy Unpacked 2026" . Wired . ISSN 1059-1028 . Retrieved 2026-02-25 .
+↑ "Samsung's Galaxy S26 Pro might get a little more screen real estate" . The Verge . September 11, 2025. Archived from the original on September 11, 2025 . Retrieved November 2, 2025 .
+↑ "Samsung's Galaxy S26 Edge might look like an iPhone 17 Pro" . The Verge . September 5, 2025. Archived from the original on September 5, 2025 . Retrieved November 2, 2025 .
+↑ "Samsung's Galaxy S26 series may ape the iPhone 17's biggest design change" . The Verge . 4 September 2025. Archived from the original on September 4, 2025 . Retrieved November 2, 2025 .
+1 2 "Everything announced at Samsung Unpacked: The Galaxy S26 Ultra, Galaxy Buds 4 and more" . Engadget . 2026-02-25 . Retrieved 2026-02-26 .
+1 2 Pritchard, Tom (February 26, 2026). "Samsung Galaxy S26 Ultra has the world's first 'Privacy Display' — here's how it works" . Tom's Guide .
+↑ Sattelberg, Will (2025-07-30). "Samsung 'Galaxy S26 Pro' reappears in regulatory listings alongside S26 Ultra, Edge" . 9to5Google . Archived from the original on 2025-07-31 . Retrieved 2026-08-06 .
+↑ Romero, Andrew (2025-07-29). "Galaxy S26 'Pro' branding appears, confusingly in place of the base model" . 9to5Google . Archived from the original on 2025-07-30 . Retrieved 2026-08-06 .
+↑ Shaik, Asif Iqbal (2025-07-14). "Galaxy S25 Edge may have pushed the Galaxy S26+ off the edge" . SamMobile . Retrieved 2026-08-06 .
+↑ Shaik, Abid Iqbal (2025-07-25). "Samsung moves one step ahead with Galaxy S26 Ultra's new software" . SamMobile . Retrieved 2026-08-06 .
+↑ Schoon, Ben (2025-10-16). "The Galaxy S25 Edge failed so badly that Samsung might give up on thin phones" . 9to5Google . Retrieved 2026-08-06 .
+↑ Mishra, Abhijeet (2025-10-17). "Let's not assume the Galaxy S Edge line is permanently cancelled" . SamMobile . Retrieved 2026-08-06 .
+1 2 Shaik, Asif Iqbal (2025-10-16). "Confirmed: Samsung drops Galaxy S26 Edge in favor of Galaxy S26+" . SamMobile . Retrieved 2026-08-06 .
+↑ Sattelberg, Will (2025-10-17). "Samsung reportedly dumps Galaxy S26 'Pro' as its vision for copying Apple crumbles" . 9to5Google . Retrieved 2026-08-06 .
+↑ Mishra, Abhijeet (2025-10-16). "So, about that rumored Galaxy S26 Pro" . SamMobile . Retrieved 2026-08-06 .
+↑ "Samsung doesn't have faith in thin phones, gets back to work on Galaxy S26 Plus" . Android Authority . 2025-10-01 . Retrieved 2026-08-06 .
+↑ "Galaxy S26 Edge out, S26 Plus in: Listing suggests Samsung lineup reversal" . Android Authority . 2025-10-17 . Retrieved 2026-08-06 .
+↑ "Bad news keeps piling up for the Galaxy S26 series" . Android Authority . 2025-10-23 . Retrieved 2026-08-06 .
+↑ Schoon, Ben (2025-10-23). "Samsung reportedly delays Galaxy S26 launch by several weeks" . 9to5Google . Retrieved 2026-08-06 .
+↑ "Samsung may not start mass producing the Galaxy S26 Plus until January" . Android Authority . 2025-10-23 . Retrieved 2026-08-06 .
+↑ Sattelberg, Will (2025-11-03). "Samsung reportedly planning late February launch for Galaxy S26 series" . 9to5Google . Retrieved 2026-08-06 .
+↑ "Mark your calendars: Samsung will reportedly 'Unpack' the Galaxy S26 series on this date!" . Android Authority . 2025-11-02 . Retrieved 2026-08-06 .
+↑ Schoon, Ben (2026-01-12). "Samsung's Galaxy S26 delay pushes release date to mid-March" . 9to5Google . Retrieved 2026-08-06 .
+↑ Schoon, Ben (2026-01-30). "Galaxy S26 series specs, official-looking images leak ahead of February 25 launch [ Gallery ] " . 9to5Google . Retrieved 2026-08-06 .
+↑ Leon, Jean (2026-02-14). "Unreleased Galaxy S26+ is Already for Sale—Not by Samsung" . Android Headlines . Retrieved 2026-08-09 .
+↑ Sattelberg, Will (2026-03-11). "The Galaxy S26 series is now officially on sale, and the trade-in values have plummeted" . 9to5Google . Archived from the original on 2026-03-16 . Retrieved 2026-08-09 .
+1 2 "Samsung Unveils Galaxy S26 Series: The Most Intuitive Galaxy AI Phone Yet" . Samsung Mobile Press . 2026-02-25 . Retrieved 2026-07-10 .
+1 2 Lee, Nicole (2026-02-25). "Samsung Galaxy S26 Ultra vs. Galaxy S26 and S26 Plus: Flagship Specs Comparison" . CNET . Retrieved 2026-02-26 .
+↑ "Compare Samsung Galaxy S26 vs. Samsung Galaxy S26+ vs. Samsung Galaxy S26 Ultra" . GSMArena . Retrieved 2026-02-26 .
+↑ Mishra, Abhijeet (2026-02-25). "Galaxy S26 chip split explained: Snapdragon vs Exynos by region" . SamMobile . Retrieved 2026-02-26 .
+↑ "Samsung Galaxy S26 vs. Galaxy S25: What's changed and which one should you buy?" . Engadget . 2026-02-25 . Retrieved 2026-02-26 .
+↑ Shaik, Abid Iqbal (2026-02-26). "Here is why Galaxy S26 Ultra doesn't have a titanium frame" . SamMobile . Retrieved 2026-02-26 .
+↑ Schoon, Ben (2026-02-25). "The Galaxy S26 Ultra is thinner and more rounded than ever, and I love it [ Gallery ] " . 9to5Google . Retrieved 2026-02-26 .
+↑ Matei, Mihai (2026-02-02). "Galaxy S26 Ultra design: What's changing from the S25 Ultra?" . SamMobile . Retrieved 2026-02-26 .
+↑ Siddiqui, Aamir (2026-01-22). "Forget tempered glass: The Galaxy S26 Ultra may debut a tougher new Gorilla Glass" . Android Authority . Retrieved 2026-03-05 .
+↑ Martin, Roland Moore-Colyer (2026-02-25). "Samsung Galaxy S26 Ultra has the world's first Privacy Display — here's how it works" . Tom's Guide . Retrieved 2026-03-05 .
+↑ Siddiqui, Aamir; Brown, C. Scott (2026-02-26). "Is the Galaxy S26 Ultra's Privacy Display better than a privacy screen protector? We tested both" . Android Authority . Retrieved 2026-03-06 .
+↑ Pandey, Rajesh (2026-02-25). "I tested the Galaxy S26 Ultra, and the Privacy Display has a major trade-off" . Android Police . Retrieved 2026-03-05 .
+↑ Segan, Sascha (2026-02-26). "I Tested Samsung's Galaxy S26 Ultra Privacy Display — It Feels Like Spy Tech" . PCMag . Retrieved 2026-03-06 .
+↑ published, DCW team (2026-02-28). "Samsung Galaxy S26 and S26 Plus hands-on: smarter cameras despite no hardware upgrades" . Digital Camera World . Retrieved 2026-03-11 .
+↑ "Tested: The Galaxy S26+ is nice, but niche" . Tech Advisor . Retrieved 2026-03-11 .
+↑ Anastasov, Aleksandar (2026-02-25). "Samsung Galaxy S26 camera: Everything you need to know" . PhoneArena . Retrieved 2026-03-11 .
+↑ published, DCW team (2026-03-09). "Samsung Galaxy S26 Ultra camera hands-on review: faster lenses, pro upgrades, same Samsung processing" . Digital Camera World . Retrieved 2026-03-11 .
+↑ Peter (2026-03-05). "The Galaxy S26 Ultra doesn't use a periscope zoom lens - here's why that matters" . GSMArena.com . Retrieved 2026-03-11 .
+↑ Shaik, Asif Iqbal (2026-03-07). "Galaxy S26 Ultra's zoom camera doesn't use a periscope lens" . SamMobile . Retrieved 2026-03-11 .
+↑ "Samsung just made the 8K video on S26 worth it — for 4K capture" . Android Authority . 2026-02-25 . Retrieved 2026-03-11 .
+↑ Daily, Seoul Economic (2026-02-28). "Samsung Galaxy S26 Debuts Horizon Lock, Privacy Display Features" . Seoul Economic Daily . Retrieved 2026-03-11 .
+↑ "Samsung Galaxy S26 Ultra Super Steady Horizontal Lock really can handle a 360-degree turn and the results are shocking" . TechRadar . 2026-02-26 . Retrieved 2026-03-11 .
+↑ Mishra, Abhijeet (2026-02-25). "Galaxy S26 and S26+ charging speed upgrades: What's faster, what isn't?" . SamMobile . Retrieved 2026-03-11 .
+1 2 Anastasov, Aleksandar (2026-02-25). "Samsung Galaxy S26 battery and charging: Everything you need to know" . PhoneArena . Retrieved 2026-03-11 .
+↑ Farooqui, Adnan (2026-02-25). "Your new Galaxy S26 Ultra will charge faster than ever before" . SamMobile . Retrieved 2026-03-11 .
+↑ Schoon, Ben (2026-02-28). "Samsung's excuse for skipping Qi2 magnets in Galaxy S26 ignores the big picture" . 9to5Google . Archived from the original on 2026-03-04 . Retrieved 2026-03-11 .
+↑ Zeman, Eric (2026-02-26). "Samsung's Galaxy S26 Is Missing This One Important Thing. Is It a Deal-Breaker?" . PCMag . Retrieved 2026-03-11 .
+↑ Brecher, Hannes (2026-02-26). "Samsung Galaxy S26 Ultra issues warning on MagSafe cases" . Notebookcheck . Retrieved 2026-03-11 .
+↑ Shaik, Asif Iqbal (2026-02-25). "Galaxy S26 uses RAM from both Samsung and its rival" . SamMobile . Retrieved 2026-03-11 .
+↑ Shaik, Asif Iqbal (2026-03-06). "What UFS version does the Galaxy S26 series use for storage?" . SamMobile . Retrieved 2026-03-11 .
+1 2 Mishra, Abhijeet (2026-02-25). "Galaxy S26, S26+, and S26 Ultra software update policy explained" . SamMobile . Retrieved 2026-03-12 .
+Galaxy S26 & S26+ – official website
+Galaxy S26 Ultra – official website
+S SL 4G LTE/Aviator/Lightray 4G Advance Duos 2 3 Plus Relay 4G WiFi
+4G LTE/Aviator/Lightray 4G
+S III Mini Neo Progre
+Galaxy Ace Plus 2 3 4 Neo
+Galaxy Amp 2 Prime Prime 2 Prime 3
+Galaxy Beam i8520 i8530
+Galaxy C C5 C7 C8/C7 (2017) C9 Pro C55 5G
+Galaxy Core LTE Plus Prime 2
+Galaxy Express 2 3 Prime Prime 2 Prime 3
+Galaxy Grand 2 Max Prime Prime+ Prime Pro Quattro
+Galaxy On On5 2016 On6 On7 2016 Prime On8 2018 On Max On Nxt
+Galaxy Pocket Duos Neo Plus 2
+Galaxy R/Galaxy Z Style
+Galaxy Trend Plus 2 Lite 3 Neo
+Galaxy Y Duos Plus Pro Duos
+T-Mobile Sidekick 4G
+A3 2015 2016 2017 Core
+A7 2015 2016 2017 2018
+A8 2015 2016 2018 + Star s
+A9 2016 Pro 2018/s Star Lite Pro Pro 2019
+V/Sky Pro/Perx/Prime (2017)
+2018/Star/Refine/V (2018)
+Z Fold Special Edition
+Omnia Pro B7610 B7330
+A013 (Galaxy A01 Core/A3 Core)
+A032 (Galaxy A03 Core) · A035 (Galaxy A03) · A037 (Galaxy A03s)
+A042 (Galaxy A04e) · A045 (Galaxy A04) · A047 (Galaxy A04s)
+A055 (Galaxy A05) · A057 (Galaxy A05s)
+A125 (Galaxy A12), A127 (Galaxy A12 Nacho/A12 (India))
+A135 (Galaxy A13) · A136 (Galaxy A13 5G)
+A145 (Galaxy A14) · A146 (Galaxy A14 5G)
+A155 (Galaxy A15) · A156 (Galaxy A15 5G)
+A165 (Galaxy A16) · A166 (Galaxy A16 5G)
+A175 (Galaxy A17) · A176 (Galaxy A17 5G)
+A226 (Galaxy A22 5G)
+A235 (Galaxy A23) · A236 (Galaxy A23 5G)
+A256 (Galaxy A25 5G)
+A260 (Galaxy A2 Core)
+A266 (Galaxy A26 5G)
+A300 (Galaxy A3 (2015))
+A310 (Galaxy A3 (2016))
+A320 (Galaxy A3 (2017))
+A326 (Galaxy A32 5G)
+A336 (Galaxy A33 5G)
+A346 (Galaxy A34 5G)
+A356 (Galaxy A35 5G)
+A366 (Galaxy A36 5G)
+A376 (Galaxy A37 5G)
+A426 (Galaxy A42 5G)
+A500 (Galaxy A5 (2015))
+A510 (Galaxy A5 (2016))
+A515 (Galaxy A51) · A516 (Galaxy A51 5G) · A516V (Galaxy A51 5G UW)
+A520 (Galaxy A5 (2017))
+A525 (Galaxy A52) · A526 (Galaxy A52 5G) · A528 (Galaxy A52s 5G)
+A536 (Galaxy A53 5G)
+A546 (Galaxy A54 5G)
+A556 (Galaxy A55 5G)
+A566 (Galaxy A56 5G)
+A576 (Galaxy A57 5G)
+A530 (Galaxy A8 (2018))
+A600 (Galaxy A6 (2018) · A605 (Galaxy A6+ (2018))
+A700 (Galaxy A7 (2015))
+A710 (Galaxy A7 (2016))
+A715 (Galaxy A71) · A716 (Galaxy A71 5G) · A716V (Galaxy A71 5G UW)
+A720 (Galaxy A7 (2017))
+A736 (Galaxy A73 5G)
+A730 (Galaxy A8+ (2018))
+A750 (Galaxy A7 (2018))
+A800 (Galaxy A8 (2015))
+A810 (Galaxy A8 (2016))
+A900 (Galaxy A9 (2016))
+A908 (Galaxy A90 5G)
+A910 (Galaxy A9 Pro (2016))
+A920x (Galaxy A9 (2018)/A9s)
+B5310 (Genio Slide, Corby Pro)
+C5000 (Galaxy C5) · C501x (Galaxy C5 Pro)
+C7000 (Galaxy C7) · C701x (Galaxy C7 Pro)
+C7100 (Galaxy C8) · C7108 (Galaxy C7 (2017))
+C900x (Galaxy C9 Pro)
+E156 (Galaxy F15 5G)
+E236 (Galaxy F23 5G)
+E426 (Galaxy F42 5G)
+E470S (Galaxy S4 Active LTE-A)
+E5260 (Galaxy F52 5G)
+E546 (Galaxy F54 5G)
+E1107 (Crest Solar/Solar Guru)
+F415 (Galaxy F41/Galaxy M21s)
+F700 (Galaxy Z Flip)
+F707 (Galaxy Z Flip 5G)
+F711 (Galaxy Z Flip3 5G)
+F721 (Galaxy Z Flip4)
+F731 (Galaxy Z Flip5)
+F741 (Galaxy Z Flip6)
+F761 (Galaxy Z Flip7 FE)
+F766 (Galaxy Z Flip7)
+F907 (Galaxy Fold 5G)
+F916 (Galaxy Z Fold2 5G)
+F926 (Galaxy Z Fold3 5G)
+F936 (Galaxy Z Fold4)
+F946 (Galaxy Z Fold5)
+F956 (Galaxy Z Fold6)
+F966 (Galaxy Z Fold7)
+G150N0 (Galaxy Folder)
+G160N (Galaxy Folder 2)
+G318 (Galaxy Ace 4 Neo/Trend 2 Lite)
+G350E (Galaxy Star 2)
+G360 (Galaxy Core Prime)
+G386x (Galaxy Core LTE)
+G388F (Galaxy Xcover 3)
+G530x (Galaxy Grand Prime) · G531x (Galaxy Grand Prime Value Edition)
+G532x (Galaxy J2 Prime/J2 Ace/Grand Prime+)
+G550 (Galaxy On5/Galaxy On5 Pro)
+G600x (Galaxy On7/On7 Pro)
+G610x (Galaxy J7 Prime/On7 2016/On NXT)
+G611x (Galaxy J7 Prime 2/On7 Prime)
+G710x (Galaxy Grand 2)
+G720x (Galaxy Grand Max)
+G750x (Galaxy Mega 2)
+G770x (Galaxy S10 Lite)
+G780x (Galaxy S20 FE)
+SM-G800x (Galaxy S5 Mini)
+G850x (Galaxy Alpha)
+G885x (Galaxy A8 Star/A9 Star)
+G887x (Galaxy A8s/A9 Pro (2019))
+G890A (Galaxy S6 Active)
+G920x (Galaxy S6) · G925x (Galaxy S6 Edge) · G928x (Galaxy S6 Edge+)
+G930x (Galaxy S7) · G935x (Galaxy S7 Edge)
+G950x (Galaxy S8) · G955x (Galaxy S8+)
+G960x (Galaxy S9) · G965x (Galaxy S9+)
+G970x (Galaxy S10e) · G973x (Galaxy S10) · G975x (Galaxy S10+) · G977x (Galaxy S10 5G)
+G980x (Galaxy S20) · G986x (Galaxy S20+) · G988x (Galaxy S20 Ultra)
+G990x (Galaxy S21 FE) · G991x (Galaxy S21) · G996x (Galaxy S21+) · G998x (Galaxy S21 Ultra)
+i300 (Windows Mobile)
+i537 (Galaxy S4 Active)
+i927 (Captivate Glide)
+i5700 (Galaxy Spica)
+i8160 (Galaxy Ace 2)
+i8190 (Galaxy S III Mini)
+i8520 (Galaxy Beam i8520)
+i8730 (Galaxy Express)
+i9001 (Galaxy S Plus)
+i9070 (Galaxy S Advance)
+i9080/i9082 (Galaxy Grand)
+i9105 (Galaxy S II Plus)
+i9250 (Galaxy Nexus)
+i9150 (Galaxy Mega 5.8)
+i9190/i9192/i9195 (Galaxy S4 Mini)
+i9200 (Galaxy Mega 6.3)
+i9295 (Galaxy S4 Active)
+i9300/i9305 (Galaxy S III)
+i9500/i9505/i9506 (Galaxy S4)
+J105x (Galaxy J1 Nxt/Mini)
+J106x (Galaxy J1 Mini Prime/V2)
+J110x (Galaxy J1 Ace)
+J120x (Galaxy J1 2016)
+J200x (Galaxy J2/J2 2017 Edition)
+J210x (Galaxy J2 (2016)/J2 Pro)
+J250x (Galaxy J2 2018/J2 Pro 2018/Grand Prime Pro)
+J260x (Galaxy J2 Core)
+J311x (Galaxy J3 Pro)
+J326AZ (Galaxy Sol 2) · J327x (Galaxy J3 Prime/J3 Emerge/J3 Eclipse/J3 Luna Pro/Express Prime 2/Amp Prime 2)
+J330x (Galaxy J3 2017)
+J337x (Galaxy J3 2018/J3 Aura/J3 Star/J3 V 2018/Amp Prime 3)
+J410x (Galaxy J4 Core)
+J500x (Galaxy J5 2015)
+J510x (Galaxy J5 2016/Metal)
+J530x (Galaxy J5 2017/Pro)
+J600x (Galaxy J6/On6)
+J700x (Galaxy J7 2015)
+J710x (Galaxy J7 2016/Metal)
+J730x (Galaxy J7 2017/Pro)
+J810x (Galaxy J8/On8 (2018))
+M013 (Galaxy M01 Core)
+M135 (Galaxy M13) · M136 (Galaxy M13 5G)
+M146 (Galaxy M14 5G)
+M236 (Galaxy M23 5G/Buddy 2)
+M315 (Galaxy M31/M31 Prime Edition)
+M326 (Galaxy M32 5G)
+M336 (Galaxy M33 5G)
+M346 (Galaxy M34 5G)
+M356 (Galaxy M35 5G)
+M366 (Galaxy M36 5G)
+M426 (Galaxy M42 5G)
+M526 (Galaxy M52 5G)
+M536 (Galaxy M53 5G)
+M546 (Galaxy M54 5G)
+M7500 (Emporio Armani)
+N7100 (Galaxy Note II)
+N750x (Galaxy Note 3 Neo)
+N900x (Galaxy Note 3)
+N910x (Galaxy Note 4)
+N920x (Galaxy Note 5)
+N930x (Galaxy Note 7)
+N935x (Galaxy Note Fan Edition)
+N950x (Galaxy Note 8)
+N960x (Galaxy Note 9)
+N970x (Galaxy Note 10) · N971x (Galaxy Note 10 5G) · N975x (Galaxy Note 10+) · N976x (Galaxy Note 10+ 5G)
+N980x (Galaxy Note 20) · N981x (Galaxy Note 20 5G) · N985x (Galaxy Note 20 Ultra) · N986x (Galaxy Note 20 Ultra 5G)
+P520 (Giorgio Armani)
+S3650 (Corby/Corby Classic)
+S5300 (Galaxy Pocket)
+S5310/S5312 (Galaxy Pocket Neo)
+S5610/11 (Primo/Utopia)
+S5690 (Galaxy Xcover)
+S6310 (Galaxy Young)
+S6500 (Galaxy Mini 2)
+S711x (Galaxy S23 FE)
+S721x (Galaxy S24 FE)
+S7270 (Galaxy Ace 3)
+S7500 (Galaxy Ace Plus)
+S7560 (Galaxy Trend) · S7560M (Galaxy Ace II x)
+S7562 (Galaxy S Duos)
+S7582 (Galaxy S Duos 2)
+S7710 (Galaxy Xcover 2)
+S901x (Galaxy S22) · S906x (Galaxy S22+) · S908x (Galaxy S22 Ultra)
+S911x (Galaxy S23) · S916x (Galaxy S23+) · S918x (Galaxy S23 Ultra)
+S921x (Galaxy S24) · S926x (Galaxy S24+) · S928x (Galaxy S24 Ultra)
+S931x (Galaxy S25) · S936x (Galaxy S25+) · S937x (Galaxy S25 Edge) · S938x (Galaxy S25 Ultra)
+S942x (Galaxy S26) · S946x (Galaxy S26+) · S948x (Galaxy S26 Ultra)
+T699 (Galaxy S Relay 4G)
+Galaxy S Note Z A M F
+Google Nexus (for Nexus S )
+SCH for CDMA (non-Sprint) Handset
+SPH for CDMA (Sprint) Handset
+GT for Global Telecommunications
+SM for Samsung Mobile
+Android (operating system) devices
+Flagship smartphones
+Mobile phones with multiple rear cameras
+Mobile phones introduced in 2026
+Mobile phones with 8K video recording
+Articles with short description
+Short description is different from Wikidata
+Commons category link is on Wikidata

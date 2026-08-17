@@ -133,7 +133,7 @@ COMMON_NAME_WORDS = {
 
 SHOP_NAME = "TechStore"
 
-SHOP_PHONE = "+91 98765 43210"
+SHOP_PHONE = "+91 9087086182"
 
 SHOP_ADDRESS = "123, Tech Market Road, City Center"
 
@@ -323,6 +323,19 @@ class IntentRouter:
         re.IGNORECASE,
     )
 
+    HUMAN_PATTERN = re.compile(
+        r"\b(?:human\s+assistance|human\s+support|human\s+help|human\s+agent|"
+        r"need\s+(?:a\s+)?human|talk\s+to\s+(?:a\s+)?(?:human|person|agent|representative|executive|someone)|"
+        r"speak\s+(?:to|with)\s+(?:a\s+)?(?:human|person|agent|representative|executive)|"
+        r"connect\s+(?:me\s+)?(?:to\s+)?(?:a\s+)?(?:human|agent|person|representative)|"
+        r"call\s+(?:our\s+|the\s+|your\s+)?store|"
+        r"call\s+(?:to\s+)?(?:this\s+)?(?:number|phone)|"
+        r"contact\s+(?:our\s+|the\s+|your\s+)?store|"
+        r"store\s+(?:phone\s+)?number|contact\s+(?:phone\s+)?number|"
+        r"customer\s+(?:care|service|support)\s+number|helpline|help\s*desk)\b",
+        re.IGNORECASE,
+    )
+
     def classify(
         self,
         question: str
@@ -331,6 +344,20 @@ class IntentRouter:
         cleaned = clean_question(question)
 
         words = set(tokenize(cleaned))
+
+        if (
+            self.HUMAN_PATTERN.search(question)
+            or "human" in words
+            or "human" in cleaned
+            or "representative" in words
+            or "executive" in words
+            or ("call" in words and any(w in words for w in {"store", "number", "me", "you", "us", "assistance", "support", "this"}))
+            or "speak with me" in cleaned
+            or "talk with me" in cleaned
+            or "talk to me" in cleaned
+            or "9087086182" in question
+        ):
+            return "human_assistance"
 
         if cleaned in self.GREETINGS_EXACT:
             return "greeting"
@@ -1776,7 +1803,10 @@ Guidelines:
 
             base += """
 \nCOMPARISON MODE:
-- When the customer asks to compare two products, present a clean comparison with the price, key specs (display, processor, RAM, storage, camera/battery or graphics), and a short "Best for:" verdict for each product, based only on the sources.
+- When the customer asks to compare products or asks for a comparison table, ALWAYS present the comparison as a clean Markdown table with:
+  | Feature | Product 1 | Product 2 | ... |
+  Include rows for Price, Key Specs (Display, Processor, RAM, Storage, Camera / Battery / Audio, Connectivity), Warranty, and Stock status.
+- Follow the table with a short bulleted "Best for:" verdict for each compared product, based strictly on the sources.
 - Be balanced and neutral - do not favour one product without evidence from the sources.
 """
 
@@ -1918,7 +1948,10 @@ Answer the customer using the knowledge source information above:
         )
 
         if not product:
-            return None
+            return self._in_stock_catalog_answer(
+                question,
+                shop_id=shop_id,
+            )
 
         name = product.get("name", "")
 
@@ -1999,6 +2032,302 @@ Answer the customer using the knowledge source information above:
         }
 
     # =====================================================
+    # IN-STOCK CATALOG LISTING (all in-stock products)
+    # =====================================================
+
+    def _in_stock_catalog_answer(
+        self,
+        question: str,
+        shop_id: str = None,
+    ):
+
+        products = self.catalog.get_all(shop_id=shop_id)
+
+        if not products:
+            return None
+
+        in_stock_products = [
+            p for p in products
+            if str(p.get("stock", "")).strip().lower() in {"in stock", "instock"}
+        ]
+
+        if not in_stock_products:
+            return {
+                "success": True,
+                "answer": (
+                    "Currently, no products are marked as 'In stock' in our catalog. "
+                    "Please contact our store for restock updates."
+                ),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "catalog_stock",
+            }
+
+        q_lower = question.lower()
+        target_category = None
+        category_title = "Products"
+
+        if re.search(r"\b(?:phones?|smartphones?|mobiles?)\b", q_lower):
+            target_category = "phone"
+            category_title = "Smartphones"
+        elif re.search(r"\b(?:laptops?|books?|notebooks?|computers?)\b", q_lower):
+            target_category = "laptop"
+            category_title = "Laptops (Galaxy Book)"
+        elif re.search(r"\b(?:accessories|accessory|watches?|buds?|earbuds?|rings?|wearables?|chargers?)\b", q_lower):
+            target_category = "accessory"
+            category_title = "Accessories & Wearables"
+
+        if target_category:
+            filtered = [
+                p for p in in_stock_products
+                if p.get("category") == target_category
+            ]
+
+            if not filtered:
+                return {
+                    "success": True,
+                    "answer": f"Currently, no {category_title.lower()} are listed as in stock in our catalog.",
+                    "relevant": True,
+                    "similarity_score": 1.0,
+                    "intent": "catalog_stock",
+                }
+
+            lines = [
+                f"Here are the current **{category_title}** in stock:\n",
+                "| Product Name | Price | Stock Status | Warranty |",
+                "| --- | --- | --- | --- |",
+            ]
+
+            for p in filtered:
+                name = p.get("name", "Unknown")
+                price = f"Rs. {p.get('price', 0):,}" if p.get("price") else "N/A"
+                stock = p.get("stock", "In stock")
+                warranty = f"{p.get('warranty_months', 0)} months" if p.get("warranty_months") else "Standard"
+                lines.append(f"| {name} | {price} | {stock} | {warranty} |")
+
+            lines.append(f"\n*Total {len(filtered)} {category_title.lower()} currently in stock.*")
+
+            return {
+                "success": True,
+                "answer": "\n".join(lines),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "catalog_stock",
+            }
+
+        # Otherwise list all in-stock products grouped by category
+        phones = [p for p in in_stock_products if p.get("category") == "phone"]
+        laptops = [p for p in in_stock_products if p.get("category") == "laptop"]
+        accessories = [p for p in in_stock_products if p.get("category") == "accessory"]
+        others = [p for p in in_stock_products if p.get("category") not in {"phone", "laptop", "accessory"}]
+
+        lines = [
+            f"Here are the current **products in stock** from our catalog ({len(in_stock_products)} available):\n"
+        ]
+
+        def add_category_table(title, items):
+            if not items:
+                return
+            lines.append(f"### {title} ({len(items)})")
+            lines.append("| Product Name | Price | Stock Status | Warranty |")
+            lines.append("| --- | --- | --- | --- |")
+            for p in items:
+                name = p.get("name", "Unknown")
+                price = f"Rs. {p.get('price', 0):,}" if p.get("price") else "N/A"
+                stock = p.get("stock", "In stock")
+                warranty = f"{p.get('warranty_months', 0)} months" if p.get("warranty_months") else "Standard"
+                lines.append(f"| {name} | {price} | {stock} | {warranty} |")
+            lines.append("")
+
+        add_category_table("Smartphones", phones)
+        add_category_table("Laptops (Galaxy Book)", laptops)
+        add_category_table("Wearables & Accessories", accessories)
+        add_category_table("Other Products", others)
+
+        return {
+            "success": True,
+            "answer": "\n".join(lines).strip(),
+            "relevant": True,
+            "similarity_score": 1.0,
+            "intent": "catalog_stock",
+        }
+
+    # =====================================================
+    # QUICK TOPICS HANDLER (Phone Specs, Buying Advice, etc.)
+    # =====================================================
+
+    def _quick_topic_answer(
+        self,
+        question: str,
+        shop_id: str = None,
+    ):
+        q = clean_question(question).lower().strip()
+
+        # 1. Phone Prices & Specs
+        if q in {
+            "phone prices & specs", "phone prices and specs", "phone prices specs",
+            "phones prices & specs", "phones prices and specs", "phone prices",
+            "phone specs", "smartphones prices and specs"
+        } or ("phone" in q and "price" in q and "spec" in q):
+            products = self.catalog.get_all(shop_id=shop_id)
+            phones = [p for p in products if p.get("category") == "phone"]
+            if not phones:
+                return None
+            lines = [
+                "Here are the **Smartphone Models, Prices & Specs** available in our catalog:\n",
+                "| Smartphone Model | Price | Display | Processor | RAM / Storage | Camera | Battery | Stock |",
+                "| --- | --- | --- | --- | --- | --- | --- | --- |",
+            ]
+            for p in phones:
+                name = p.get("name", "Unknown")
+                price = f"Rs. {p.get('price', 0):,}" if p.get("price") else "N/A"
+                specs = p.get("specs", {})
+                display = specs.get("display", "sAMOLED")
+                proc = specs.get("processor", "Octa-core")
+                ram = specs.get("ram", "")
+                storage = specs.get("storage", "")
+                mem = f"{ram}, {storage}".strip(", ") or "Standard"
+                cam = specs.get("camera", "Multi-Cam")
+                bat = specs.get("battery", "5000 mAh")
+                stock = p.get("stock", "In stock")
+                lines.append(f"| **{name}** | {price} | {display} | {proc} | {mem} | {cam} | {bat} | {stock} |")
+            lines.append(f"\n*Total {len(phones)} smartphone models available. All units include 12 months brand warranty.*")
+            return {
+                "success": True,
+                "answer": "\n".join(lines),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "catalog_phones",
+            }
+
+        # 2. Laptop Buying Advice
+        if q in {
+            "laptop buying advice", "laptop buying guide", "laptop recommendations",
+            "laptop advice", "buying advice laptop", "laptop advice guide"
+        } or ("laptop" in q and ("advice" in q or "recommend" in q or "guide" in q)):
+            products = self.catalog.get_all(shop_id=shop_id)
+            laptops = [p for p in products if p.get("category") == "laptop"]
+            lines = [
+                "### 💻 Laptop Buying Guide & Recommendations\n",
+                "Whether you need a laptop for studies, professional work, or intensive creative projects, here is our store's recommendation breakdown:\n",
+                "#### 1. 🎓 Best for Students & Daily Productivity",
+                "- **Samsung Galaxy Book4 / Book3**: Lightweight, Intel Core processors, anti-glare display, and all-day battery life.",
+                "- **Price Range:** Rs. 65,000 – Rs. 85,000\n",
+                "#### 2. 💼 Best for Working Professionals & Business",
+                "- **Samsung Galaxy Book4 Pro / Pro 360**: 3K Dynamic AMOLED 2X touchscreen, 2-in-1 S-Pen convertible, Intel Core Ultra AI processor.",
+                "- **Price Range:** Rs. 1,15,000 – Rs. 1,55,000\n",
+                "#### 3. ⚡ Best for Creators & High Performance",
+                "- **Samsung Galaxy Book4 Ultra**: Dedicated NVIDIA GeForce RTX 4070/4050 graphics, Intel Core Ultra 9, 3K 120Hz AMOLED.",
+                "- **Price Range:** Rs. 2,10,000 – Rs. 2,50,000\n",
+                "| Recommended Model | Price | Key Specs | Best For | Stock |",
+                "| --- | --- | --- | --- | --- |",
+            ]
+            for p in (laptops[:8] if laptops else []):
+                name = p.get("name", "Unknown")
+                price = f"Rs. {p.get('price', 0):,}" if p.get("price") else "N/A"
+                specs = p.get("specs", {})
+                proc = specs.get("processor", "Intel Core Ultra")
+                ram = specs.get("ram", "16GB")
+                storage = specs.get("storage", "512GB")
+                stock = p.get("stock", "In stock")
+                best_for = "Pro / AI" if "Ultra" in name or "Pro" in name else "Student / Office"
+                lines.append(f"| **{name}** | {price} | {proc}, {ram}, {storage} | {best_for} | {stock} |")
+            lines.append("\n*Visit TechStore (123, Tech Market Road) or call +91 9087086182 to test interactive live demo units!*")
+            return {
+                "success": True,
+                "answer": "\n".join(lines),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "recommendation",
+            }
+
+        # 3. Accessories in Stock
+        if q in {"accessories in stock", "accessory in stock", "accessories stock"} or ("accessor" in q and "stock" in q):
+            return self._in_stock_catalog_answer("accessories in stock", shop_id=shop_id)
+
+        # 4. Warranty & Returns
+        if q in {
+            "warranty & returns", "warranty and returns", "warranty & return",
+            "warranty returns", "return policy", "warranty policy", "returns & warranty"
+        } or ("warranty" in q and "return" in q):
+            lines = [
+                "### 🛡️ TechStore Warranty & Return Policy\n",
+                "We provide full brand warranty and hassle-free returns for complete customer satisfaction:\n",
+                "| Policy Aspect | Coverage Details | Duration |",
+                "| --- | --- | --- |",
+                "| **Brand Warranty** | 100% official manufacturer warranty covering hardware defects, display, motherboard, and battery. | **12 Months** (Phones & Laptops)<br>**6 Months** (Accessories) |",
+                "| **7-Day Replacement** | Instant replacement for Dead-on-Arrival (DOA) or manufacturing defects with original box & tax invoice. | **7 Days** from purchase |",
+                "| **Authorized Service** | Genuine OEM certified parts with on-spot diagnosis by trained technicians at our store repair desk. | Same-day walk-in available |",
+                "| **GST & EMI** | Official GST invoice provided with every purchase; 0% No-Cost EMI on major credit cards. | Available at billing |",
+                "\n**Support & Inquiries:**\n",
+                "- 📞 **Call Store:** [+91 9087086182](tel:+919087086182)\n",
+                "- 💬 **WhatsApp:** [Chat on WhatsApp (+91 9087086182)](https://wa.me/919087086182?text=Hello%20TechStore%2C%20I%20have%20a%20warranty%20inquiry)\n",
+                "- 📍 **Address:** TechStore (123, Tech Market Road, City Center) | Open 10:00 AM – 9:00 PM all days.",
+            ]
+            return {
+                "success": True,
+                "answer": "\n".join(lines),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "policy",
+            }
+
+        # 5. Troubleshooting
+        if q in {"troubleshooting", "troubleshoot", "troubleshooting guide", "troubleshooting steps"}:
+            lines = [
+                "### 🔧 Device Troubleshooting Guide\n",
+                "Quick step-by-step solutions for common smartphone and laptop issues:\n",
+                "#### 1. 🔋 Phone Not Charging or Charging Slowly",
+                "- Gently clean the Type-C charging port with a dry wooden toothpick to remove dust.",
+                "- Use a 45W / 25W USB-PD certified fast charger and undamaged cable.",
+                "- Verify fast charging is enabled: *Settings → Battery → More Battery Settings → Fast Charging*.\n",
+                "#### 2. 📱 Screen Frozen or Unresponsive",
+                "- **Force Restart:** Hold **Power Button + Volume Down** simultaneously for **10 to 15 seconds** until the phone restarts.\n",
+                "#### 3. 📶 Galaxy Buds / Watch Pairing Issues",
+                "- Place Galaxy Buds into the charging case and hold both touch sensors for 7 seconds until the LED flashes to enter pairing mode.",
+                "- Reset Bluetooth network settings: *Settings → General Management → Reset → Reset Network Settings*.\n",
+                "#### 4. 🌡️ Device Overheating or Battery Drain",
+                "- Close heavy background apps and turn on 'Protect Battery' in Settings.",
+                "- Install the latest firmware update for bug fixes and power optimizations.\n",
+                "🛠️ **Still facing an issue?** Visit our in-store tech repair desk at **TechStore** or call **[+91 9087086182](tel:+919087086182)** for expert diagnosis!",
+            ]
+            return {
+                "success": True,
+                "answer": "\n".join(lines),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "troubleshooting",
+            }
+
+        # 6. Best Sellers
+        if q in {
+            "best sellers", "bestsellers", "best selling", "best selling products",
+            "best selling phone", "best selling items", "top sellers"
+        }:
+            lines = [
+                "### 🏆 Best-Selling Products at TechStore\n",
+                "Here are our most popular, top-rated products across smartphones, laptops, and wearables:\n",
+                "| Category | Top Product | Price | Highlights | Stock Status |",
+                "| --- | --- | --- | --- | --- |",
+                "| **Flagship Phone** | **Samsung Galaxy S25 Ultra** | Rs. 129,999 | Snapdragon 8 Elite, 200MP Camera, Titanium Frame, S-Pen | In stock |",
+                "| **Mid-Range Phone** | **Samsung Galaxy A55 5G** | Rs. 38,999 | Premium Glass & Metal, 120Hz sAMOLED, IP67 Water Resistance | In stock |",
+                "| **Budget Phone** | **Samsung Galaxy M35 5G** | Rs. 18,999 | 6000mAh Monster Battery, 120Hz AMOLED, 50MP OIS Camera | In stock |",
+                "| **Premium Laptop** | **Galaxy Book4 Pro 360** | Rs. 155,000 | 3K Dynamic AMOLED 2X, Intel Core Ultra 7, S-Pen Included | In stock |",
+                "| **Wireless Audio** | **Galaxy Buds3 Pro** | Rs. 19,999 | 24-bit Hi-Fi Audio, Blade Lights, Adaptive ANC | In stock |",
+                "| **Smartwatch** | **Galaxy Watch7** | Rs. 28,999 | 3nm Dual-Frequency GPS, BioActive Sensor, Sleep Coaching | In stock |",
+                "\n*Visit TechStore today to try our live demonstration units or call [+91 9087086182](tel:+919087086182)!*",
+            ]
+            return {
+                "success": True,
+                "answer": "\n".join(lines),
+                "relevant": True,
+                "similarity_score": 1.0,
+                "intent": "bestsellers",
+            }
+
+        return None
+
+    # =====================================================
     # FAQ ANSWER
     # =====================================================
 
@@ -2063,6 +2392,23 @@ Answer the customer using the knowledge source information above:
                 f"{phone} whenever you need us."
             )
 
+        if intent == "human_assistance":
+
+            clean_num = ((shop or {}).get("phone") or SHOP_PHONE).replace(" ", "").replace("+", "")
+            wa_link = f"https://wa.me/{clean_num}?text=Hello%20TechStore%2C%20I%20need%20human%20assistance"
+
+            return (
+                f"We're here to help! For direct human assistance from **{name}** ({address}), please choose one of the options below:\n\n"
+                f"### 📞 Option 1: Customer Service Care Number\n"
+                f"- **Phone Number:** [{phone}](tel:{((shop or {}).get('phone') or SHOP_PHONE).replace(' ', '')}) *(or 9087086182)*\n"
+                f"- **Store Hours:** 10:00 AM – 9:00 PM (All 7 Days)\n"
+                f"- **Location:** {address}\n\n"
+                f"### 💬 Option 2: WhatsApp Chat Support\n"
+                f"- Connect directly with our store support team on WhatsApp:\n"
+                f"  👉 [**Chat with Us on WhatsApp (+91 9087086182)**]({wa_link})\n\n"
+                f"*Our representatives are ready to assist you with order status, product guidance, reservations, warranty, and technical service!*"
+            )
+
         return (
             f"I'm the {name} customer support assistant. "
             "I can help you with:\n"
@@ -2109,17 +2455,14 @@ Answer the customer using the knowledge source information above:
         print("-" * 60)
         print("TECHSTORE RAG REQUEST")
         print("-" * 60)
-
         print(f"Question: {question}")
         print(f"Intent: {intent}")
-        print(f"Shop: {shop_id or 'ALL (cross-shop)'}")
+        print(f"Shop: {shop_id or 'cross-shop'}")
 
         response_base = {
             "shop_id": shop_id,
-            "shop_name": (shop or {}).get("name")
-            if shop
-            else None,
-            "support_intent": None,
+            "shop_name": (shop or {}).get("name"),
+            "intent": intent,
         }
 
         # -------------------------------------------------
@@ -2159,9 +2502,10 @@ Answer the customer using the knowledge source information above:
             "thanks",
             "farewell",
             "identity",
+            "human_assistance",
         }:
 
-            return {
+            resp = {
                 **response_base,
                 "success": True,
                 "answer": self._conversational_answer(
@@ -2173,15 +2517,80 @@ Answer the customer using the knowledge source information above:
                 "intent": intent,
             }
 
+            if intent == "human_assistance":
+                clean_num = ((shop or {}).get("phone") or SHOP_PHONE).replace(" ", "").replace("+", "")
+                resp["action"] = "human_support"
+                resp["phone"] = (shop or {}).get("phone") or SHOP_PHONE
+                resp["tel"] = f"tel:{((shop or {}).get('phone') or SHOP_PHONE).replace(' ', '')}"
+                resp["whatsapp"] = f"https://wa.me/{clean_num}?text=Hello%20TechStore%2C%20I%20need%20human%20assistance"
+
+            return resp
+
+        # -------------------------------------------------
+        # STEP 1b: Quick Topics Handling (Exact button queries)
+        # -------------------------------------------------
+
+        quick_response = self._quick_topic_answer(
+            question,
+            shop_id=shop_id,
+        )
+
+        if quick_response:
+            print("Answered from quick topics handler.")
+            return {
+                **response_base,
+                **quick_response,
+            }
+
+        is_comparison = bool(
+            re.search(
+                r"\b(?:compare|comparison|vs|versus|cheapest|"
+                r"cheaper|cheap|least|best price|which shop|"
+                r"difference|differences|tabular|table|between)\b",
+                question,
+                re.IGNORECASE,
+            )
+        )
+
+        is_in_stock_list = bool(
+            re.search(
+                r"\b(?:current\s+products?\s+in\s+stock|"
+                r"products?\s+(?:in\s+stock|available)|"
+                r"what\s+(?:products?|phones?|laptops?|items?|models?|accessories|watches|earbuds|stock|is\s+in\s+stock|are\s+in\s+stock)\b|"
+                r"(?:list|show|give|tell\s+me)\s+(?:all\s+)?(?:the\s+)?(?:in\s*stock|available)\b|"
+                r"(?:in\s*stock|available)\s+(?:products?|items?|phones?|laptops?|accessories|models?|catalog|list))\b",
+                question,
+                re.IGNORECASE,
+            )
+        )
+
+        # -------------------------------------------------
+        # STEP 1b: General In-Stock Catalog Listing
+        # -------------------------------------------------
+
+        if is_in_stock_list and not is_comparison:
+
+            stock_list_response = self._in_stock_catalog_answer(
+                question,
+                shop_id=shop_id,
+            )
+
+            if stock_list_response:
+                print("Answered from in-stock catalog listing.")
+                return {
+                    **response_base,
+                    **stock_list_response,
+                }
+
         # -------------------------------------------------
         # STEP 2: Direct catalog lookup (price / stock) -
         # runs BEFORE FAQ so products from the shop's own
         # dataset (including newly added ones) always win.
-        # (Skipped in cross-shop mode so multiple shops
-        # are compared instead of returning one answer.)
+        # (Skipped in cross-shop and comparison modes so
+        # multiple products / shops are compared instead).
         # -------------------------------------------------
 
-        if intent in {"price", "stock"} and not cross_shop:
+        if intent in {"price", "stock"} and not cross_shop and not is_comparison:
 
             catalog_response = self._catalog_answer(
                 question,
@@ -2218,6 +2627,7 @@ Answer the customer using the knowledge source information above:
 
         if (
             not cross_shop
+            and not is_comparison
             and (is_troubleshooting or has_spec_words)
         ):
 
@@ -2271,7 +2681,7 @@ Answer the customer using the knowledge source information above:
 
         faq_response = (
             None
-            if is_troubleshooting
+            if (is_troubleshooting or has_spec_words or product_id or is_comparison)
             else self._faq_answer(question)
         )
 
@@ -2352,7 +2762,8 @@ Answer the customer using the knowledge source information above:
         is_comparison = bool(
             re.search(
                 r"\b(?:compare|comparison|vs|versus|cheapest|"
-                r"cheaper|cheap|least|best price|which shop)\b",
+                r"cheaper|cheap|least|best price|which shop|"
+                r"difference|differences|tabular|table|between)\b",
                 question,
                 re.IGNORECASE,
             )

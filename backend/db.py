@@ -155,7 +155,7 @@ def _seed():
         "address": "123, Tech Market Road, City Center",
         "city": "City Center",
         "pincode": "560001",
-        "phone": "+91 98765 43210",
+        "phone": "+91 9087086182",
         "email": "",
         "timings": "10:00 AM - 9:00 PM, all days",
     }
