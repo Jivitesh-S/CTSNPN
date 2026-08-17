@@ -434,12 +434,8 @@ def chat(
 
         return result
 
-            shop_id=request.shop_id,
-        )
-
-        return result
-
     except ValueError as error:
+
 
         raise HTTPException(
             status_code=400,
