@@ -31,7 +31,7 @@ graph TD
 
     subgraph "Data & Ingestion (Scripts)"
         IngestScripts[Python Ingestion Scripts]
-        DataStore[Data Folder (CSVs, JSON)]
+        DataStore["Data Folder (CSVs, JSON)"]
         IngestScripts --> VDB
         DataStore --> IngestScripts
     end

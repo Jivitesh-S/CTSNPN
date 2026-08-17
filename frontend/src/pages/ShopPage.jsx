@@ -167,20 +167,21 @@ function ShopPage() {
 
   if (loadingShop) {
     return (
-      <div className="flex h-screen w-screen items-center justify-center bg-[#f8fafc] text-slate-600 font-sans">
-        <Loader2 className="w-5 h-5 animate-spin text-blue-900" /> &nbsp; Loading shop...
+      <div className="flex h-screen w-screen items-center justify-center text-slate-700 font-sans">
+        <Loader2 className="w-6 h-6 animate-spin text-blue-600 mr-2" />
+        <span className="font-medium text-sm">Loading shop details...</span>
       </div>
     );
   }
 
   if (shopError) {
     return (
-      <div className="flex h-screen w-screen items-center justify-center bg-[#f8fafc] text-slate-600 font-sans">
-        <div className="text-center space-y-3">
-          <p className="text-sm text-rose-600">{shopError}</p>
+      <div className="flex h-screen w-screen items-center justify-center text-slate-700 font-sans p-4">
+        <div className="text-center space-y-3 glass-panel-deep p-8 rounded-3xl max-w-md">
+          <p className="text-sm text-rose-700 font-medium">{shopError}</p>
           <button
             onClick={() => navigate("/")}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 bg-white text-slate-600 text-xs font-medium transition hover:border-blue-900 hover:text-blue-900 mx-auto"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-semibold shadow-md shadow-blue-500/20 transition hover:from-blue-700 hover:to-purple-700 mx-auto active:scale-95"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             Back to Assistant
@@ -193,56 +194,56 @@ function ShopPage() {
   const shopName = shop?.name || "My Store";
 
   return (
-    <div className="relative flex h-screen w-screen bg-[#f8fafc] text-slate-800 overflow-hidden font-sans">
+    <div className="relative flex h-screen w-screen overflow-hidden font-sans">
 
       <div className="flex-1 flex flex-col h-full relative z-10 overflow-hidden">
 
         <Header />
 
         {/* Shop banner */}
-        <div className="border-b border-slate-200 bg-white px-4 sm:px-8 py-4">
+        <div className="border-b border-white/50 bg-white/40 backdrop-blur-xl px-4 sm:px-8 py-5">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start justify-between gap-3 flex-wrap">
-              <div className="flex items-start gap-3 min-w-0">
-                <div className="w-11 h-11 rounded-xl bg-blue-900 flex items-center justify-center flex-shrink-0">
-                  <Store className="w-5 h-5 text-white" />
+              <div className="flex items-start gap-3.5 min-w-0">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-md shadow-blue-500/20 ring-1 ring-white/60">
+                  <Store className="w-6 h-6 text-white" />
                 </div>
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <h2 className="font-heading font-bold text-lg text-slate-900">
+                  <div className="flex items-center gap-2.5 flex-wrap">
+                    <h2 className="font-heading font-bold text-xl text-slate-900 tracking-tight">
                       {shopName}
                     </h2>
                     {shop?.category && (
-                      <span className="text-[10px] uppercase font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-900 border border-blue-100">
+                      <span className="text-[10px] uppercase font-bold px-2.5 py-0.5 rounded-full bg-blue-100/80 text-blue-700 border border-blue-200/60 shadow-xs">
                         {shop.category}
                       </span>
                     )}
                   </div>
                   {shop?.description && (
-                    <p className="text-xs text-slate-500 mt-1">{shop.description}</p>
+                    <p className="text-xs text-slate-600 mt-1 font-normal">{shop.description}</p>
                   )}
-                  <div className="mt-1.5 flex items-center gap-3 flex-wrap text-xs text-slate-500">
+                  <div className="mt-2 flex items-center gap-3.5 flex-wrap text-xs text-slate-500 font-medium">
                     {(shop?.address || shop?.city) && (
                       <span className="flex items-center gap-1">
-                        <MapPin className="w-3 h-3" />
+                        <MapPin className="w-3.5 h-3.5 text-blue-600" />
                         {[shop.address, shop.city].filter(Boolean).join(", ")}
                       </span>
                     )}
                     {shop?.phone && (
                       <span className="flex items-center gap-1">
-                        <Phone className="w-3 h-3" />
+                        <Phone className="w-3.5 h-3.5 text-blue-600" />
                         {shop.phone}
                       </span>
                     )}
                     {shop?.timings && (
                       <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
+                        <Clock className="w-3.5 h-3.5 text-blue-600" />
                         {shop.timings}
                       </span>
                     )}
                     <span className="flex items-center gap-1">
-                      <Package className="w-3 h-3" />
-                      {products.length} product(s)
+                      <Package className="w-3.5 h-3.5 text-purple-600" />
+                      {products.length} catalog items
                     </span>
                   </div>
                 </div>
@@ -250,7 +251,7 @@ function ShopPage() {
 
               <button
                 onClick={() => navigate("/")}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 bg-white text-slate-600 text-xs font-medium transition hover:border-blue-900 hover:text-blue-900 flex-shrink-0"
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-white/80 bg-white/70 backdrop-blur-md text-slate-700 text-xs font-semibold transition hover:bg-white hover:text-blue-700 shadow-xs active:scale-95 flex-shrink-0"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
                 Back to Assistant
@@ -258,15 +259,15 @@ function ShopPage() {
             </div>
 
             {/* Tabs */}
-            <div className="mt-4 flex gap-1.5">
+            <div className="mt-5 flex gap-2">
               {tabs.map((tab) => (
                 <button
                   key={tab.key}
                   onClick={() => setActiveTab(tab.key)}
-                  className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition ${
+                  className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all shadow-xs active:scale-95 cursor-pointer ${
                     activeTab === tab.key
-                      ? "bg-blue-900 text-white"
-                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md shadow-blue-500/20"
+                      : "bg-white/60 hover:bg-white/90 text-slate-700 border border-white/80"
                   }`}
                 >
                   {tab.label}
@@ -279,21 +280,21 @@ function ShopPage() {
         {/* Status banner */}
         {status && (
           <div className="px-4 sm:px-8 pt-4">
-            <div className={`max-w-4xl mx-auto flex items-start gap-2.5 px-4 py-3 rounded-xl border text-sm ${
+            <div className={`max-w-4xl mx-auto flex items-start gap-2.5 px-4 py-3 rounded-2xl border backdrop-blur-md text-xs sm:text-sm ${
               status.type === "success"
-                ? "bg-emerald-50 border-emerald-200 text-emerald-800"
+                ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-800"
                 : status.type === "warn"
-                ? "bg-amber-50 border-amber-200 text-amber-800"
-                : "bg-rose-50 border-rose-200 text-rose-800"
+                ? "bg-amber-500/10 border-amber-500/20 text-amber-800"
+                : "bg-rose-500/10 border-rose-500/20 text-rose-800"
             }`}>
               {status.type === "success" ? (
-                <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5 text-emerald-600" />
               ) : status.type === "warn" ? (
-                <Info className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <Info className="w-4 h-4 flex-shrink-0 mt-0.5 text-amber-600" />
               ) : (
-                <XCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <XCircle className="w-4 h-4 flex-shrink-0 mt-0.5 text-rose-600" />
               )}
-              <span>{status.message}</span>
+              <span className="font-medium">{status.message}</span>
             </div>
           </div>
         )}
@@ -304,66 +305,66 @@ function ShopPage() {
             <div className="max-w-4xl mx-auto w-full space-y-4">
               <div className="flex items-center justify-between gap-3 flex-wrap">
                 <h3 className="font-heading text-base font-bold text-slate-900 flex items-center gap-2">
-                  <Package className="w-4 h-4 text-blue-900" />
-                  Catalog products ({filteredProducts.length})
+                  <Package className="w-4 h-4 text-blue-600" />
+                  Store Products ({filteredProducts.length})
                 </h3>
-                <div className="relative w-full sm:w-64">
+                <div className="relative w-full sm:w-72">
                   <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                   <input
                     type="text"
                     value={productFilter}
                     onChange={(e) => setProductFilter(e.target.value)}
-                    placeholder="Search products..."
-                    className="w-full pl-9 pr-3 py-2 text-xs rounded-lg bg-white border border-slate-300 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100 transition"
+                    placeholder="Filter products by name or category..."
+                    className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-white/70 backdrop-blur-md border border-white/80 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:bg-white transition shadow-xs"
                   />
                 </div>
               </div>
 
               {filteredProducts.length === 0 ? (
-                <div className="py-8 text-center">
-                  <Package className="w-8 h-8 text-slate-300 mx-auto mb-2" />
-                  <p className="text-sm text-slate-500">
+                <div className="py-12 text-center glass-panel rounded-2xl p-6">
+                  <Package className="w-10 h-10 text-slate-400 mx-auto mb-2 opacity-60" />
+                  <p className="text-sm text-slate-600 font-medium">
                     {products.length === 0
                       ? "No products yet. Upload a dataset in the 'Upload Dataset' tab."
-                      : "No products match your search."}
+                      : "No products match your search query."}
                   </p>
                 </div>
               ) : (
                 <div className="space-y-3">
                   {filteredProducts.map((product) => (
-                    <div key={product.id} className="rounded-xl border border-slate-200 bg-white p-4">
+                    <div key={product.id} className="glass-card rounded-2xl p-4 sm:p-5">
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0">
                           <div className="flex items-center gap-2 flex-wrap">
-                            <span className="font-semibold text-slate-900 text-sm">{product.name}</span>
-                            {product.brand && <span className="text-xs text-slate-500">{product.brand}</span>}
-                            <span className="text-[10px] uppercase font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-blue-900 border border-blue-100">
+                            <span className="font-heading font-bold text-slate-900 text-sm sm:text-base">{product.name}</span>
+                            {product.brand && <span className="text-xs text-slate-500 font-medium">by {product.brand}</span>}
+                            <span className="text-[10px] uppercase font-bold px-2.5 py-0.5 rounded-full bg-blue-100/70 text-blue-700 border border-blue-200/50">
                               {product.category}
                             </span>
                           </div>
-                          <div className="mt-1.5 flex items-center gap-3 flex-wrap text-xs text-slate-600">
-                            <span className="font-semibold text-slate-800">
+                          <div className="mt-2 flex items-center gap-3 flex-wrap text-xs text-slate-600 font-medium">
+                            <span className="font-heading font-bold text-blue-700 text-sm">
                               Rs. {Number(product.price || 0).toLocaleString()}
                             </span>
-                            <span className={`px-2 py-0.5 rounded-full ${
+                            <span className={`px-2.5 py-0.5 rounded-full font-medium ${
                               product.stock === "In stock"
-                                ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                                ? "bg-emerald-500/10 text-emerald-700 border border-emerald-500/20"
                                 : product.stock === "Low stock"
-                                ? "bg-amber-50 text-amber-700 border border-amber-200"
-                                : "bg-rose-50 text-rose-700 border border-rose-200"
+                                ? "bg-amber-500/10 text-amber-700 border border-amber-500/20"
+                                : "bg-rose-500/10 text-rose-700 border border-rose-500/20"
                             }`}>
                               {product.stock}
                             </span>
                             <span>Warranty: {product.warranty_months || 0} months</span>
                           </div>
                           {product.description && (
-                            <p className="text-xs text-slate-500 mt-1.5">{product.description}</p>
+                            <p className="text-xs text-slate-600 mt-2 font-normal leading-relaxed">{product.description}</p>
                           )}
                           {Object.keys(product.specs || {}).length > 0 && (
-                            <div className="mt-2 flex flex-wrap gap-1.5">
+                            <div className="mt-2.5 flex flex-wrap gap-1.5">
                               {Object.entries(product.specs).map(([key, value]) => (
-                                <span key={key} className="text-[11px] px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-600">
-                                  <span className="font-medium text-slate-700">{key.replace(/_/g, " ")}:</span> {value}
+                                <span key={key} className="text-[11px] px-2.5 py-0.5 rounded-lg bg-white/70 border border-white/80 text-slate-700 shadow-xs">
+                                  <span className="font-semibold text-slate-800">{key.replace(/_/g, " ")}:</span> {value}
                                 </span>
                               ))}
                             </div>
@@ -372,11 +373,11 @@ function ShopPage() {
                         <button
                           onClick={() => handleDeleteProduct(product)}
                           disabled={savingDelete === product.id}
-                          className="p-2 rounded-lg text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition flex-shrink-0 disabled:opacity-40"
+                          className="p-2 rounded-xl text-slate-400 hover:text-rose-600 hover:bg-rose-500/10 transition flex-shrink-0 disabled:opacity-40 active:scale-95"
                           title={`Delete ${product.name}`}
                         >
                           {savingDelete === product.id ? (
-                            <Loader2 className="w-4 h-4 animate-spin" />
+                            <Loader2 className="w-4 h-4 animate-spin text-rose-600" />
                           ) : (
                             <Trash2 className="w-4 h-4" />
                           )}
@@ -394,48 +395,60 @@ function ShopPage() {
         {activeTab === "upload" && (
           <main className="flex-1 overflow-y-auto px-4 sm:px-8 py-6">
             <div className="max-w-4xl mx-auto w-full space-y-4">
-              <section className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6">
-                <h3 className="font-heading text-base font-bold text-slate-900 flex items-center gap-2">
-                  <Upload className="w-4 h-4 text-blue-900" />
-                  Upload product dataset
-                </h3>
-                <p className="text-xs text-slate-500 mt-1">
-                  Upload a <span className="font-medium">CSV</span> or{" "}
-                  <span className="font-medium">JSON</span> file. Each row/item is one product.
-                  Required columns: <span className="font-medium">name</span>. Optional: brand, category
+              <section className="glass-panel-deep rounded-3xl p-6 sm:p-7 space-y-4">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center shadow-md shadow-blue-500/20 ring-1 ring-white/60">
+                    <Upload className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-base font-bold text-slate-900 tracking-tight">
+                      Upload Product Dataset
+                    </h3>
+                    <p className="text-xs text-slate-500">
+                      Sync inventory and technical manuals directly to RAG ChromaDB
+                    </p>
+                  </div>
+                </div>
+
+                <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                  Upload a <span className="font-semibold text-slate-800">CSV</span> or{" "}
+                  <span className="font-semibold text-slate-800">JSON</span> file. Each row/item is one product.
+                  Required columns: <span className="font-semibold text-blue-700">name</span>. Optional: brand, category
                   (phone/laptop/accessory), price, stock, warranty_months, description - any extra
                   columns become specifications.
                 </p>
 
-                <div className="flex items-center gap-3 mt-4 flex-wrap">
+                <div className="flex items-center gap-3 pt-2 flex-wrap">
                   <input
                     ref={fileInputRef}
                     type="file"
                     accept=".csv,.json"
                     disabled={uploading}
                     onChange={(e) => handleUpload(e.target.files[0])}
-                    className="text-xs text-slate-600 file:mr-3 file:px-3 file:py-2 file:rounded-lg file:border file:border-slate-300 file:bg-white file:text-slate-700 file:text-xs file:font-medium hover:file:bg-slate-50 transition"
+                    className="text-xs text-slate-700 file:mr-3 file:px-4 file:py-2.5 file:rounded-xl file:border file:border-white/80 file:bg-white/80 file:text-slate-800 file:text-xs file:font-semibold hover:file:bg-white transition cursor-pointer shadow-xs"
                   />
                   {uploading && (
-                    <span className="flex items-center gap-2 text-xs text-blue-900">
-                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                      Uploading & re-indexing...
+                    <span className="flex items-center gap-2 text-xs font-semibold text-blue-700">
+                      <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
+                      Uploading &amp; re-indexing into vector store...
                     </span>
                   )}
                 </div>
 
-                <button
-                  onClick={downloadTemplate}
-                  className="mt-4 flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-600 text-xs font-medium transition hover:border-blue-900 hover:text-blue-900"
-                >
-                  <FileDown className="w-3.5 h-3.5" />
-                  Download CSV template
-                </button>
+                <div className="pt-2">
+                  <button
+                    onClick={downloadTemplate}
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-white/80 bg-white/70 backdrop-blur-md text-slate-700 text-xs font-semibold transition hover:bg-white hover:text-blue-700 shadow-xs active:scale-95"
+                  >
+                    <FileDown className="w-3.5 h-3.5 text-blue-600" />
+                    Download CSV Template
+                  </button>
+                </div>
               </section>
 
               <div className="pb-4 text-center">
-                <p className="text-[11px] text-slate-400">
-                  After upload, the assistant answers about these products instantly - no restart, no LLM cost for indexing.
+                <p className="text-[11px] text-slate-500">
+                  After upload, the assistant answers queries regarding these products instantly with live embeddings.
                 </p>
               </div>
             </div>

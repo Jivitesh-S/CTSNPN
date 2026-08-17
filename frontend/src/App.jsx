@@ -257,7 +257,7 @@ function App() {
   };
 
   return (
-    <div className="relative flex h-screen w-screen bg-[#f8fafc] text-slate-800 overflow-hidden font-sans">
+    <div className="relative flex h-screen w-screen overflow-hidden font-sans">
 
       {!introComplete && (
         <TvIntroPortal onComplete={() => setIntroComplete(true)} />
@@ -285,22 +285,41 @@ function App() {
           <div className="max-w-4xl mx-auto w-full">
 
             {messages.length === 0 && (
-              <div className="py-6 space-y-8">
-                <div className="text-center space-y-3">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-900 text-xs font-semibold">
-                    <Sparkles className="w-3.5 h-3.5 text-blue-800" />
-                    <span>Intelligent Product Support</span>
+              <div className="py-8 space-y-8">
+                {/* Hero Title and Badge */}
+                <div className="text-center space-y-3.5">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-md border border-white/80 text-blue-700 text-xs font-semibold shadow-xs">
+                    <Sparkles className="w-3.5 h-3.5 text-blue-600 animate-spin" style={{ animationDuration: "3s" }} />
+                    <span>Intelligent AI Support Concierge</span>
                   </div>
-                  <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                    Ask about our <br />
-                    <span className="text-blue-800">products & policies</span>
+                  
+                  <h2 className="font-heading text-3xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight max-w-2xl mx-auto">
+                    Get Instant Technical Support &amp; Product Advice
                   </h2>
-                  <p className="text-sm text-slate-500 max-w-md mx-auto leading-relaxed">
-                    Instant answers on prices, stock, specs, warranties and more - grounded in our catalog.
+                  
+                  <p className="text-sm sm:text-base text-slate-600 max-w-lg mx-auto leading-relaxed font-normal">
+                    Expert troubleshooting, verified catalog specs, and personalized recommendations at your fingertips.
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                {/* Expertise Filter Chips */}
+                <div className="flex flex-wrap justify-center items-center gap-2.5 pt-1">
+                  <span className="text-xs font-medium text-slate-500 mr-1">
+                    Suggested topics:
+                  </span>
+                  {SAMPLE_CATEGORIES.map((cat, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => sendMessage(cat.query)}
+                      className="px-3.5 py-1.5 rounded-full bg-white/60 hover:bg-white/90 backdrop-blur-md border border-white/80 text-slate-700 hover:text-blue-700 text-xs font-medium transition-all shadow-xs active:scale-95 cursor-pointer"
+                    >
+                      {cat.title}
+                    </button>
+                  ))}
+                </div>
+
+                {/* 2x2 Feature Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   {SAMPLE_CATEGORIES.map((cat, index) => (
                     <CategoryCard
                       key={index}
@@ -332,15 +351,15 @@ function App() {
 
             {loading && (
               <div className="flex items-start gap-3 my-4">
-                <div className="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center flex-shrink-0">
-                  <Sparkles className="w-4 h-4 text-white" />
+                <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-md shadow-blue-500/20 ring-1 ring-white/60">
+                  <Sparkles className="w-5 h-5 text-white" />
                 </div>
-                <div className="bg-white rounded-2xl rounded-tl-lg px-5 py-4 border border-slate-200 space-y-2">
-                  <div className="flex items-center gap-2 text-blue-900 text-xs font-medium">
-                    <div className="w-2 h-2 rounded-full bg-blue-700 animate-ping" />
-                    <span>Searching the knowledge base...</span>
+                <div className="glass-panel-deep rounded-2xl rounded-tl-sm px-5 py-4 space-y-2.5">
+                  <div className="flex items-center gap-2 text-blue-700 text-xs font-semibold">
+                    <div className="w-2 h-2 rounded-full bg-blue-600 animate-ping" />
+                    <span>Searching catalog & generating response...</span>
                   </div>
-                  <div className="h-1.5 w-48 rounded-full overflow-hidden bg-slate-100">
+                  <div className="h-1.5 w-52 rounded-full overflow-hidden bg-white/60">
                     <div className="w-full h-full typing-shimmer" />
                   </div>
                 </div>
@@ -354,19 +373,22 @@ function App() {
         <footer className="p-4 sm:pb-6 flex-shrink-0">
           <div className="max-w-4xl mx-auto space-y-2">
             {voiceStatus && (
-              <div className="flex items-center justify-center gap-2 py-1 px-4 rounded-full bg-blue-50 border border-blue-200 text-blue-900 text-xs font-medium max-w-fit mx-auto">
-                <div className="w-2 h-2 rounded-full bg-blue-700 animate-ping" />
+              <div className="flex items-center justify-center gap-2 py-1.5 px-4 rounded-full bg-white/80 backdrop-blur-md border border-white/90 text-blue-700 text-xs font-semibold max-w-fit mx-auto shadow-xs">
+                <div className="w-2 h-2 rounded-full bg-blue-600 animate-ping" />
                 <span>{voiceStatus}</span>
               </div>
             )}
 
-            <div className={`relative flex items-center gap-2 p-1.5 rounded-2xl bg-white border shadow-sm transition-all ${
-              inlineListening ? "ring-2 ring-blue-400 border-blue-900" : "border-slate-300"
+            {/* Floating Glass Input Container */}
+            <div className={`relative flex items-center gap-2 p-2 rounded-2xl glass-panel-deep transition-all duration-300 ${
+              inlineListening ? "ring-2 ring-blue-500/50 border-blue-500" : ""
             }`}>
               <button
                 onClick={handleToggleInlineMic}
-                className={`p-3 rounded-full transition transform active:scale-95 flex-shrink-0 ${
-                  inlineListening ? "bg-blue-900 text-white scale-105" : "text-slate-500 hover:text-blue-900 hover:bg-slate-100"
+                className={`p-3 rounded-xl transition transform active:scale-95 flex-shrink-0 ${
+                  inlineListening 
+                    ? "bg-gradient-to-br from-blue-600 to-purple-600 text-white scale-105 shadow-md shadow-blue-500/25" 
+                    : "text-slate-500 hover:text-blue-700 hover:bg-white/70"
                 }`}
                 title={inlineListening ? "Click to stop listening" : "Click to speak directly"}
               >
@@ -377,24 +399,24 @@ function App() {
                 value={question}
                 onChange={(e) => setQuestion(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={inlineListening ? "Listening to your voice..." : "Ask about prices, stock, specs..."}
+                placeholder={inlineListening ? "Listening to your voice... Speak now" : "Ask about troubleshooting, specs, or product advice..."}
                 rows={1}
                 disabled={loading}
-                className="flex-1 bg-transparent text-slate-900 placeholder-slate-400 text-sm outline-none resize-none py-2.5 px-2 max-h-24 disabled:opacity-50"
+                className="flex-1 bg-transparent text-slate-900 placeholder-slate-400 text-sm outline-none resize-none py-2.5 px-2 max-h-24 disabled:opacity-50 font-normal"
               />
 
               <button
                 onClick={() => sendMessage()}
                 disabled={loading || !question.trim()}
-                className="p-3 rounded-full bg-blue-900 text-white hover:bg-blue-800 disabled:opacity-30 disabled:cursor-not-allowed transition transform active:scale-95 flex-shrink-0"
+                className="p-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-md shadow-blue-500/25 disabled:opacity-30 disabled:cursor-not-allowed transition-all transform active:scale-95 flex-shrink-0"
                 title="Send message"
               >
                 <Send className="w-4 h-4" />
               </button>
             </div>
 
-            <p className="text-center text-[11px] text-slate-400">
-              Assistant grounded on our catalog & shared policies • Enter to send
+            <p className="text-center text-[11px] text-slate-500">
+              Grounded strictly on our catalog & verified support knowledge • Press Enter to send
             </p>
           </div>
         </footer>
