@@ -1,6 +1,6 @@
-# 🎤 TechStore AI — 8-Person Professional Presentation Guide & Scripts
+# 🎤 Intelligent Product Support Assistant (TechStore AI) — 8-Person Presentation Guide & Scripts
 
-A complete, slide-by-slide presentation breakdown for 8 team members, including **Roles**, **Slide Content**, **Exact Code Snippets**, **Line-by-Line Technical Explanations**, and **Word-for-Word Spoken Scripts with Seamless Handoff Cues**.
+A complete, slide-by-slide presentation breakdown for 8 team members, tailored to a single-store **Intelligent Product Support Assistant**. Includes **Roles**, **Slide Bullet Points**, **Exact Code Snippets**, **Line-by-Line Technical Explanations**, and **Word-for-Word Spoken Scripts with Seamless Verbal Handoffs**.
 
 ---
 
@@ -8,31 +8,31 @@ A complete, slide-by-slide presentation breakdown for 8 team members, including 
 
 | # | Speaker Role | Section Title | Code / Visual Focus | Time |
 |---|---|---|---|---|
-| **1** | **The Strategist** | Introduction & Problem Scoping | Anti-Hallucination Guardrail (`rag_service.py`) | ~1.5 min |
-| **2** | **The Product Lead** | Proposed Solution & Multi-Shop Vision | Pydantic Request Schema (`main.py`) | ~1.5 min |
+| **1** | **The Strategist** | Introduction & Problem Statement | Anti-Hallucination Guardrail (`rag_service.py`) | ~1.5 min |
+| **2** | **The Product Lead** | Proposed Solution & Core Value | Pydantic Request Schema (`main.py`) | ~1.5 min |
 | **3** | **The Backend Architect** | FastAPI Core & Layered Security | Middleware & REST Endpoints (`main.py`) | ~2.0 min |
 | **4** | **The AI / RAG Engineer** | Hybrid Search & Cross-Encoder Re-Ranking | ChromaDB + BM25 + RRF (`rag_service.py`) | ~2.0 min |
 | **5** | **The Frontend Lead** | UI Architecture & Vision AI Diagnostics | Diagnostic Card Component (`VisualDiagnosticCard.jsx`) | ~2.0 min |
-| **6** | **The Omnichannel Lead** | In-Store QR Holds & Telegram Alerts | Live Telegram Bot Integration (`telegram_service.py`) | ~1.5 min |
-| **7** | **The QA & Data Lead** | Dynamic Ingestion & Automated Testing | ChromaDB Upsert & Benchmarks (`ingest.py` / `test_retrieval.py`) | ~1.5 min |
-| **8** | **The Visionary** | Enterprise Scaling & Conclusion | Cloud-to-Edge Fallback Circuit Breaker (`future.md`) | ~1.5 min |
+| **6** | **The Operations Lead** | In-Store QR Holds & Telegram Alerts | Live Telegram Bot Integration (`telegram_service.py`) | ~1.5 min |
+| **7** | **The QA & Data Lead** | Catalog Ingestion & Automated Testing | ChromaDB Upsert & Benchmarks (`ingest.py` / `test_retrieval.py`) | ~1.5 min |
+| **8** | **The Visionary** | Future Scaling Roadmap & Conclusion | Cloud-to-Edge Fallback Circuit Breaker (`future.md`) | ~1.5 min |
 
 ---
 
-## 👤 Speaker 1: Introduction, Problem Statement & Architecture Vision
+## 👤 Speaker 1: Introduction & Problem Statement
 * **Role:** Project Lead / Strategist  
 * **Slide Title:** *The Retail Friction: Why Traditional Product Support Fails*
 
 ### 📋 Slide Bullet Points:
 * **The Manual Dilemma:** 50+ page technical manuals, fragmented FAQ databases, and dense warranty policies cause high customer drop-off.
-* **Search Blind Spots:** Traditional keyword search ignores semantic synonyms (e.g., searching *"water error"* misses *"OE drainage fault"*).
-* **AI Hallucination Liability:** Public LLMs guess specifications, return windows, and pricing when not strictly constrained.
-* **Our Target Scope:** An enterprise-ready multi-shop assistant grounded exclusively on verified product documentation.
+* **Search Blind Spots:** Traditional keyword search ignores semantic synonyms (e.g., searching *"water leaking"* misses *"OE drainage error code"*).
+* **AI Hallucination Liability:** Generic public LLMs guess specifications, return windows, and pricing when not strictly constrained.
+* **Our Target Scope:** An intelligent product support assistant grounded strictly and exclusively on authorized product documentation.
 
 ### 💻 Code Snippet for Slide:
 ```python
 # Problem Guardrail Definition (backend/rag_service.py)
-# When the query is outside verified product manuals, strict fallback is triggered
+# When the query cannot be answered from verified product documents, strict fallback is triggered
 
 UNSUPPORTED_FALLBACK = (
     "I can only assist with verified product specifications, manuals, "
@@ -42,45 +42,45 @@ UNSUPPORTED_FALLBACK = (
 ```
 
 ### 🎙️ Spoken Script:
-> "Good morning/afternoon everyone. When a customer buys modern tech—whether an OLED TV or a smart washer—they face a frustrating barrier: 50-page PDF manuals, confusing error codes, and rigid keyword search bars that fail if you don't type the exact technical terminology.
+> "Good morning/afternoon everyone. When a customer buys modern electronics—whether a flagship smartphone, a 4K OLED TV, or a smart washing machine—they face a frustrating barrier: 50-page PDF manuals, confusing error codes, and rigid keyword search bars that fail if you don't type the exact technical terminology.
 >
-> Generic LLM chatbots try to solve this, but they introduce a dangerous risk: **hallucinations**. They make up refund terms and invent nonexistent ports or dimensions.
+> Generic AI chatbots try to solve this, but they introduce a dangerous risk: **hallucinations**. They make up refund terms and invent nonexistent ports or dimensions.
 >
-> In our project, we solved this by designing a strictly grounded conversational assistant. As you can see in our fallback guardrail snippet, if a query cannot be verified against our ingested store catalog, our system is constrained to prevent fabrication. 
+> In our project, we solved this by building the **Intelligent Product Support Assistant**. As you can see in our fallback guardrail snippet, if a query cannot be verified against our approved product documents, our system is strictly constrained to prevent fabrication. 
 > 
-> To explain our solution and core value proposition, I'll hand over to **[Speaker 2's Name]**."
+> To explain our solution and core system capabilities, I'll hand over to **[Speaker 2's Name]**."
 
 ---
 
-## 👤 Speaker 2: Proposed Solution & Multi-Shop Ecosystem
+## 👤 Speaker 2: Proposed Solution & Core System Capabilities
 * **Role:** Product Specialist  
-* **Slide Title:** *TechStore AI: Multi-Shop Grounded Concierge*
+* **Slide Title:** *TechStore AI: Intelligent & Grounded Product Support*
 
 ### 📋 Slide Bullet Points:
-* **Multi-Branch Hierarchy:** Support for multiple store locations (e.g., Metro, Downtown, Airport branches) with live stock tracking.
-* **Cross-Store Semantic Search:** Real-time semantic discovery across all branches.
-* **Dual Access Model:** Public conversational interface for shoppers + PIN-secured admin endpoints for store managers.
+* **Conversational Semantic Search:** Understands user intent and natural language phrasing without requiring exact keywords.
+* **100% Grounded Answers:** Synthesizes direct answers for specifications, setup, maintenance, and troubleshooting.
+* **Interactive Media Support:** Delivers side-by-side product comparisons, visual error diagnostics, and video guides.
+* **Actionable Conversion:** Enables shoppers to reserve items for in-store pickup with instant hold passes.
 
 ### 💻 Code Snippet for Slide:
 ```python
 # API Contract & Data Model (backend/main.py)
 class ChatRequest(BaseModel):
     query: str = Field(..., description="User's product or troubleshooting question")
-    shop_id: Optional[str] = Field("S001", description="Target store branch ID")
     product_id: Optional[str] = Field(None, description="Optional target product filter")
-    history: List[Dict[str, str]] = Field(default_factory=list, description="Chat context")
-    image_data: Optional[str] = Field(None, description="Base64 photo for visual diagnostics")
+    history: List[Dict[str, str]] = Field(default_factory=list, description="Conversation context")
+    image_data: Optional[str] = Field(None, description="Base64 photo for visual hardware diagnostics")
 ```
 
 ### 🎙️ Spoken Script:
-> "Thank you, **[Speaker 1]**. Our solution is **TechStore AI**—an omnichannel platform tailored for both single stores and multi-branch retail networks.
+> "Thank you, **[Speaker 1]**. Our solution is **TechStore AI**—an end-to-end intelligent assistant engineered to provide instant, clear, and provably grounded answers.
 >
-> On the screen is our core `ChatRequest` schema. Notice how structured our conversational contract is:
-> - It takes natural language queries along with an active `shop_id` to enforce store-level catalog isolation.
-> - It accepts session-level `history` for contextual follow-up questions.
-> - And crucially, it supports `image_data` for visual hardware diagnostics.
+> On the screen is our core `ChatRequest` schema:
+> - It accepts natural language queries and optional `product_id` filters for focused answers.
+> - It accepts multi-turn conversation `history` for contextual follow-up questions.
+> - It supports `image_data` so users can upload photos of hardware issues or error lights for visual diagnosis.
 >
-> This gives users accurate spec comparison, troubleshooting, and in-store stock availability across any registered branch.
+> This gives customers an all-in-one assistant for spec queries, troubleshooting, and in-store reservations.
 >
 > To walk us through how the backend and server architecture handle these requests, here is **[Speaker 3's Name]**."
 
@@ -91,16 +91,17 @@ class ChatRequest(BaseModel):
 * **Slide Title:** *FastAPI Backend & Security Middleware Architecture*
 
 ### 📋 Slide Bullet Points:
-* **FastAPI Async Engine:** High-concurrency REST endpoints for `/chat`, `/shops`, and `/inventory`.
-* **Layered Middleware:** Security headers (`X-Frame-Options`, `CSP`, `nosniff`) & dynamic CORS handling.
-* **Rate Limiting & Memory Isolation:** Sliding-window rate limiters preventing API abuse.
+* **FastAPI Async Engine:** High-concurrency REST endpoints for `/chat`, `/health`, and inventory operations.
+* **Layered Middleware:** Enterprise security headers (`X-Frame-Options`, `CSP`, `nosniff`) & dynamic CORS handling.
+* **Sliding-Window Rate Limiter:** Protects the API against abuse and Denial-of-Service attacks.
+* **Local Persistence:** Local database holding product catalogs and reservation states.
 
 ### 💻 Code Snippet for Slide:
 ```python
 # High-Performance FastAPI Engine & Security Headers (backend/main.py)
 app = FastAPI(
     title="TechStore Assistant",
-    description="Multi-shop support API with hybrid retrieval (ChromaDB + BM25Okapi)"
+    description="AI-powered product support API using hybrid retrieval (ChromaDB + BM25)"
 )
 
 @app.middleware("http")
@@ -119,12 +120,12 @@ async def chat_endpoint(req: ChatRequest):
 ### 🎙️ Spoken Script:
 > "Thank you, **[Speaker 2]**. Let's examine our backend architecture.
 >
-> We chose **FastAPI** because of its native asynchronous execution and strict Pydantic validation. As shown in our middleware snippet:
-> 1. We enforce enterprise HTTP security headers—preventing clickjacking and MIME-type sniffing.
-> 2. We use dynamic CORS origin detection, securing communications between our React client and the backend.
-> 3. The `/chat` endpoint receives the incoming user payload and delegates it to our dedicated RAG service.
+> We chose **FastAPI** because of its native asynchronous execution and strict Pydantic validation:
+> 1. We enforce enterprise HTTP security headers to protect against clickjacking, cross-site scripting, and MIME-type sniffing.
+> 2. We use dynamic CORS handling, ensuring secure communication between our React client and the backend server.
+> 3. The `/chat` endpoint receives incoming queries and seamlessly delegates them to our dedicated RAG pipeline.
 >
-> Now, **[Speaker 4's Name]** will explain how the RAG service performs hybrid vector retrieval and enforces 0% hallucination."
+> Now, **[Speaker 4's Name]** will explain how our RAG engine performs hybrid vector retrieval and ensures 0% hallucination."
 
 ---
 
@@ -132,7 +133,7 @@ async def chat_endpoint(req: ChatRequest):
 * **Role:** AI & NLP Engineer  
 * **Slide Title:** *Hybrid Retrieval (BM25 + ChromaDB) & Cross-Encoder Re-Ranking*
 
-### 📋 Slide Bullet Points:
+### 📋 Slide Visual & Bullets:
 * **Dense + Sparse Hybrid Search:** Combines **ChromaDB** (`BAAI/bge-small-en-v1.5`) dense semantic vectors with **BM25Okapi** sparse keyword matching.
 * **Reciprocal Rank Fusion (RRF):** Fuses scores ($RRF\_K = 60$) to balance exact model numbers with conceptual queries.
 * **Cross-Encoder Re-Ranking:** Uses `ms-marco-MiniLM-L-6-v2` to score relevance before feeding top chunks to the Groq/Gemini LLM.
@@ -140,12 +141,11 @@ async def chat_endpoint(req: ChatRequest):
 ### 💻 Code Snippet for Slide:
 ```python
 # Hybrid Vector + Keyword Retrieval & Grounding (backend/rag_service.py)
-def _retrieve(self, query: str, shop_id: str, product_id: Optional[str] = None):
+def _retrieve(self, query: str, product_id: Optional[str] = None):
     # 1. Dense Semantic Vector Search via ChromaDB
     dense_results = self.chroma_collection.query(
         query_embeddings=[self.embed_model.encode(query).tolist()],
-        n_results=TOP_K,
-        where={"shop_id": shop_id}
+        n_results=TOP_K
     )
     # 2. Sparse Lexical Search via BM25Okapi
     bm25_scores = self.bm25_index.get_scores(tokenize(query))
@@ -161,10 +161,10 @@ def _retrieve(self, query: str, shop_id: str, product_id: Optional[str] = None):
 >
 > To solve this, we implemented a **3-stage Hybrid Retrieval Engine**:
 > 1. **Dense Search:** We query **ChromaDB** using `BAAI/bge-small-en-v1.5` embeddings.
-> 2. **Sparse Search:** Simultaneously, we run **BM25Okapi** lexical scoring.
-> 3. **RRF & Re-ranking:** We fuse both candidate lists with Reciprocal Rank Fusion, then run a **Cross-Encoder model** (`ms-marco-MiniLM`) to re-rank the top contexts.
+> 2. **Sparse Search:** Simultaneously, we run **BM25Okapi** lexical scoring for exact model numbers.
+> 3. **RRF & Re-ranking:** We fuse both candidate lists using Reciprocal Rank Fusion, then run a **Cross-Encoder model** (`ms-marco-MiniLM`) to re-rank the top contexts.
 >
-> Only the most relevant snippets are passed into the LLM system prompt with strict grounding constraints.
+> Only verified document snippets are passed into the LLM system prompt with strict grounding constraints.
 >
 > Next, **[Speaker 5's Name]** will show how our frontend renders this rich data for the user."
 
@@ -175,7 +175,7 @@ def _retrieve(self, query: str, shop_id: str, product_id: Optional[str] = None):
 * **Slide Title:** *React Frontend: Voice Modal & Vision AI Diagnostics*
 
 ### 📋 Slide Bullet Points:
-* **Glassmorphic React UI:** Built with Vite and Tailwind CSS for instant rendering and zero layout shift.
+* **Glassmorphic React UI:** Built with Vite and Tailwind CSS for fast rendering and fluid animations.
 * **Visual Diagnostic Component:** Analyzes user-uploaded appliance photos and renders categorized severity cards.
 * **Interactive Media:** Dynamic comparison tables, embedded troubleshooting video cards, and voice mode.
 
@@ -209,29 +209,28 @@ export default function VisualDiagnosticCard({ diag, imagePreview }) {
 > - Our component renders this with tailored color badges and verified troubleshooting steps.
 > - We also built a **Voice Modal** for real-time speech input and a **Comparison Card** that renders side-by-side spec tables.
 >
-> Now, **[Speaker 6's Name]** will explain how we connect digital conversations to real in-store inventory and Telegram alerts."
+> Now, **[Speaker 6's Name]** will explain how we connect digital conversations to in-store reservations and Telegram alerts."
 
 ---
 
 ## 👤 Speaker 6: In-Store Reservations & Telegram Integration
-* **Role:** Omnichannel / Integration Lead  
-* **Slide Title:** *Omnichannel Commerce: QR Hold Passes & Real-Time Telegram Alerts*
+* **Role:** Omnichannel Operations Lead  
+* **Slide Title:** *Closing the Loop: In-Store QR Holds & Telegram Alerts*
 
 ### 📋 Slide Bullet Points:
-* **In-Store Reservation Flow:** Shoppers can reserve items at their nearest store branch directly from the chat.
-* **Digital QR Hold Pass:** Generates a secure, scannable QR pass with a 48-hour hold window.
-* **Instant Telegram Webhooks:** Automated alerts dispatched directly to store management upon reservation.
+* **In-Store Reservation Flow:** Shoppers can reserve items directly from the chat with a custom hold window.
+* **Digital QR Hold Pass:** Generates a secure, scannable QR pass for fast checkout at the store counter.
+* **Instant Telegram Webhooks:** Automated alerts dispatched directly to store staff upon reservation.
 
 ### 💻 Code Snippet for Slide:
 ```python
 # Real-Time Telegram Alert Integration (backend/telegram_service.py)
-def send_telegram_reservation_alert(order_id: str, product_name: str, customer_phone: str, store_name: str):
+def send_telegram_reservation_alert(order_id: str, product_name: str, customer_phone: str):
     masked_phone = mask_phone_number(customer_phone)
     message = (
         f"🚨 <b>NEW IN-STORE RESERVATION</b>\n"
         f"📦 <b>Item:</b> {product_name}\n"
         f"🆔 <b>Order ID:</b> <code>{order_id}</code>\n"
-        f"🏬 <b>Store:</b> {store_name}\n"
         f"📞 <b>Customer:</b> {masked_phone}\n"
         f"⏱ <i>Status: 48-Hour Hold Active</i>"
     )
@@ -244,46 +243,46 @@ def send_telegram_reservation_alert(order_id: str, product_name: str, customer_p
 >
 > When a user wants to purchase a product, they can click **'Reserve in Store'**:
 > 1. The frontend generates a unique Order ID and digital QR Pass for counter pick-up.
-> 2. On the backend, as shown in our `telegram_service.py` snippet, an instant webhook formats a clean HTML notification with masked customer PII for privacy and sends it to the store manager's **Telegram channel**.
+> 2. On the backend, as shown in our `telegram_service.py` snippet, an instant webhook formats a clean notification with masked customer PII for privacy and sends it to the store staff's **Telegram channel**.
 > 3. The store team immediately sets aside the inventory, ensuring the customer never arrives to an out-of-stock item.
 >
-> To explain how administrators ingest new catalogs and how we test the system, I'll pass the mic to **[Speaker 7's Name]**."
+> To explain how administrators manage catalogs and how we test the system, I'll pass the mic to **[Speaker 7's Name]**."
 
 ---
 
-## 👤 Speaker 7: Dynamic Ingestion, Admin Portal & Testing Pipeline
+## 👤 Speaker 7: Catalog Ingestion, Admin Portal & Testing Pipeline
 * **Role:** Data & QA Lead  
-* **Slide Title:** *Data Ingestion Pipeline & Automated Test Validation*
+* **Slide Title:** *Catalog Ingestion Pipeline & Automated Test Validation*
 
 ### 📋 Slide Bullet Points:
 * **Admin Ingestion (`sync_index`):** Upload CSV/JSON catalogs to automatically chunk, embed, and update ChromaDB.
-* **Test Suite Coverage:** Automated tests for retrieval precision (`test_retrieval.py`), QA grounding (`test_qa.py`), and system lifecycle (`test_full_system_final.py`).
-* **Deterministic Verification:** Validates that retrieval latency is under 300ms and similarity scores exceed confidence thresholds.
+* **PIN-Protected Admin:** Secure admin interface for inventory and document updates.
+* **Test Suite Coverage:** Automated tests for retrieval precision (`test_retrieval.py`), QA grounding (`test_qa.py`), and Telegram diagnostic workflows.
 
 ### 💻 Code Snippet for Slide:
 ```python
 # Dynamic Ingestion & Benchmark Verification (backend/ingest.py & test_retrieval.py)
-def sync_index(catalog_items: list, shop_id: str):
+def sync_index(catalog_items: list):
     documents, metadatas, ids = [], [], []
     for item in catalog_items:
         chunk = f"Product: {item['name']} | Specs: {item['specs']} | Price: ${item['price']}"
         documents.append(chunk)
-        metadatas.append({"shop_id": shop_id, "product_id": item["id"]})
-        ids.append(f"{shop_id}_{item['id']}")
+        metadatas.append({"product_id": item["id"]})
+        ids.append(f"prod_{item['id']}")
     
     # Batch upsert into ChromaDB vector collection
     chroma_collection.upsert(documents=documents, metadatas=metadatas, ids=ids)
 
 # Automated Benchmark Loop
 for pid, name, question in tests:
-    results = rag_service._retrieve(question, shop_id="S001", product_id=pid)
+    results = rag_service._retrieve(question, product_id=pid)
     assert len(results) > 0 and results[0]["similarity"] >= 0.30
 ```
 
 ### 🎙️ Spoken Script:
-> "Thank you, **[Speaker 6]**. Keeping an AI assistant up to date must be easy for store managers.
+> "Thank you, **[Speaker 6]**. Keeping an AI assistant up to date must be effortless for store managers.
 >
-> - Through our **Admin Portal**, managers upload raw product catalogs in CSV or JSON. As shown in `sync_index`, the backend extracts structured specs, chunks them with store metadata, and upserts them directly into ChromaDB. There is zero downtime or need to restart the server.
+> - Through our **Admin Portal**, managers upload raw product catalogs in CSV or JSON. As shown in `sync_index`, the backend extracts structured specs, chunks them, and upserts them directly into ChromaDB. There is zero downtime or need to restart the server.
 > - On the right side of the slide is our automated testing harness. We test retrieval latency and accuracy across our entire catalog (`test_retrieval.py` and `test_qa.py`), ensuring that every query retrieves the correct product chunk with similarity scores consistently meeting our confidence thresholds.
 >
 > To share our future enterprise roadmap and conclude our presentation, I'll hand over to **[Speaker 8's Name]**."
@@ -294,7 +293,7 @@ for pid, name, question in tests:
 * **Role:** Strategy & Future Scaling Lead  
 * **Slide Title:** *Enterprise Scaling Roadmap & Future Horizons*
 
-### 📋 Slide Bullet Points:
+### 📋 Slide Visual & Bullets:
 * **Phase 1 (Multilingual):** Regional voice and text expansion (*Hindi, Tamil, Telugu*) with Whisper and Neural TTS.
 * **Phase 2 (ERP Sync):** Bi-directional POS webhooks for SAP S/4HANA and Shopify inventory.
 * **Phase 3 (Edge Resilience):** On-premise fallback using local **Ollama / vLLM** if cloud internet drops.

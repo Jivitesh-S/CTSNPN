@@ -60,9 +60,10 @@ Thumbs.db
 
 
 # =========================================================
-# PYTHON CACHE
-# =========================================================
-
 .pytest_cache/
 .coverage
 htmlcov/
+
+# SQLite Temporary Files
+*.db-shm
+*.db-wal
