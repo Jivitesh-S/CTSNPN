@@ -2127,8 +2127,9 @@ Answer the customer using the knowledge source information above:
                 )
 
                 # Clean thinking tokens if returned by reasoning models
-                if "<think>" in answer and "</think>" in answer:
-                    answer = re.sub(r"<think>.*?</think>", "", answer, flags=re.DOTALL).strip()
+                if "<think>" in answer:
+                    answer = re.sub(r"<think>[\s\S]*?(?:</think>|$)", "", answer).strip()
+                answer = re.sub(r"</?think>", "", answer).strip()
 
                 if answer:
                     return answer

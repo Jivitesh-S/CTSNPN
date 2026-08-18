@@ -205,7 +205,7 @@ function App() {
           ...prev,
           {
             role: "assistant",
-            content: diagData.analysis || "Hardware Diagnostic complete.",
+            content: "Here is the Vision AI Hardware Diagnostic Report for your device:",
             visual_diagnostic: diagData,
             image_preview: attachedPreview,
             suggested_followups: diagData.suggested_followups || [],
